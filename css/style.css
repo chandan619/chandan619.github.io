@@ -81,7 +81,8 @@ table {
 
 /* Fonts */
 @font-face {
-	font-family:'karbonregular';src:url(assets/fonts/karbon-regular-webfont.eot);src:url(assets/fonts/karbon-regular-webfont.eot?#iefix) format("embedded-opentype"),
+	font-family:'karbonregular';
+	src:url(assets/fonts/karbon-regular-webfont.eot);src:url(assets/fonts/karbon-regular-webfont.eot?#iefix) format("embedded-opentype"),
 	url(assets/fonts/karbon-regular-webfont.woff) format("woff"),
 	url(assets/fonts/karbon-regular-webfont.ttf) format("truetype"),
 	url(assets/fonts/karbon-regular-webfont.svg#karbonregular) format("svg");
@@ -89,7 +90,8 @@ table {
 	font-style:normal
 }
 @font-face {
-	font-family:'karbonsemibold';src:url(assets/fonts/karbon-semibold-webfont.eot);src:url(assets/fonts/karbon-semibold-webfont.eot?#iefix) format("embedded-opentype"),
+	font-family:'karbonsemibold';
+	src:url(assets/fonts/karbon-semibold-webfont.eot);src:url(assets/fonts/karbon-semibold-webfont.eot?#iefix) format("embedded-opentype"),
 	url(assets/fonts/karbon-semibold-webfont.woff) format("woff"),
 	url(assets/fonts/karbon-semibold-webfont.ttf) format("truetype"),
 	url(assets/fonts/karbon-semibold-webfont.svg#karbonsemibold) format("svg");
@@ -97,7 +99,8 @@ table {
 	font-style:normal
 }
 @font-face {
-	font-family:'karbonlight';src:url(assets/fonts/karbon-light-webfont.eot);src:url(assets/fonts/karbon-light-webfont.eot?#iefix) format("embedded-opentype"),
+	font-family:'karbonlight';
+	src:url(assets/fonts/karbon-light-webfont.eot);src:url(assets/fonts/karbon-light-webfont.eot?#iefix) format("embedded-opentype"),
 	url(assets/fonts/karbon-light-webfont.woff) format("woff"),
 	url(assets/fonts/karbon-light-webfont.ttf) format("truetype"),
 	url(assets/fonts/karbon-light-webfont.svg#karbonlight) format("svg");
@@ -303,3 +306,68 @@ footer a.more:hover {
   height: 0;
 }
 
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	header {
+		padding: 20px 20px;
+	}
+	.headcenter {
+		text-align: center;
+	}
+	header nav {
+		float: none;
+		text-align: center;
+		margin-top: 20px;
+	}
+	header li {
+  		margin-left: 15px;
+	}
+	.intro h2 {
+		min-width: 280px;
+		max-width: 280px;
+		font-size: 28px;
+  		line-height: 32px;
+  		text-align: center;
+	}
+	footer a.more {
+  		font-size: 14px;
+  		padding: 10px 15px;
+  	}
+  	.bio .cd-words-wrapper b {
+		text-align: center;
+		white-space: normal;
+		font-size: 20px;
+  	}
+}
+
+@media only screen and (min-device-width : 480px) and (max-device-width : 680px) {
+	header {
+		padding: 20px 20px;
+	}
+	.headcenter {
+		text-align: center;
+	}
+	header nav {
+		float: none;
+		text-align: center;
+		margin-top: 20px;
+	}
+	header li {
+  		margin-left: 15px;
+	}
+	.intro h2 {
+		min-width: 300px;
+		max-width: 600px;
+		font-size: 28px;
+  		line-height: 32px;
+  		text-align: center;
+	}
+	footer a.more {
+  		font-size: 14px;
+  		padding: 10px 15px;
+  	}
+  	.bio .cd-words-wrapper b {
+		text-align: center;
+		white-space: normal;
+		font-size: 28px;
+  	}
+}
