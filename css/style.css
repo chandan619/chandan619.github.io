@@ -328,6 +328,9 @@ footer a.more:hover {
   		line-height: 32px;
   		text-align: center;
 	}
+	footer {
+		padding: 40px 20px
+	}
 	footer a.more {
   		font-size: 14px;
   		padding: 10px 15px;
@@ -360,6 +363,9 @@ footer a.more:hover {
 		font-size: 28px;
   		line-height: 32px;
   		text-align: center;
+	}
+	footer {
+		padding: 30px 20px
 	}
 	footer a.more {
   		font-size: 14px;
