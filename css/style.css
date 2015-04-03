@@ -26,7 +26,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	}
 
 body {
-	background: #000;
+	background: #0B121D;
 	line-height: 1;
 	font-family: 'karbonlight',Sans-Serif;
 	font-size: 10px;
@@ -64,13 +64,12 @@ table {
 }
 
 ::selection {
-  background: rgba(255, 216, 0, 0.7);
+  background: #FFE432;
   color: rgba(0, 0, 0, 0.7);
   text-shadow: none;
 }
 
 /* grid */
-
 *, 
 *:before,
 *:after {
@@ -110,6 +109,8 @@ table {
 
 /* STYLING BEGINS HERE */
 
+/* Home - Header and Nav */
+
 header {
 	width: 100%;
 	position: fixed;
@@ -123,6 +124,10 @@ header {
 	z-index: 6;
 }
 
+header.blk_hdr {
+	background: #0B121D;
+}
+
 .headcenter {
 	max-width: 1400px;
 	margin: 0 auto;
@@ -134,6 +139,7 @@ header a {
 	font-size: 17px;
 	color: #FFF;
 }
+
 
 header a::after {
 	content: "";
@@ -157,19 +163,19 @@ header a::after {
 header a:hover::after {
     -webkit-transform:rotate(0deg) scale(1,1) !important;
     -moz-transform:rotate(0deg) scale(1,1) !important;
-    transform:rotate(0deg) scale(1,1) !important
+    transform:rotate(0deg) scale(1,1) !important;
 }
 
 header h1 a:hover::after {
     -webkit-transform:rotate(0deg) scale(1,1) !important;
     -moz-transform:rotate(0deg) scale(1,1) !important;
-    transform:rotate(0deg) scale(1,1) !important
+    transform:rotate(0deg) scale(1,1) !important;
 }
 
 header nav li a.active::after {
     -webkit-transform:rotate(0deg) scale(1,1) !important;
     -moz-transform:rotate(0deg) scale(1,1) !important;
-    transform:rotate(0deg) scale(1,1) !important
+    transform:rotate(0deg) scale(1,1) !important;
 }
 
 header h1, header li {
@@ -181,7 +187,6 @@ header h1 a::after {
 	-webkit-transform: rotate(0deg) scale(1, 1);
   	-moz-transform: rotate(0deg) scale(1, 1);
   	transform: rotate(0deg) scale(1, 1);
-	/*background: #45C65B;*/
 	background: rgba(255,255,255,0.5);
 }
 
@@ -199,24 +204,39 @@ header nav li:first-child {
 }
 
 header nav li:nth-child(1) a::after {
-	/*background: #FF0B59;*/
 	background: rgba(255,255,255,0.5);
 }
 
 header nav li:nth-child(2) a::after {
-	/*background: #FFE432;*/
 	background: rgba(255,255,255,0.5);
 }
 
 header nav li:nth-child(3) a::after {
-	/*background: #0049D7;*/
 	background: rgba(255,255,255,0.5);
 }
 
 header nav li:nth-child(4) a::after {
-	/*background: #FF0D05;*/
 	background: rgba(255,255,255,0.5);
 }
+
+header nav li.active:nth-child(1) a::after {
+	/*background: #FF0B59;*/
+	background: #FF0D05;
+}
+
+header nav li.active:nth-child(2) a::after {
+	background: #45C65B;
+}
+
+header nav li.active:nth-child(3) a::after {
+	background: #0049D7;
+}
+
+header nav li.active:nth-child(4) a::after {
+	background: #FFE432;
+}
+
+/* Home - Intro Section */
 
 .intro {
 	position: fixed;
@@ -248,6 +268,8 @@ header nav li:nth-child(4) a::after {
 	display: table-cell;
 	vertical-align: middle;
 }
+
+/* Home - Footer Section */
 
 footer {
 	width: 100%;
@@ -298,6 +320,8 @@ footer a.more:hover {
 	border: 2px solid rgba(255,255,255,0.8);
 }
 
+/* Home - Gradient Section */
+
 #gradient
 {
   padding: 0px;
@@ -307,10 +331,7 @@ footer a.more:hover {
   opacity: 0.9;
 }
 
-#scroll {
-  width: 100%;
-  height: 0;
-}
+/* Responsive CSS */
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 	header {
