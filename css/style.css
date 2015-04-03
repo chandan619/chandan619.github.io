@@ -26,7 +26,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	}
 
 body {
-	background: #0B121D;
+	background: #251D35;
 	line-height: 1;
 	font-family: 'karbonlight',Sans-Serif;
 	font-size: 10px;
@@ -125,7 +125,7 @@ header {
 }
 
 header.blk_hdr {
-	background: #0B121D;
+	/*background: #0B121D;*/
 }
 
 .headcenter {
@@ -220,8 +220,8 @@ header nav li:nth-child(4) a::after {
 }
 
 header nav li.active:nth-child(1) a::after {
-	/*background: #FF0B59;*/
-	background: #FF0D05;
+	background: #FF0B59;
+	/*background: #FF0D05;*/
 }
 
 header nav li.active:nth-child(2) a::after {
@@ -330,6 +330,122 @@ footer a.more:hover {
   width: 100%;
   opacity: 0.9;
 }
+
+/* About - Container Section */
+
+.container {
+	min-height: 100%;
+	display: block;
+	padding-top: 77px;
+	background: #251D35 url("/img/background.png") no-repeat;
+  	background-size: 975px 617px;
+  	background-position: center;
+  	text-align: center;
+}
+
+.row {
+  padding: 0 50px;
+}
+
+.pathRow {
+  overflow: visible;
+  position: relative;
+}
+
+.pathRow--about {
+  /*background-color: #31A480;*/
+}
+
+.pathRow--about .pathRow-cell {
+/*  background-image: url();
+  background-position: right bottom;
+  background-repeat: no-repeat;*/
+}
+
+.tci {
+  color: #FFF;
+}
+
+.cell {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 75em;
+  position: relative;
+}
+
+.pathRow-cell {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 2.5em;
+  padding-top: 2.5em;
+  min-height: 300px;
+}
+
+.g {
+  display: block;
+  margin-left: 0px;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.g-b {
+  box-sizing: border-box;
+  float: left;
+  margin: 0;
+  padding-left: 0px;
+  width: 100%;
+}
+
+.g-b--l--2of5 {
+  width: 100%;
+}
+
+.mtl {
+  margin-top: 2.5em;
+}
+
+.mbxs {
+  margin-bottom: 1.3125em;
+}
+
+.tag {
+  background: #D9D7D5;
+  border: 0;
+  border-radius: 3px;
+  color: #909090;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0.3125em 0.9375em;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.tag--about {
+  background: #90DEC6;
+  color: #31A480;
+}
+
+.tshl {
+  font-size: 60px;
+  line-height: 65px;
+}
+
+.mbf {
+  margin-bottom: 0;
+}
+
+.tsm {
+  font-size: 30px;
+  line-height: 38px;
+  margin-top: 10px;
+}
+
+.g::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
 
 /* Responsive CSS */
 
