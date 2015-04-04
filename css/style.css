@@ -81,30 +81,44 @@ table {
 /* Fonts */
 @font-face {
 	font-family:'karbonregular';
-	src:url(/css/assets/fonts/karbon-regular-webfont.eot);src:url(/css/assets/fonts/karbon-regular-webfont.eot?#iefix) format("embedded-opentype"),
+	src:url(/css/assets/fonts/karbon-regular-webfont.eot);
+	src:url(/css/assets/fonts/karbon-regular-webfont.eot?#iefix) format("embedded-opentype"),
 	url(/css/assets/fonts/karbon-regular-webfont.woff) format("woff"),
 	url(/css/assets/fonts/karbon-regular-webfont.ttf) format("truetype"),
 	url(/css/assets/fonts/karbon-regular-webfont.svg#karbonregular) format("svg");
 	font-weight:normal;
-	font-style:normal
+	font-style:normal;
 }
 @font-face {
 	font-family:'karbonsemibold';
-	src:url(/css/assets/fonts/karbon-semibold-webfont.eot);src:url(/css/assets/fonts/karbon-semibold-webfont.eot?#iefix) format("embedded-opentype"),
+	src:url(/css/assets/fonts/karbon-semibold-webfont.eot);
+	src:url(/css/assets/fonts/karbon-semibold-webfont.eot?#iefix) format("embedded-opentype"),
 	url(/css/assets/fonts/karbon-semibold-webfont.woff) format("woff"),
 	url(/css/assets/fonts/karbon-semibold-webfont.ttf) format("truetype"),
 	url(/css/assets/fonts/karbon-semibold-webfont.svg#karbonsemibold) format("svg");
 	font-weight:normal;
-	font-style:normal
+	font-style:normal;
 }
 @font-face {
 	font-family:'karbonlight';
-	src:url(/css/assets/fonts/karbon-light-webfont.eot);src:url(/css/assets/fonts/karbon-light-webfont.eot?#iefix) format("embedded-opentype"),
+	src:url(/css/assets/fonts/karbon-light-webfont.eot);
+	src:url(/css/assets/fonts/karbon-light-webfont.eot?#iefix) format("embedded-opentype"),
 	url(/css/assets/fonts/karbon-light-webfont.woff) format("woff"),
 	url(/css/assets/fonts/karbon-light-webfont.ttf) format("truetype"),
 	url(/css/assets/fonts/karbon-light-webfont.svg#karbonlight) format("svg");
 	font-weight:normal;
-	font-style:normal
+	font-style:normal;
+}
+
+@font-face {
+	font-family:'karbonregularitalic';
+	src:url(/css/assets/fonts/karbon-regularitalic-webfont.eot);
+	src:url(/css/assets/fonts/karbon-regularitalic-webfont.eot?#iefix) format("embedded-opentype"),
+	url(/css/assets/fonts/karbon-regularitalic-webfont.woff) format("woff"),
+	url(/css/assets/fonts/karbon-regularitalic-webfont.ttf) format("truetype"),
+	url(/css/assets/fonts/karbon-regularitalic-webfont.svg#karbonregularitalic) format("svg");
+	font-weight:normal;
+	font-style:normal;
 }
 
 /* STYLING BEGINS HERE */
@@ -122,10 +136,6 @@ header {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	z-index: 6;
-}
-
-header.blk_hdr {
-	/*background: #0B121D;*/
 }
 
 .headcenter {
@@ -217,6 +227,22 @@ header nav li:nth-child(3) a::after {
 
 header nav li:nth-child(4) a::after {
 	background: rgba(255,255,255,0.5);
+}
+
+header.blk_hdr nav li:nth-child(1) a::after {
+	background: #FF0B59;
+}
+
+header.blk_hdr nav li:nth-child(2) a::after {
+	background: #45C65B;
+}
+
+header.blk_hdr nav li:nth-child(3) a::after {
+	background: #0049D7;
+}
+
+header.blk_hdr nav li:nth-child(4) a::after {
+	background: #FFE432;
 }
 
 header nav li.active:nth-child(1) a::after {
@@ -333,91 +359,12 @@ footer a.more:hover {
 
 /* About - Container Section */
 
-.container {
-	min-height: 100%;
-	display: block;
-	padding-top: 77px;
-	background: #251D35 url("/img/background.png") no-repeat;
-  	background-size: 975px 617px;
-  	background-position: center;
-  	text-align: center;
-}
-
-.row {
-  padding: 0 50px;
-}
-
-.pathRow {
-  overflow: visible;
-  position: relative;
-}
-
-.pathRow--about {
-  /*background-color: #31A480;*/
-}
-
-.pathRow--about .pathRow-cell {
-/*  background-image: url();
-  background-position: right bottom;
-  background-repeat: no-repeat;*/
-}
-
-.tci {
-  color: #FFF;
-}
-
-.cell {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 75em;
-  position: relative;
-}
-
-.pathRow-cell {
-  margin-bottom: 0;
-  margin-top: 0;
-  padding-bottom: 2.5em;
-  padding-top: 2.5em;
-  min-height: 300px;
-}
-
-.g {
-  display: block;
-  margin-left: 0px;
-  margin-top: 0px;
-  text-align: center;
-}
-
-.g-b {
-  box-sizing: border-box;
-  float: left;
-  margin: 0;
-  padding-left: 0px;
-  width: 100%;
-}
-
-.g-b--l--2of5 {
-  width: 100%;
-}
-
-.mtl {
-  margin-top: 2.5em;
-}
-
-.mbxs {
-  margin-bottom: 1.3125em;
-}
-
-.tag {
-  background: #D9D7D5;
-  border: 0;
-  border-radius: 3px;
-  color: #909090;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 0.3125em 0.9375em;
-  text-transform: uppercase;
-  z-index: 2;
+header.blk_hdr {
+	/*background: rgba(11, 18, 29, 0.3);*/
+	background: -webkit-linear-gradient(rgba(0, 0, 0, 0.175),rgba(255, 255, 255, 0));
+	background: -moz-linear-gradient(rgba(0,0,0,.175),rgba(255,255,255,0));
+	background: -o-linear-gradient(rgba(0,0,0,.175),rgba(255,255,255,0));
+	background: linear-gradient(rgba(0, 0, 0, 0.175),rgba(255, 255, 255, 0));
 }
 
 .tag--about {
@@ -425,27 +372,160 @@ footer a.more:hover {
   color: #31A480;
 }
 
-.tshl {
-  font-size: 60px;
-  line-height: 65px;
+.inpage-intro {
+  display: table;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  text-align: center;
+  opacity: 1;
+  background: #251D35 url("/img/background.png") no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.mbf {
-  margin-bottom: 0;
+h2.inpage-h2 {
+	text-align: center;
+	font-size: 60px;
+  	line-height: 65px;
+  	color: #fff;
+  	margin-top: 280px;
 }
 
-.tsm {
-  font-size: 30px;
+h3.inpage-h3 {
+	font-size: 30px;
   line-height: 38px;
   margin-top: 10px;
+  color: #fff;
+  text-align: center;
 }
 
-.g::after {
-  clear: both;
-  content: "";
+.thumbnails {
+  max-width: 950px;
+  margin: 0 auto;
+  padding-bottom: 4em;
+  padding-left: 0;
+  padding-top: 10em;
+}
+
+.thumbnails li {
+  display: inline-block;
+  width: 300px;
+  margin: 0 15px 30px 0;
+  text-align: center;
+}
+
+.thumbnails a .thumbimage {
+  display: block;
+  width: 300px;
+  height: 169px;
+  background: rgba(0, 0, 0, 0) no-repeat left top;
+  background-position: -2400px;
+  background-size: 5700px 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.thumbnails a[href*='hue'] .thumbimage {
+  background-image: url(/img/);
+}
+
+.thumbnails h4 {
+  font-family: 'karbonlight',Sans-Serif;
+  font-size: 26px;
+  color: #FFF;
+  -webkit-transition: .1s linear text-shadow;
+  -moz-transition: .1s linear text-shadow;
+  transition: 0.1s linear text-shadow;
+}
+
+.thumbnails h5 {
+  font-family: 'karbonlight',Sans-Serif;
+  font-size: 16px;
+  color: #FFF;
+  opacity: .6;
+  margin-top: 5px;
+  -webkit-transition: .1s linear opacity, .1s linear text-shadow;
+  -moz-transition: .1s linear opacity, .1s linear text-shadow;
+  transition: .1s linear opacity, .1s linear text-shadow;
+}
+
+.content {
+	background: #FFF;
+	display: table;
+  	top: 100%;
+  	width: 100%;
+  	min-height: 100vh;
+	border-bottom:1px solid rgba(0, 0, 0, 0.03);
+}
+
+#skillset {
+	background: #f9f9f9;
+}
+
+.c_box {
+	display: table-cell;
+ 	vertical-align: middle;
+}
+
+h2.cb {
+  max-width: 950px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  padding-top: 120px;
+  font-size: 50px;
+  text-align: center;
+  color: #FF0B59;
+}
+
+h3.cd {
+  max-width: 950px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  padding-top: 0px;
+  font-size: 30px;
+  text-align: center;
+  color: #FF0B59;
+}
+
+h3.cd blockquote {
+	display: inline-block;
+  background: #FFE432;
+  color: #000;
+}
+
+.prin {
+	max-width: 950px;
+  margin: 0 auto;
+  padding-top: 4em;
+  padding-left: 0;
   display: table;
 }
 
+.prin li {
+  margin-bottom: 30px;
+  float: left;
+  width: 40%;
+  min-height: 150px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.prin h3 {
+	font-size: 30px;
+	line-height: 38px;
+}
+
+.prin .num{
+	color: #FF0B59;
+}
+
+.prin p {
+	font-size: 18px;
+	line-height: 24px;
+	color: #666;
+}
 
 /* Responsive CSS */
 
@@ -483,6 +563,38 @@ footer a.more:hover {
 		white-space: normal;
 		font-size: 20px;
   	}
+  	h2.inpage-h2 {
+  		font-size: 40px;
+  		line-height: 65px;
+  		margin-top: 130px;
+  	}
+  	h3.inpage-h3 {
+  		font-size: 28px;
+  		line-height: 34px;
+  		margin: 10px 50px;
+  	}
+  	.thumbnails {
+  		padding-top: 3em;
+	}
+	.thumbnails li {
+  		margin: 0px;
+  	}
+  	.prin {
+  		padding-top: 10px;
+  	}
+  	.prin li {
+  		margin:0;
+  		padding: 20px 30px 30px 30px;
+  		width: 100%;
+  	}
+  	h2.cb {
+  		font-size: 40px;
+ 	}
+ 	h3.cd {
+ 		font-size: 28px;
+ 	}
+
+
 }
 
 @media only screen and (min-device-width : 480px) and (max-device-width : 680px) {
@@ -519,4 +631,14 @@ footer a.more:hover {
 		white-space: normal;
 		font-size: 28px;
   	}
+  	h2.inpage-h2 {
+  		font-size: 40px;
+  		line-height: 55px;
+  		margin-top: 110px;
+	}
+  	h3.inpage-h3 {
+  		font-size: 26px;
+  		line-height: 28px;
+  		margin: 10px 50px;
+	}
 }
