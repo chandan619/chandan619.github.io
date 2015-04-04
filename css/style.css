@@ -435,7 +435,7 @@ h3.inpage-h3 {
 
 .thumbnails h4 {
   font-family: 'karbonlight',Sans-Serif;
-  font-size: 26px;
+  font-size: 28px;
   color: #FFF;
   -webkit-transition: .1s linear text-shadow;
   -moz-transition: .1s linear text-shadow;
@@ -444,7 +444,7 @@ h3.inpage-h3 {
 
 .thumbnails h5 {
   font-family: 'karbonlight',Sans-Serif;
-  font-size: 16px;
+  font-size: 18px;
   color: #FFF;
   opacity: .6;
   margin-top: 5px;
@@ -475,7 +475,7 @@ h2.cb {
   max-width: 950px;
   margin: 0 auto;
   padding-bottom: 10px;
-  padding-top: 120px;
+  padding-top: 100px;
   font-size: 50px;
   text-align: center;
   color: #FF0B59;
@@ -506,12 +506,10 @@ h3.cd blockquote {
 }
 
 .prin li {
-  margin-bottom: 30px;
+  padding: 30px 40px;
   float: left;
-  width: 40%;
+  width: 50%;
   min-height: 150px;
-  margin-left: 40px;
-  margin-right: 40px;
 }
 
 .prin h3 {
@@ -528,6 +526,150 @@ h3.cd blockquote {
 	line-height: 24px;
 	color: #666;
 }
+
+.skill_table {
+  max-width: 950px;
+  margin: 0 auto;
+  padding-top: 0em;
+  padding-left: 0;
+  display: table;
+}
+
+.skill_b {
+  width: 45%;
+  float: left;
+  min-width: 450px;
+  padding: 0px 0px 5px 0px;
+  margin: 10px 12px 40px 12px;
+  background: #FFF;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+}
+
+.skill_b li {
+  padding: 12px 0px;
+  width: 100%;
+  border-bottom: 1px solid #F6F6F6;
+  display: inline-block;
+  float: left;
+}
+
+.skill_b li:nth-child(odd) {
+    background: rgba(0,0,0,0.01);
+}
+
+.skill_b li:last-child {
+	border-bottom: none;
+}
+
+.skill_b h3 {
+	font-size: 30px;
+  line-height: 38px;
+  padding: 20px 0px;
+  text-align: center;
+  border-bottom: 1px solid #F6F6F6;
+}
+
+.skill_b p {
+	  font-size: 18px;
+  line-height: 26px;
+  color: #333;
+  padding: 5px 0px;
+  float: left;
+  height: 34px;
+  text-transform: uppercase;
+}
+
+.skill_icon {
+	border-radius: 90px;
+  background: #000;
+  line-height: 22px;
+  color: #FFF;
+  float: left;
+  width: 34px;
+  height: 34px;
+  margin: 0px 20px;
+  padding: 4px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'karbonsemibold',Sans-Serif;
+  font-size: 18px;
+  border:2px solid rgba(0, 0, 0, 0.02);
+}
+
+.skill_b li .ps {
+	background: #5e97f6;
+}
+
+.skill_b li .il {
+	background: #ffa726;
+}
+
+.skill_b li .sk {
+	background: #fdd835;
+}
+
+.skill_b li .ui {
+	background: #4fc3f7;
+}
+
+.skill_b li .ux {
+	background: #4dd0e1;
+}
+
+.skill_b li .id {
+	background: #57bb8a;
+}
+
+.skill_b li .ap {
+	background: #9ccc65;
+}
+
+.skill_b li .wb {
+	background: #7986cb;
+}
+
+.skill_b li .bl {
+	background: #f06292;
+}
+
+.skill_b li .ht {
+	background: #a1887f;
+}
+
+.skill_b li .cs {
+	background: #d4e157;
+}
+
+.skill_b li .js {
+	background: #fdd835;
+}
+
+.skill_b li .jq {
+	background: #5e97f6;
+}
+
+.skill_b li .an {
+	background: #7986cb;
+}
+
+.skill_b li .ru {
+	background: #e06055;
+}
+
+.skill_b li .ph {
+	background: #9575cd;
+}
+
+.skill_b li .oc {
+	background: #90a4ae;
+}
+
+.skill_b li .sw {
+	background: #ff8a65;
+}
+
+
 
 /* Responsive CSS */
 
@@ -549,8 +691,8 @@ h3.cd blockquote {
 	.intro h2 {
 		min-width: 280px;
 		max-width: 280px;
-		font-size: 28px;
-  		line-height: 32px;
+		font-size: 30px;
+  		line-height: 34px;
   		text-align: center;
 	}
 	footer {
@@ -563,7 +705,7 @@ h3.cd blockquote {
   	.bio .cd-words-wrapper b {
 		text-align: center;
 		white-space: normal;
-		font-size: 20px;
+		font-size: 21px;
   	}
   	h2.inpage-h2 {
   		font-size: 40px;
@@ -595,11 +737,15 @@ h3.cd blockquote {
  	h3.cd {
  		font-size: 28px;
  	}
-
+	.skill_b {
+  		min-width: 100%;
+  		margin: 10px 0px 20px 0px;
+  		border-radius: 0px;
+  	}
 
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+@media only screen and (min-device-width : 321px) and (max-device-width : 568px) {
 	header {
 		padding: 20px 20px;
 	}
@@ -660,9 +806,14 @@ h3.cd blockquote {
  	h3.cd {
  		font-size: 28px;
  	}
+ 	.skill_b {
+  		min-width: 100%;
+  		margin: 10px 0px 20px 0px;
+  		border-radius: 0px;
+  	}
 }
 
-@media only screen and (min-device-width : 375px) and (max-device-width : 736px) {
+@media only screen and (min-device-width : 569px) and (max-device-width : 736px) {
 	header {
 		padding: 20px 20px;
 	}
@@ -728,6 +879,11 @@ h3.cd blockquote {
   		width: 220px;
   	}
   	.thumbnails a .thumbimage {
-  		width: 240px;
+  		width: 220px;
+	}
+	.skill_b {
+  		min-width: 45%;
+  		width: 47%;
+  		margin: 10px 10px 40px 10px;
 	}
 }
