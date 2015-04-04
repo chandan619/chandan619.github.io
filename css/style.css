@@ -531,7 +531,7 @@ h3.cd blockquote {
 
 /* Responsive CSS */
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 479px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 	header {
 		padding: 20px 20px;
 	}
@@ -599,7 +599,7 @@ h3.cd blockquote {
 
 }
 
-@media only screen and (min-device-width : 480px) and (max-device-width : 680px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 776px) {
 	header {
 		padding: 20px 20px;
 	}
@@ -636,11 +636,31 @@ h3.cd blockquote {
   	h2.inpage-h2 {
   		font-size: 40px;
   		line-height: 55px;
-  		margin-top: 120px;
+  		margin-top: 130px;
 	}
   	h3.inpage-h3 {
-  		font-size: 18px;
-  		line-height: 24px;
+  		font-size: 20px;
+  		line-height: 26px;
  		margin: 10px 40px;
 	}
+	.thumbnails {
+  		padding-top: 3em;
+	}
+	.thumbnails li {
+  		margin: 0px;
+  	}
+  	.prin {
+  		padding-top: 10px;
+  	}
+  	.prin li {
+  		margin:0;
+  		padding: 20px 30px 30px 30px;
+  		width: 100%;
+  	}
+  	h2.cb {
+  		font-size: 40px;
+ 	}
+ 	h3.cd {
+ 		font-size: 28px;
+ 	}
 }
