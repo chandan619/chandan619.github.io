@@ -30,6 +30,7 @@ body {
 	line-height: 1;
 	font-family: 'karbonlight',Sans-Serif;
 	font-size: 10px;
+	color: #333;
 	-webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
     font-smoothing: antialiased;
@@ -39,9 +40,9 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-size: 100%;
-  font-weight: normal;
-  font-family: 'karbonlight',Sans-Serif;
+	font-size: 100%;
+	font-weight: normal;
+	font-family: 'karbonlight',Sans-Serif;
 }
 
 a {
@@ -66,9 +67,9 @@ table {
 }
 
 ::selection {
-  background: #FFE432;
-  color: rgba(0, 0, 0, 0.7);
-  text-shadow: none;
+	background: #FFE432;
+	color: rgba(0, 0, 0, 0.7);
+	text-shadow: none;
 }
 
 /* grid */
@@ -240,16 +241,15 @@ header.blk_hdr nav li:nth-child(2) a::after {
 }
 
 header.blk_hdr nav li:nth-child(3) a::after {
-	background: #0049D7;
+	background: #FFE432;
 }
 
 header.blk_hdr nav li:nth-child(4) a::after {
-	background: #FFE432;
+	background: #2BA9F5;
 }
 
 header nav li.active:nth-child(1) a::after {
 	background: #FF0B59;
-	/*background: #FF0D05;*/
 }
 
 header nav li.active:nth-child(2) a::after {
@@ -257,11 +257,11 @@ header nav li.active:nth-child(2) a::after {
 }
 
 header nav li.active:nth-child(3) a::after {
-	background: #0049D7;
+	background: #FFE432;
 }
 
 header nav li.active:nth-child(4) a::after {
-	background: #FFE432;
+	background: #2BA9F5;
 }
 
 /* Home - Intro Section */
@@ -352,11 +352,11 @@ footer a.more:hover {
 
 #gradient
 {
-  padding: 0px;
-  margin: 0px;
-  height: 100vh;
-  width: 100%;
-  opacity: 0.9;
+	padding: 0px;
+	margin: 0px;
+	height: 100vh;
+	width: 100%;
+	opacity: 0.9;
 }
 
 /* About - Container Section */
@@ -370,21 +370,21 @@ header.blk_hdr {
 }
 
 .tag--about {
-  background: #90DEC6;
-  color: #31A480;
+	background: #90DEC6;
+	color: #31A480;
 }
 
 .inpage-intro {
-  display: table;
-  width: 100%;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  text-align: center;
-  opacity: 1;
-  background: #251D35 url("/img/background.png") no-repeat;
-  background-size: cover;
-  background-position: center;
+	display: table;
+	width: 100%;
+	height: 50vh;
+	top: 0;
+	left: 0;
+	text-align: center;
+	opacity: 1;
+	background: #251D35 url("/img/background.png") no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 h2.inpage-h2 {
@@ -392,65 +392,73 @@ h2.inpage-h2 {
 	font-size: 60px;
   	line-height: 65px;
   	color: #fff;
-  	margin-top: 280px;
+  	display: inline-block;
 }
 
 h3.inpage-h3 {
 	font-size: 30px;
-  line-height: 38px;
-  margin-top: 10px;
-  color: #fff;
-  text-align: center;
+	line-height: 38px;
+	margin-top: 10px;
+	color: #fff;
+	text-align: center;
+}
+
+h3.inpage-h3 span {
+	padding: 0 0 .1em 0;
+	position: relative;
+	display: block;
+	max-width: 700px;
+	margin: 0 auto;
 }
 
 .thumbnails {
-  max-width: 950px;
-  margin: 0 auto;
-  padding-bottom: 4em;
-  padding-left: 0;
-  padding-top: 10em;
+	max-width: 950px;
+	margin: 0 auto;
+	padding-bottom: 4em;
+	padding-left: 0;
+	padding-top: 10em;
 }
 
 .thumbnails li {
-  display: inline-block;
-  width: 300px;
-  margin: 0 15px 30px 0;
-  text-align: center;
+	display: inline-block;
+	width: 300px;
+	margin: 0 15px 30px 0;
+	text-align: center;
 }
 
 .thumbnails a .thumbimage {
-  display: block;
-  width: 300px;
-  height: 169px;
-  background: rgba(0, 0, 0, 0) no-repeat left top;
-  background-position: -2400px;
-  background-size: 5700px 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+	display: block;
+	width: 300px;
+	height: 169px;
+	background: rgba(0, 0, 0, 0) no-repeat left top;
+	background-position: -2400px;
+	background-size: 5700px 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 }
 
 .thumbnails a[href*='hue'] .thumbimage {
-  background-image: url(/img/);
+	background-image: url(/img/);
 }
 
 .thumbnails h4 {
-  font-family: 'karbonlight',Sans-Serif;
-  font-size: 28px;
-  color: #FFF;
-  -webkit-transition: .1s linear text-shadow;
-  -moz-transition: .1s linear text-shadow;
-  transition: 0.1s linear text-shadow;
+	font-family: 'karbonlight',Sans-Serif;
+	font-size: 28px;
+	color: #FFF;
+	-webkit-transition: .1s linear text-shadow;
+	-moz-transition: .1s linear text-shadow;
+	transition: 0.1s linear text-shadow;
 }
 
 .thumbnails h5 {
-  font-family: 'karbonlight',Sans-Serif;
-  font-size: 18px;
-  color: #FFF;
-  opacity: .6;
-  margin-top: 5px;
-  -webkit-transition: .1s linear opacity, .1s linear text-shadow;
-  -moz-transition: .1s linear opacity, .1s linear text-shadow;
-  transition: .1s linear opacity, .1s linear text-shadow;
+	font-family: 'karbonlight',Sans-Serif;
+	font-size: 18px;
+	color: #FFF;
+	opacity: .6;
+	margin-top: 5px;
+	-webkit-transition: .1s linear opacity, .1s linear text-shadow;
+	-moz-transition: .1s linear opacity, .1s linear text-shadow;
+	transition: .1s linear opacity, .1s linear text-shadow;
 }
 
 .content {
@@ -462,54 +470,115 @@ h3.inpage-h3 {
 	border-bottom:1px solid rgba(0, 0, 0, 0.03);
 }
 
-#skillset {
-	background: #f9f9f9;
-}
-
 .c_box {
 	display: table-cell;
  	vertical-align: middle;
 }
 
 h2.cb {
-  max-width: 950px;
-  margin: 0 auto;
-  padding-bottom: 10px;
-  padding-top: 100px;
-  font-size: 50px;
-  text-align: center;
-  color: #FF0B59;
+	max-width: 950px;
+	margin: 0 auto;
+	padding-bottom: 10px;
+	padding-top: 100px;
+	font-size: 50px;
+	text-align: center;
+	color: #FF0B59;
 }
 
 h3.cd {
-  max-width: 950px;
-  margin: 0 auto;
-  padding-bottom: 30px;
-  padding-top: 0px;
-  font-size: 30px;
-  text-align: center;
-  color: #FF0B59;
+	max-width: 950px;
+	margin: 0 auto;
+	padding-bottom: 30px;
+	padding-top: 0px;
+	font-size: 30px;
+	text-align: center;
+	color: #FF0B59;
 }
 
 h3.cd blockquote {
 	display: inline-block;
-  background: #FFE432;
-  color: #000;
+	background: #FFE432;
+	color: #000;
 }
+
+
+/* Profile - Forte's */
+
+#forte {
+	min-height: 50vh;
+}
+
+.forte-b {
+	max-width: 950px;
+	margin: 0 auto;
+	padding-top: 0;
+	padding-left: 0;
+	display: table;
+}
+
+.forte-b li {
+	padding: 30px 20px;
+	float: left;
+	width: 50%;
+	min-height: 150px;
+	display: inline-block;;
+}
+
+.forte-b h3 {
+	font-size: 30px;
+	line-height: 32px;
+	color: #333;
+	display: inline-block;
+	padding: 0px 0px;
+	/*background: #FFE432;#0049D7*/
+	margin-bottom: 5px;
+}
+
+.forte-b p {
+	font-size: 18px;
+	line-height: 24px;
+	color: rgba(33, 41, 52, 0.7);
+}
+
+.for-pc {
+	display: block;
+	width: 115px;
+	height: 115px;
+	background: rgba(0, 0, 0, 0.03) no-repeat left top;
+	float: left;
+	margin-right: 35px;
+	margin-top: 0px;
+	border: 2px solid rgba(0, 0, 0, 0.03);
+	border-radius: 90px;
+}
+
+.for-ct {
+	float: left;
+	display: block;
+	width: 260px;
+	vertical-align: middle;
+}
+
+.for-blue {background: #4DD0E1;}
+.for-green {background: #57bb8a;}
+.for-purple {background: #9575CD;}
+.for-red {background: #E06055;}
+
+/* Profile - Principles */
 
 .prin {
 	max-width: 950px;
-  margin: 0 auto;
-  padding-top: 4em;
-  padding-left: 0;
-  display: table;
+	margin: 0 auto;
+	padding-top: 2em;
+	padding-left: 0;
+	display: table;
 }
 
 .prin li {
-  padding: 30px 40px;
-  float: left;
-  width: 50%;
-  min-height: 150px;
+	padding: 30px 40px;
+	float: left;
+	width: 50%;
+	min-height: 150px;
 }
 
 .prin h3 {
@@ -524,34 +593,37 @@ h3.cd blockquote {
 .prin p {
 	font-size: 18px;
 	line-height: 24px;
-	color: #666;
+	color: rgba(33, 41, 52, 0.7);
 }
 
+
+/* Profile SkillSet */
+
 .skill_table {
-  max-width: 950px;
-  margin: 0 auto;
-  padding-top: 0em;
-  padding-left: 0;
-  display: table;
+	max-width: 950px;
+	margin: 0 auto;
+	padding-top: 0em;
+	padding-left: 0;
+	display: table;
 }
 
 .skill_b {
-  width: 45%;
-  float: left;
-  min-width: 450px;
-  padding: 0px 0px 5px 0px;
-  margin: 10px 12px 40px 12px;
-  background: #FFF;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  border-radius: 3px;
+	width: 45%;
+	float: left;
+	min-width: 450px;
+	padding: 0px 0px 5px 0px;
+	margin: 10px 12px 40px 12px;
+	background: #FFF;
+	border: 1px solid rgba(0, 0, 0, 0.07);
+	border-radius: 0px;
 }
 
 .skill_b li {
-  padding: 12px 0px;
-  width: 100%;
-  border-bottom: 1px solid #F6F6F6;
-  display: inline-block;
-  float: left;
+	padding: 12px 0px;
+	width: 100%;
+	border-bottom: 1px solid #F6F6F6;
+	display: inline-block;
+	float: left;
 }
 
 .skill_b li:nth-child(odd) {
@@ -564,37 +636,37 @@ h3.cd blockquote {
 
 .skill_b h3 {
 	font-size: 30px;
-  line-height: 38px;
-  padding: 20px 0px;
-  text-align: center;
-  border-bottom: 1px solid #F6F6F6;
+	line-height: 38px;
+	padding: 20px 0px;
+	text-align: center;
+	border-bottom: 1px solid #F6F6F6;
 }
 
 .skill_b p {
-	  font-size: 18px;
-  line-height: 26px;
-  color: #333;
-  padding: 5px 0px;
-  float: left;
-  height: 34px;
-  text-transform: uppercase;
+	font-size: 18px;
+	line-height: 26px;
+	color: #333;
+	padding: 5px 0px;
+	float: left;
+	height: 34px;
+	text-transform: uppercase;
 }
 
 .skill_icon {
 	border-radius: 90px;
-  background: #000;
-  line-height: 22px;
-  color: #FFF;
-  float: left;
-  width: 34px;
-  height: 34px;
-  margin: 0px 20px;
-  padding: 4px;
-  text-align: center;
-  font-weight: bold;
-  font-family: 'karbonsemibold',Sans-Serif;
-  font-size: 18px;
-  border:2px solid rgba(0, 0, 0, 0.02);
+	background: #000;
+	line-height: 22px;
+	color: #FFF;
+	float: left;
+	width: 34px;
+	height: 34px;
+	margin: 0px 20px;
+	padding: 4px;
+	text-align: center;
+	font-weight: bold;
+	font-family: 'karbonsemibold',Sans-Serif;
+	font-size: 18px;
+	border:2px solid rgba(0, 0, 0, 0.02);
 }
 
 .skill_b li .ps {
@@ -669,7 +741,14 @@ h3.cd blockquote {
 	background: #ff8a65;
 }
 
-
+.gray {
+	background: #FAFAFA;
+	background: -moz-linear-gradient(-45deg,#fafafa 0,#f2f2f2 60%,#eaeaea 100%);
+	background: -webkit-linear-gradient(-45deg,#FAFAFA 0,#F2F2F2 60%,#EAEAEA 100%);
+	background: -o-linear-gradient(-45deg,#fafafa 0,#f2f2f2 60%,#eaeaea 100%);
+	background: -ms-linear-gradient(-45deg,#fafafa 0,#f2f2f2 60%,#eaeaea 100%);
+	background: linear-gradient(135deg,#FAFAFA 0,#F2F2F2 60%,#EAEAEA 100%);
+}
 
 /* Responsive CSS */
 
@@ -686,7 +765,7 @@ h3.cd blockquote {
 		margin-top: 20px;
 	}
 	header li {
-  		margin-left: 15px;
+  		margin-left: 12px;
 	}
 	.intro h2 {
 		min-width: 280px;
@@ -742,7 +821,6 @@ h3.cd blockquote {
   		margin: 10px 0px 20px 0px;
   		border-radius: 0px;
   	}
-
 }
 
 @media only screen and (min-device-width : 321px) and (max-device-width : 568px) {
