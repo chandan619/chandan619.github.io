@@ -908,7 +908,7 @@ h2.rcb {
 	max-width: 950px;
 	margin: 0 auto;
 	padding-bottom: 0px;
-	padding-top: 100px;
+	padding-top: 110px;
 	font-size: 50px;
 	line-height: 45px;
 	text-align: center;
@@ -920,11 +920,86 @@ h3.rcd {
 	margin: 0 auto;
 	padding-bottom: 30px;
 	padding-top: 0px;
-	font-size: 30px;
 	color: rgba(33, 41, 52, 0.7);
   	font-size: 16px;
 	text-align: center;
 }
+
+.r-work {
+  margin-top: .75em;
+  margin-bottom: 3em;
+  background: #FFF;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 0px;
+  text-align: left;
+  overflow: auto;
+    padding-bottom: 60px;
+}
+
+.r-work li {
+position: relative;
+  text-indent: 0;
+  font-size: 15px;
+  line-height: 18px;
+  padding: 1.8em;
+  /*border-top: 1px solid rgba(0, 0, 0, 0.03);*/
+}
+
+.r-work li span {
+  display: inline-block;
+  width: 70%;
+}
+
+.r-work li span h5 {
+  display: block;
+  text-align: left;
+  max-width: none;
+  width: auto;
+  margin: 6px 0px;
+  display: none;
+}
+
+.r-work span p {
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: .8em;
+  color: rgba(33, 41, 52, 0.7);
+  /* font-weight: bold; */
+}
+
+.r-work h4 {
+font-size: 30px;
+  line-height: 38px;
+  color: #333;
+  background: #FFE432;
+  display: inline-block;
+}
+
+.r-work strong {
+	  /*font-weight: bold;*/
+}
+
+
+.r-work h5 {
+  display: inline-block;
+  vertical-align: top;
+  text-align: right;
+  font-size: 14px;
+  width: 110px;
+  margin: 0px 20px 0 0;
+  color: rgba(33, 41, 52, 0.7);
+  line-height: 21px;
+}
+
+.r-work a {
+  color: #000;
+  text-decoration: none;
+	-moz-transition: opacity .15s linear;
+  -webkit-transition: opacity .15s linear;
+  transition: opacity .15s linear;
+}
+
 
 /* Responsive CSS */
 
