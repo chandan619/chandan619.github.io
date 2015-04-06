@@ -12,8 +12,8 @@
 	<meta name="apple-mobile-web-app-capable" content="yes"> 
 	<meta name="apple-touch-fullscreen" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	
 	<link rel="apple-touch-icon" href="/img/touch.png">
-
 	<link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
 	<link rel="icon" type="image/png" href="/img/android-chrome-192x192.png" sizes="192x192">
 	<link rel="icon" type="image/png" href="/img/favicon-96x96.png" sizes="96x96">
@@ -40,13 +40,129 @@
 		</div>
 	</header>
 	
+	<!-- Intro Section -->
+	<div id="intro" class="inpage-intro">
+		<div class="bio">
+			<h2 class="inpage-h2">
+				Let's Talk.
+			</h2>
+			<h3 class="inpage-h3">
+				<span>
+					If you have a project in mind or are simply interested in finding out more, get in touch and let’s get things moving.
+				</span>
+			</h3>
+		</div>
+	</div>
+
+	<!-- Contact Form Section -->
+	<div id="contact" class="content">
+		<div class="c_box">
+			<h2 class="hlb">Say Hello!</h2>
+			<h3 class="cd"><blockquote>Let’s work together.</blockquote></h3>
+			<form class="hl-form" action="https://docs.google.com/forms/d/1Hl_1GGEO2yyLihOWIjxchYYG8YjTCRqTp68hz80ap5o/formResponse" method="POST" id="ss-form" target="_self" onsubmit="">
+				<span class="input input--hoshi">
+					<input class="input__field input__field--hoshi" type="text" name="entry.1355352292" id="entry_1355352292" />
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="entry_1355352292">
+						<span class="input__label-content input__label-content--hoshi">Full Name</span>
+					</label>
+				</span>
+
+				<span class="input input--hoshi">
+					<input class="input__field input__field--hoshi" type="email" name="entry.356361034" id="entry_356361034" />
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="entry_356361034">
+						<span class="input__label-content input__label-content--hoshi">Email Address</span>
+					</label>
+				</span>
+
+				<span class="input input--hoshi">
+					<input class="input__field input__field--hoshi" type="text" name="entry.1094895206" id="entry_1094895206" />
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="entry_1094895206">
+						<span class="input__label-content input__label-content--hoshi">How can i help You?</span>
+					</label>
+				</span>
+				
+				<span class="input input--hoshi">
+					<input type="submit" name="submit" value="Send Message" class="button sb-bt" id="ss-submit">
+					<span class="sb-tx">You will receive an answer within next 3 days.</span>
+				</span>
+			</form>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer class="inner-foot">
+		<nav class="sitemap">
+			<ul>
+				<li><a href="/" title="Home" class="underliner">Home</a></li>
+				<li><a href="/profile" title="View profile" class="underliner">Profile</a></li>
+				<li><a href="/work/" title="View the portfolio" class="underliner">Work</a></li>
+				<li><a href="/resume/" title="Download my resume" class="underliner">Resume</a></li>
+				<li><a href="/contact/" title="Write me a letter" class="underliner">Contact</a></li>
+			</ul>
+		</nav>
+		<span class="social">
+			You should follow me on <a href="https://linkedin.com/cplusk" title="Follow me on Linkedin">Linkedin</a>, <a href="https://twitter.com/chandan619" title="Follow me on Twitter">Twitter</a>, <a href="http://dribbble.com/chandan619" title="View my work on Dribbble">Dribbble</a> or <a href="http://www.facebook.com/cplusk" title="Follow me on Facebook">Facebook</a>.</span>
+		<span class="copyright">
+			Copyright 2015 Chandan Kumar
+		</span>
+	</footer>
 
 	<footer>
 		
 	</footer>
 	
 	<script src="/js/jquery-2.1.1.js"></script>
+	<script src="/js/classie.js"></script>
+	<script>
+		var distance = $('.bio').offset().top + 300;
+    	$window = $(window);
 
+		$window.scroll(function() {
+    		if ( $window.scrollTop() >= distance ) {
+        		// Your div has reached the top
+        		$( ".blk_hdr" ).css({"background":"rgba(255,255,255,1)", "border-bottom":"1px solid rgba(0,0,0,0.03)"});
+				$( ".blk_hdr a" ).css({"color":"#212934"});
+    		}else{
+    			$( ".blk_hdr" ).css({ "border-bottom":"none","background": "-webkit-linear-gradient(rgba(0, 0, 0, 0.175),rgba(255, 255, 255, 0))","background": "-moz-linear-gradient(rgba(0,0,0,.175),rgba(255,255,255,0))","background": "-o-linear-gradient(rgba(0,0,0,.175),rgba(255,255,255,0))","background": "linear-gradient(rgba(0, 0, 0, 0.175),rgba(255, 255, 255, 0))"});
+    			$( ".blk_hdr a" ).css({"color":"#fff"});
+    		}
+		});
+	</script>
+	<script>
+			(function() {
+				// trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+				if (!String.prototype.trim) {
+					(function() {
+						// Make sure we trim BOM and NBSP
+						var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+						String.prototype.trim = function() {
+							return this.replace(rtrim, '');
+						};
+					})();
+				}
+
+				[].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+					// in case the input is already filled..
+					if( inputEl.value.trim() !== '' ) {
+						classie.add( inputEl.parentNode, 'input--filled' );
+					}
+
+					// events:
+					inputEl.addEventListener( 'focus', onInputFocus );
+					inputEl.addEventListener( 'blur', onInputBlur );
+				} );
+
+				function onInputFocus( ev ) {
+					classie.add( ev.target.parentNode, 'input--filled' );
+				}
+
+				function onInputBlur( ev ) {
+					if( ev.target.value.trim() === '' ) {
+						classie.remove( ev.target.parentNode, 'input--filled' );
+					}
+				}
+			})();
+		</script>
 
 </body>
 </html>
