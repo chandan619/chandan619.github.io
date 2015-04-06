@@ -39,9 +39,19 @@ var g2 = Math.round(istep * c1_0[1] + step * c1_1[1]);
 var b2 = Math.round(istep * c1_0[2] + step * c1_1[2]);
 var color2 = "rgb("+r2+","+g2+","+b2+")";
 
- $('#gradient').css({
-   background: "-webkit-gradient(linear, left top, right top, from("+color1+"), to("+color2+"))"}).css({
-    background: "-moz-linear-gradient(left, "+color1+" 0%, "+color2+" 100%)"});
+$('#gradient').css({
+background: "-webkit-gradient(linear, left top, right top, from("+color1+"), to("+color2+"))"})
+.css({
+background: "-moz-linear-gradient(left, "+color1+" 0%, "+color2+" 100%)"})
+.css({
+background: "-o-linear-gradient(left,  "+color1+" 1%, "+color2+" 100%)"})
+.css({    
+background: "-ms-linear-gradient(left,  "+color1+" 1%, "+color2+" 100%)"})
+.css({
+background: "linear-gradient(to right,  "+color1+" 1%, "+color2+" 100%)"})
+.css({
+filter: "progid:DXImageTransform.Microsoft.gradient( startColorstr='"+color1+"', endColorstr='"+color2+"',GradientType=1 )"})
+
   
   step += gradientSpeed;
   if ( step >= 1 )
