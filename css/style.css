@@ -725,6 +725,7 @@ h3.cd blockquote {
 
 .inner {
 	padding: 15px;
+	border-top: 1px solid rgba(51, 51, 51, 0.05);
 }
 
 .meta {
