@@ -788,6 +788,7 @@ h3.cd blockquote {
 	font-family: 'karbonsemibold',Sans-Serif;
 	font-size: 17px;
 	text-transform: uppercase;	
+	-webkit-appearance: none;
 }
 
 .button:focus {
@@ -1003,7 +1004,7 @@ h2.hlb {
 	max-width: 950px;
 	margin: 0 auto;
 	padding-bottom: 10px;
-	padding-top: 0px;
+	padding-top: 50px;
 	font-size: 50px;
 	text-align: center;
 	color: #2BA9F5;
@@ -1137,7 +1138,7 @@ h2.hlb {
 	left: 0;
 	width: 100%;
 	height: calc(100% - 10px);
-	border-bottom: 2px solid rgba(185, 193, 202, 0.2);
+	border-bottom: 2px solid rgba(185, 193, 202, 0.4);
 }
 
 .input__label--hoshi::after {
