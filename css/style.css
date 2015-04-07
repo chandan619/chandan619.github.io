@@ -551,7 +551,7 @@ h3.cd blockquote {
 }
 
 .skill_b {
-	width: 45%;
+	width: 46%;
 	float: left;
 	min-width: 450px;
 	padding: 0px 0px 5px 0px;
@@ -1213,9 +1213,10 @@ h2.hlb {
 
 /* Responsive CSS */
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* iPhone 2G-4S */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) {
 	header {
-		padding: 20px 20px;
+		padding: 20px 10px;
 	}
 	.headcenter {
 		text-align: center;
@@ -1228,6 +1229,9 @@ h2.hlb {
 	header li {
   		margin-left: 12px;
 	}
+	.inpage-intro {
+  		height: 70vh;
+	}
 	.intro h2 {
 		min-width: 280px;
 		max-width: 280px;
@@ -1236,7 +1240,7 @@ h2.hlb {
   		text-align: center;
 	}
 	footer {
-		padding: 40px 20px
+		padding: 20px 20px
 	}
 	footer a.more {
   		font-size: 14px;
@@ -1250,18 +1254,12 @@ h2.hlb {
   	h2.inpage-h2 {
   		font-size: 40px;
   		line-height: 65px;
-  		margin-top: 130px;
+  		margin-top: 40px;
   	}
   	h3.inpage-h3 {
-  		font-size: 28px;
-  		line-height: 34px;
-  		margin: 10px 50px;
-  	}
-  	.thumbnails {
-  		padding-top: 3em;
-	}
-	.thumbnails li {
-  		margin: 0px;
+  		font-size: 20px;
+  		line-height: 26px;
+  		margin: 10px 40px;
   	}
   	.prin {
   		padding-top: 10px;
@@ -1282,147 +1280,588 @@ h2.hlb {
   		margin: 10px 0px 20px 0px;
   		border-radius: 0px;
   	}
+  	.forte-b {
+  		margin-top: 30px;
+  	}
+  	.forte-b li {
+  		width: 100%;
+  		text-align: center;
+  		padding: 0px 20px 30px;
+  	}
+  	.for-pc {
+  		margin: 0px auto 20px;
+  		width: 100%;
+  		border-radius: 2px;
+		height: 150px;
+  	}
+  	.for-ct {
+  		width: 100%;
+  	}
+  	.brands-b {
+		display: block;
+		width: 100%;
+		float: left;
+  	}
+  	.brands-b li {
+		width: 280px;
+		float: none;
+	}
+	.inpage-outro {
+		height: 80vh;
+	}
+	.out-s {
+		width: 280px;
+	}
+	.button{
+		width: 280px;
+  		margin-bottom: 20px;
+	}
+	.inner-foot{
+		padding: 40px 20px;
+	}
+	.sitemap li {
+  		display: inline-block;
+  		margin: 8px 15px;
+	}
+	.social, .social a {
+		line-height: 20px;
+	}
+	.hl-form {
+		width: 280px;
+	}
+	.sb-bt {
+		width: 260px;
+	}
+	h2.rcb {
+		font-size: 40px;
+	}
+	.r-work {
+		padding-bottom: 10px;
+	}
+	.r-work li {
+		padding: 30px 20px;
+		border-top: 1px solid rgba(0, 0, 0, 0.03);
+	}
+	.r-work li span {
+  		width: 100%;
+	}
+	.r-work h5 {
+		display: none;
+	}
+	.r-work li span h5 {
+		display: block;
+	}
+	a.home-white {
+		width: 100%;
+		margin: 0px;
+	}
 }
-
-@media only screen and (min-device-width : 321px) and (max-device-width : 568px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) {
 	header {
 		padding: 20px 20px;
-	}
-	.headcenter {
-		text-align: center;
 	}
 	header nav {
 		float: none;
 		text-align: center;
 		margin-top: 20px;
 	}
-	header li {
-  		margin-left: 15px;
-	}
-	.intro h2 {
-		min-width: 300px;
-		max-width: 600px;
-		font-size: 28px;
-  		line-height: 32px;
-  		text-align: center;
-	}
-	footer {
-		padding: 30px 20px
-	}
-	footer a.more {
-  		font-size: 14px;
-  		padding: 10px 15px;
-  	}
-  	.bio .cd-words-wrapper b {
-		text-align: center;
-		white-space: normal;
-		font-size: 28px;
-  	}
-  	h2.inpage-h2 {
-  		font-size: 40px;
-  		line-height: 55px;
-  		margin-top: 130px;
-	}
-  	h3.inpage-h3 {
-  		font-size: 20px;
-  		line-height: 26px;
- 		margin: 10px 40px;
-	}
-	.thumbnails {
-  		padding-top: 3em;
-	}
-  	.prin {
-  		padding-top: 10px;
-  	}
-  	.prin li {
-  		margin:0;
-  		padding: 20px 30px 30px 30px;
-  		width: 100%;
-  	}
-  	h2.cb {
-  		font-size: 40px;
- 	}
- 	h3.cd {
- 		font-size: 28px;
- 	}
- 	.skill_b {
-  		min-width: 100%;
-  		margin: 10px 0px 20px 0px;
-  		border-radius: 0px;
-  	}
-}
-
-@media only screen and (min-device-width : 569px) and (max-device-width : 736px) {
-	header {
-		padding: 20px 20px;
-	}
 	.headcenter {
 		text-align: center;
 	}
-	header nav {
-		float: none;
-		text-align: center;
-		margin-top: 20px;
-	}
-	header li {
-  		margin-left: 15px;
+	footer {
+		padding: 20px 20px;
 	}
 	.intro h2 {
-		min-width: 300px;
-		max-width: 600px;
-		font-size: 28px;
-  		line-height: 32px;
-  		text-align: center;
-	}
-	footer {
-		padding: 30px 20px
-	}
-	footer a.more {
-  		font-size: 14px;
-  		padding: 10px 15px;
-  	}
-  	.bio .cd-words-wrapper b {
+		min-width: 450px;
+		max-width: 450px;
+		font-size: 26px;
+		line-height: 30px;
 		text-align: center;
-		white-space: normal;
-		font-size: 28px;
-  	}
-  	h2.inpage-h2 {
-  		font-size: 40px;
-  		line-height: 55px;
-  		margin-top: 130px;
 	}
-  	h3.inpage-h3 {
-  		font-size: 20px;
-  		line-height: 26px;
- 		margin: 10px 40px;
+	.inpage-intro {
+		height: 100vh;
 	}
-	.thumbnails {
-  		padding-top: 3em;
+	h2.inpage-h2 {
+		font-size: 40px;
+		line-height: 45px;
+		margin-top: 60px;
 	}
-  	.prin {
-  		padding-top: 10px;
-  	}
-  	.prin li {
-  		margin:0;
-  		padding: 20px 30px 30px 30px;
-  		width: 100%;
-  	}
-  	h2.cb {
-  		font-size: 40px;
- 	}
- 	h3.cd {
- 		font-size: 28px;
- 	}
-	.thumbnails li {
-  		margin: 0px;
-  		width: 220px;
-  	}
-  	.thumbnails a .thumbimage {
-  		width: 220px;
+	h3.inpage-h3 {
+		font-size: 20px;
+		line-height: 26px;
+		margin: 10px 40px;
+	}
+	.forte-b {
+  		margin-top: 30px;
+	}
+	.forte-b li {
+		width: 100%;
+		text-align: center;
+		padding: 0px 20px 30px;
+	}
+	.for-ct {
+		text-align: left;
+		width: 60%;
 	}
 	.skill_b {
-  		min-width: 45%;
-  		width: 47%;
-  		margin: 10px 10px 40px 10px;
+		min-width: 100%;
+		margin: 10px 0px 20px 0px;
+		border-radius: 0px;
+	}
+	.prin li {
+		margin: 0;
+		padding: 20px 30px 30px 30px;
+		width: 100%;
+	}
+	.brands-b {
+		display: block;
+		width: 100%;
+		float: left;
+	}
+	.brands-b li {
+		width: 46%;
+		margin: 2%;
+	}
+	.inpage-outro {
+		height: 100vh;
+	}
+	.inner-foot {
+  		padding: 30px 20px;
+  		z-index: 0;
+	}
+	.sitemap li {
+		display: inline-block;
+		margin: 8px 12px;
+	}
+	h2.rcb {
+		font-size: 40px;
+	}
+	.r-work {
+		padding-bottom: 10px;
+	}
+	.r-work li {
+		padding: 30px 20px;
+		border-top: 1px solid rgba(0, 0, 0, 0.03);
+	}
+	.r-work li span {
+  		width: 100%;
+	}
+	.r-work h5 {
+		display: none;
+	}
+	.r-work li span h5 {
+		display: block;
+	}
+	.social, .social a {
+		line-height: 20px;
+	}
+	.hl-form {
+		width: 380px;
+	}
+	.sb-bt {
+		width: 360px;
+	}
+	.copyright {
+  		margin-top: 50px;
 	}
 }
+
+/* iPhone 5 & 5S */
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) {
+}
+
+/* iPhone 6 */
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) { 
+	header li {
+  		margin-left: 25px;
+	}
+	.inpage-intro {
+  		height: 60vh;
+	}
+	.inpage-outro {
+  		height: 60vh;
+	}
+	a.home-white {
+  		width: 280px;
+  	}
+  	.intro h2 {
+		min-width: 340px;
+		max-width: 340px;
+		font-size: 36px;
+		line-height: 40px;
+	}
+	.bio .cd-words-wrapper b {
+		font-size: 26px;
+	}
+}
+@media only screen and (min-device-width : 569px) and (max-device-width : 667px) and (orientation : landscape) {
+	header {
+		padding: 20px 20px;
+	}
+	header nav {
+		float: none;
+		text-align: center;
+		margin-top: 20px;
+	}
+	.headcenter {
+		text-align: center;
+	}
+	footer {
+		padding: 20px 20px;
+	}
+	.intro h2 {
+		min-width: 500px;
+		max-width: 500px;
+		font-size: 30px;
+		line-height: 34px;
+		text-align: center;
+	}
+	.inpage-intro {
+		height: 70vh;
+	}
+	h2.inpage-h2 {
+		font-size: 40px;
+		line-height: 45px;
+		margin-top: 60px;
+	}
+	h3.inpage-h3 {
+		font-size: 20px;
+		line-height: 26px;
+		margin: 10px 40px;
+	}
+	.forte-b {
+  		margin-top: 30px;
+	}
+	.forte-b li {
+		width: 100%;
+		text-align: center;
+		padding: 0px 20px 30px;
+	}
+	.for-ct {
+		text-align: left;
+		width: 60%;
+	}
+	.skill_b {
+		min-width: 100%;
+		margin: 10px 0px 20px 0px;
+		border-radius: 0px;
+	}
+	.prin li {
+		margin: 0;
+		padding: 20px 30px 30px 30px;
+		width: 100%;
+	}
+	.brands-b {
+		display: block;
+		width: 100%;
+		float: left;
+	}
+	.brands-b li {
+		width: 27%;
+		margin: 3%;
+	}
+	.inpage-outro {
+		height: 100vh;
+	}
+	.inner-foot {
+  		padding: 30px 20px;
+  		z-index: 0;
+	}
+	.sitemap li {
+		display: inline-block;
+		margin: 8px 12px;
+	}
+	h2.rcb {
+		font-size: 40px;
+	}
+	.r-work {
+		padding-bottom: 10px;
+	}
+	.r-work li {
+		padding: 30px 20px;
+		border-top: 1px solid rgba(0, 0, 0, 0.03);
+	}
+	.r-work li span {
+  		width: 100%;
+	}
+	.r-work h5 {
+		display: none;
+	}
+	.r-work li span h5 {
+		display: block;
+	}
+	.social, .social a {
+		line-height: 20px;
+	}
+	.hl-form {
+		width: 380px;
+	}
+	.sb-bt {
+		width: 360px;
+	}
+	.copyright {
+  		margin-top: 50px;
+	}
+}
+
+/* iPhone 6 Plus */
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait) { 
+}
+@media only screen and (min-device-width : 668px) and (max-device-width : 736px) and (orientation : landscape) {
+	header {
+		padding: 20px 20px;
+	}
+	header nav {
+		float: none;
+		text-align: center;
+		margin-top: 20px;
+	}
+	.headcenter {
+		text-align: center;
+	}
+	footer {
+		padding: 20px 20px;
+	}
+	.intro h2 {
+		min-width: 500px;
+		max-width: 500px;
+		font-size: 30px;
+		line-height: 34px;
+		text-align: center;
+	}
+	.inpage-intro {
+		height: 70vh;
+	}
+	h2.inpage-h2 {
+		font-size: 40px;
+		line-height: 45px;
+		margin-top: 50px;
+	}
+	h3.inpage-h3 {
+		font-size: 20px;
+		line-height: 26px;
+		margin: 10px 100px;
+	}
+	.forte-b {
+  		margin-top: 30px;
+	}
+	.forte-b li {
+		width: 100%;
+		text-align: center;
+		padding: 0px 20px 30px;
+	}
+	.for-ct {
+		text-align: left;
+		width: 70%;
+		margin-top: 10px;
+	}
+	.skill_b {
+		min-width: 46%;
+		margin: 2%;
+		border-radius: 0px;
+	}
+	.prin li {
+		margin: 0;
+		padding: 20px 30px 30px 30px;
+		width: 50%;
+	}
+	.brands-b {
+		display: block;
+		width: 100%;
+		float: left;
+	}
+	.brands-b li {
+		width: 27%;
+		margin: 3%;
+	}
+	.inpage-outro {
+		height: 80vh;
+	}
+	.inner-foot {
+  		padding: 30px 20px;
+  		z-index: 0;
+	}
+	.sitemap li {
+		display: inline-block;
+		margin: 8px 12px;
+	}
+	h2.rcb {
+		font-size: 40px;
+	}
+	.r-work {
+		padding-bottom: 10px;
+	}
+	.r-work li {
+		padding: 30px 20px;
+		border-top: 1px solid rgba(0, 0, 0, 0.03);
+		width: 50%;
+  		float: left;
+	}
+	.r-work li span {
+  		width: 100%;
+	}
+	.r-work h5 {
+		display: none;
+	}
+	.r-work li span h5 {
+		display: block;
+	}
+	.social, .social a {
+		line-height: 20px;
+	}
+	.hl-form {
+		width: 380px;
+	}
+	.sb-bt {
+		width: 360px;
+	}
+	.copyright {
+  		margin-top: 50px;
+	}
+}
+
+/* Others - 600 & 800 */
+@media only screen and (min-device-width : 600px) and (max-device-width : 1024px) and (orientation : portrait) { 
+	h2.inpage-h2 {
+		font-size: 50px;
+		line-height: 55px;
+		margin-top: 30px;
+	}
+	h3.inpage-h3 {
+  		font-size: 24px;
+  		line-height: 30px;
+  		margin: 10px 80px;
+  	}
+  	.inpage-intro {
+		height: 30vh;
+	}
+	.brands-b li {
+		width: 27%;
+		margin: 3%;
+	}
+	.skill_b {
+		margin: 2%;
+		width: 46%;
+		min-width: 46%;
+	}
+	.for-ct {
+		width: 100%;
+		min-height: 120px;
+		margin-top: 20px;
+	}
+	.for-pc {
+		width: 100%;
+		height: 100px;
+		margin-right: 0px;
+		border-radius: 3px;
+	}
+	.skill_table {
+	  	padding-bottom: 0;
+	}
+	#skillset h2 {
+		padding-top: 0;
+	}
+	#forte {
+  		min-height: 45vh;
+	}
+	#contact {
+  		min-height: 70vh;
+	}
+	.inner-foot {
+		height: 21vh;
+	}
+	.inpage-outro {
+  		height: 30vh;
+	}
+	.intro h2 {
+		min-width: 500px;
+		max-width: 500px;
+		font-size: 36px;
+		line-height: 40px;
+	}
+	.bio .cd-words-wrapper b {
+		font-size: 30px;
+	}
+}
+@media only screen and (min-device-width : 600px) and (max-device-width : 1024px) and (orientation : landscape) { 
+	h2.inpage-h2 {
+		font-size: 50px;
+		line-height: 55px;
+	}
+	h3.inpage-h3 {
+  		font-size: 24px;
+  		line-height: 30px;
+  	}
+}
+
+/* iPad */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) { 
+	h2.inpage-h2 {
+		font-size: 50px;
+		line-height: 55px;
+		margin-top: 30px;
+	}
+	h3.inpage-h3 {
+  		font-size: 24px;
+  		line-height: 30px;
+  		margin: 10px 80px;
+  	}
+  	.inpage-intro {
+		height: 30vh;
+	}
+	.brands-b li {
+		width: 27%;
+		margin: 3%;
+	}
+	.skill_b {
+		margin: 2%;
+		width: 46%;
+		min-width: 46%;
+	}
+	.for-ct {
+		width: 60%;
+		min-height: 150px;
+		margin-top: 0;
+	}
+	.for-pc {
+		width: 100px;
+		height: 100px;
+		margin-right: 20px;
+		border-radius: 90px;
+	}
+	.skill_table {
+	  	padding-bottom: 0;
+	}
+	#skillset h2 {
+		padding-top: 0;
+	}
+	#forte {
+  		min-height: 45vh;
+	}
+	#contact {
+  		min-height: 70vh;
+	}
+	.inner-foot {
+		height: 21vh;
+	}
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) { 
+	h2.inpage-h2 {
+		font-size: 50px;
+		line-height: 55px;
+	}
+	h3.inpage-h3 {
+  		font-size: 24px;
+  		line-height: 30px;
+  	}
+}
+
+
+
+
+
+
+
+
