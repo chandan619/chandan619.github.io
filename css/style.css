@@ -721,11 +721,12 @@ h3.cd blockquote {
 
 .brand-shot img {
 	max-width: 100%;
+	background: rgba(0, 0, 0, 0.01);
 }
 
 .inner {
 	padding: 15px;
-	border-top: 1px solid rgba(51, 51, 51, 0.05);
+	border-top: 2px solid rgba(51, 51, 51, 0.05);
 }
 
 .meta {
