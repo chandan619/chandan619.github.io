@@ -506,6 +506,12 @@ h3.cd blockquote {
 .for-purple {background: #9575CD;}
 .for-red {background: #E06055;}
 
+img.ab-ico {
+	width: 50%;
+	margin: 28px auto;
+	display: block;
+}
+
 /* Profile - Principles */
 
 .prin {
@@ -1367,6 +1373,11 @@ h2.hlb {
 		width: 100%;
 		margin: 0px;
 	}
+	img.ab-ico {
+		width: 20%;
+		margin: 46px auto;
+		display: block;
+	}
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) {
 	header {
@@ -1513,6 +1524,11 @@ h2.hlb {
 	.bio .cd-words-wrapper b {
 		font-size: 26px;
 	}
+	img.ab-ico {
+		width: 20%;
+		margin: 40px auto;
+		display: block;
+	}
 }
 @media only screen and (min-device-width : 569px) and (max-device-width : 667px) and (orientation : landscape) {
 	header {
@@ -1632,6 +1648,11 @@ h2.hlb {
 
 /* iPhone 6 Plus */
 @media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait) { 
+	img.ab-ico {
+		width: 20%;
+		margin: 36px auto;
+		display: block;
+	}
 }
 @media only screen and (min-device-width : 668px) and (max-device-width : 736px) and (orientation : landscape) {
 	header {
@@ -1881,6 +1902,11 @@ h2.hlb {
 	}
 	.out-s {
 		font-size: 26px;
+	}
+	img.ab-ico {
+		width: 50%;
+		margin: 24px auto;
+		display: block;
 	}
 }
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) { 
