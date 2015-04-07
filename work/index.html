@@ -40,13 +40,63 @@
 		</div>
 	</header>
 	
+	<!-- Intro Section -->
+	<div id="intro" class="inpage-intro">
+		<div class="bio">
+			<h2 class="inpage-h2">
+				Sculpted solutions.
+			</h2>
+			<h3 class="inpage-h3">
+				<span>
+					Every project starts with insight and ends with the user. My job is to align the two. This is where design creates experiences.
+				</span>
+			</h3>
+		</div>
+	</div>
 
-	<footer>
-		
+	<!-- Outro Section -->
+	<div id="outro" class="inpage-outro">
+		<div class="c_box">
+			<h3 class="out-h3 wgr">Let's Work</h3>
+			<span class="out-s"><blockquote>Tell me about your project and we can get things moving.</blockquote></span>
+			<a href="/contact/#contact" title="Let’s talk." class="button out-blue">Contact me</a>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer class="inner-foot">
+		<nav class="sitemap">
+			<ul>
+				<li><a href="/" title="Home" class="underliner">Home</a></li>
+				<li><a href="/profile" title="View profile" class="underliner">Profile</a></li>
+				<li><a href="/work/" title="View the portfolio" class="underliner">Work</a></li>
+				<li><a href="/resume/" title="Download my resume" class="underliner">Resume</a></li>
+				<li><a href="/contact/" title="Write me a letter" class="underliner">Contact</a></li>
+			</ul>
+		</nav>
+		<span class="social">
+			You should follow me on <a href="https://linkedin.com/cplusk" title="Follow me on Linkedin">Linkedin</a>, <a href="https://twitter.com/chandan619" title="Follow me on Twitter">Twitter</a>, <a href="http://dribbble.com/chandan619" title="View my work on Dribbble">Dribbble</a> or <a href="http://www.facebook.com/cplusk" title="Follow me on Facebook">Facebook</a>.</span>
+		<span class="copyright">
+			Copyright 2015 Chandan Kumar
+		</span>
 	</footer>
 	
 	<script src="/js/jquery-2.1.1.js"></script>
+	<script>
+		var distance = $('.bio').offset().top + 300;
+    	$window = $(window);
 
+		$window.scroll(function() {
+    		if ( $window.scrollTop() >= distance ) {
+        		// Your div has reached the top
+        		$( ".blk_hdr" ).css({"background":"rgba(255,255,255,1)", "border-bottom":"1px solid rgba(0,0,0,0.03)"});
+				$( ".blk_hdr a" ).css({"color":"#212934"});
+    		}else{
+    			$( ".blk_hdr" ).css({ "border-bottom":"none","background": "-webkit-linear-gradient(rgba(0, 0, 0, 0.175),rgba(255, 255, 255, 0))","background": "-moz-linear-gradient(rgba(0,0,0,.175),rgba(255,255,255,0))","background": "-o-linear-gradient(rgba(0,0,0,.175),rgba(255,255,255,0))","background": "linear-gradient(rgba(0, 0, 0, 0.175),rgba(255, 255, 255, 0))"});
+    			$( ".blk_hdr a" ).css({"color":"#fff"});
+    		}
+		});
+	</script>
 
 </body>
 </html>
