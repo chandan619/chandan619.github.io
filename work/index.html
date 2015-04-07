@@ -3,39 +3,44 @@
 <head>
 	<meta charset="UTF-8">
 	
-	<title>Chandan Kumar | Work Portfolio</title>
-	<meta name="description" content="Chandan is a Full Stack Product Designer. He’s been at it for over 10 years.">
-	<meta name="keywords" content="chandan, kumar, interaction, industrial, product, design, user experience, user interface, new, delhi, india">
+	<title>Chandan Kumar | Work - My Portfolio.</title>
+	<meta name="description" content="This is my work portfolio. Checkout my recent work. Every project starts with insight and ends with the user. My job is to align the two.">
+	<meta name="keywords" content="chandan, kumar, ui, ux, web, design, product, designer, user experience, user interface, interaction, industrial, new, delhi, india">
 	
 	<meta name="apple-mobile-web-app-title" content="Chandan Kumar">
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
 	<meta name="apple-mobile-web-app-capable" content="yes"> 
 	<meta name="apple-touch-fullscreen" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-	<link rel="apple-touch-icon" href="/img/touch.png">
-
-	<link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
-	<link rel="icon" type="image/png" href="/img/android-chrome-192x192.png" sizes="192x192">
-	<link rel="icon" type="image/png" href="/img/favicon-96x96.png" sizes="96x96">
-	<link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
-
-	<link rel="stylesheet" type="text/css" href="/css/style.css"> <!-- Resource style -->
 	
-	<script src="/js/ga.js"></script> <!-- Google Analytics -->
-</head>
+	<link rel="apple-touch-icon" href="/img/touch.png">
+	<link rel="icon" type="image/png" href="/assets/img/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/assets/img/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="/assets/img/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="/assets/img/favicon-16x16.png" sizes="16x16">
 
+	<link rel="stylesheet" type="text/css" href="/assets/css/style.css"> <!-- Resource style -->
+</head>
 
 <body>
 	
 	<!-- Navigation -->
 	<header class="blk_hdr">
 		<div class="headcenter">
-			<h1><a href="/" class="logo">Chandan Kumar</a></h1>
+			<h1><a href="/" title="Chandan Kumar" class="logo">Chandan Kumar</a></h1>
 			<nav>
-				<li><a href="/profile">profile</a></li>
-				<li class="active"><a class="active" href="/work">work</a></li>
-				<li><a href="/resume">resume</a></li>
-				<li><a href="/contact">contact</a></li>
+				<li>
+					<a href="/profile/" title="View my profile">profile</a>
+				</li>
+				<li class="active">
+					<a href="/work/" title="View my work" class="active">work</a>
+				</li>
+				<li>
+					<a href="/resume/" title="View my resume">resume</a>
+				</li>
+				<li>
+					<a href="/contact/" title="Say Hello!">contact</a>
+				</li>
 			</nav>
 		</div>
 	</header>
@@ -52,6 +57,7 @@
 				</span>
 			</h3>
 		</div>
+
 	</div>
 
 	<!-- Outro Section -->
@@ -67,11 +73,11 @@
 	<footer class="inner-foot">
 		<nav class="sitemap">
 			<ul>
-				<li><a href="/" title="Home" class="underliner">Home</a></li>
-				<li><a href="/profile" title="View profile" class="underliner">Profile</a></li>
-				<li><a href="/work/" title="View the portfolio" class="underliner">Work</a></li>
-				<li><a href="/resume/" title="Download my resume" class="underliner">Resume</a></li>
-				<li><a href="/contact/" title="Write me a letter" class="underliner">Contact</a></li>
+				<li><a href="/" title="Chandan Kumar" class="underliner">Home</a></li>
+				<li><a href="/profile/" title="View my profile" class="underliner">Profile</a></li>
+				<li><a href="/work/" title="View my work" class="underliner">Work</a></li>
+				<li><a href="/resume/" title="View my resume" class="underliner">Resume</a></li>
+				<li><a href="/contact/" title="Say Hello!" class="underliner">Contact</a></li>
 			</ul>
 		</nav>
 		<span class="social">
@@ -81,22 +87,10 @@
 		</span>
 	</footer>
 	
-	<script src="/js/jquery-2.1.1.js"></script>
-	<script>
-		var distance = $('.bio').offset().top + 300;
-    	$window = $(window);
-
-		$window.scroll(function() {
-    		if ( $window.scrollTop() >= distance ) {
-        		// Your div has reached the top
-        		$( ".blk_hdr" ).css({"background":"rgba(255,255,255,1)", "border-bottom":"1px solid rgba(0,0,0,0.03)"});
-				$( ".blk_hdr a" ).css({"color":"#212934"});
-    		}else{
-    			$( ".blk_hdr" ).css({ "border-bottom":"none","background": "-webkit-linear-gradient(rgba(0, 0, 0, 0.175),rgba(255, 255, 255, 0))","background": "-moz-linear-gradient(rgba(0,0,0,.175),rgba(255,255,255,0))","background": "-o-linear-gradient(rgba(0,0,0,.175),rgba(255,255,255,0))","background": "linear-gradient(rgba(0, 0, 0, 0.175),rgba(255, 255, 255, 0))"});
-    			$( ".blk_hdr a" ).css({"color":"#fff"});
-    		}
-		});
-	</script>
+	<!-- Scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="/assets/js/app.js"></script>
+	<script src="/assets/js/ga.js"></script>
 
 </body>
 </html>

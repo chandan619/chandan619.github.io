@@ -94,42 +94,42 @@ table {
 /* Fonts */
 @font-face {
 	font-family:'karbonregular';
-	src:url(/css/assets/fonts/karbon-regular-webfont.eot);
-	src:url(/css/assets/fonts/karbon-regular-webfont.eot?#iefix) format("embedded-opentype"),
-	url(/css/assets/fonts/karbon-regular-webfont.woff) format("woff"),
-	url(/css/assets/fonts/karbon-regular-webfont.ttf) format("truetype"),
-	url(/css/assets/fonts/karbon-regular-webfont.svg#karbonregular) format("svg");
+	src:url(/assets/fonts/karbon-regular-webfont.eot);
+	src:url(/assets/fonts/karbon-regular-webfont.eot?#iefix) format("embedded-opentype"),
+	url(/assets/fonts/karbon-regular-webfont.woff) format("woff"),
+	url(/assets/fonts/karbon-regular-webfont.ttf) format("truetype"),
+	url(/assets/fonts/karbon-regular-webfont.svg#karbonregular) format("svg");
 	font-weight:normal;
 	font-style:normal;
 }
 @font-face {
 	font-family:'karbonsemibold';
-	src:url(/css/assets/fonts/karbon-semibold-webfont.eot);
-	src:url(/css/assets/fonts/karbon-semibold-webfont.eot?#iefix) format("embedded-opentype"),
-	url(/css/assets/fonts/karbon-semibold-webfont.woff) format("woff"),
-	url(/css/assets/fonts/karbon-semibold-webfont.ttf) format("truetype"),
-	url(/css/assets/fonts/karbon-semibold-webfont.svg#karbonsemibold) format("svg");
+	src:url(/assets/fonts/karbon-semibold-webfont.eot);
+	src:url(/assets/fonts/karbon-semibold-webfont.eot?#iefix) format("embedded-opentype"),
+	url(/assets/fonts/karbon-semibold-webfont.woff) format("woff"),
+	url(/assets/fonts/karbon-semibold-webfont.ttf) format("truetype"),
+	url(/assets/fonts/karbon-semibold-webfont.svg#karbonsemibold) format("svg");
 	font-weight:normal;
 	font-style:normal;
 }
 @font-face {
 	font-family:'karbonlight';
-	src:url(/css/assets/fonts/karbon-light-webfont.eot);
-	src:url(/css/assets/fonts/karbon-light-webfont.eot?#iefix) format("embedded-opentype"),
-	url(/css/assets/fonts/karbon-light-webfont.woff) format("woff"),
-	url(/css/assets/fonts/karbon-light-webfont.ttf) format("truetype"),
-	url(/css/assets/fonts/karbon-light-webfont.svg#karbonlight) format("svg");
+	src:url(/assets/fonts/karbon-light-webfont.eot);
+	src:url(/assets/fonts/karbon-light-webfont.eot?#iefix) format("embedded-opentype"),
+	url(/assets/fonts/karbon-light-webfont.woff) format("woff"),
+	url(/assets/fonts/karbon-light-webfont.ttf) format("truetype"),
+	url(/assets/fonts/karbon-light-webfont.svg#karbonlight) format("svg");
 	font-weight:normal;
 	font-style:normal;
 }
 
 @font-face {
 	font-family:'karbonregularitalic';
-	src:url(/css/assets/fonts/karbon-regularitalic-webfont.eot);
-	src:url(/css/assets/fonts/karbon-regularitalic-webfont.eot?#iefix) format("embedded-opentype"),
-	url(/css/assets/fonts/karbon-regularitalic-webfont.woff) format("woff"),
-	url(/css/assets/fonts/karbon-regularitalic-webfont.ttf) format("truetype"),
-	url(/css/assets/fonts/karbon-regularitalic-webfont.svg#karbonregularitalic) format("svg");
+	src:url(/assets/fonts/karbon-regularitalic-webfont.eot);
+	src:url(/assets/fonts/karbon-regularitalic-webfont.eot?#iefix) format("embedded-opentype"),
+	url(/assets/fonts/karbon-regularitalic-webfont.woff) format("woff"),
+	url(/assets/fonts/karbon-regularitalic-webfont.ttf) format("truetype"),
+	url(/assets/fonts/karbon-regularitalic-webfont.svg#karbonregularitalic) format("svg");
 	font-weight:normal;
 	font-style:normal;
 }
@@ -374,7 +374,7 @@ header.blk_hdr {
 	left: 0;
 	text-align: center;
 	opacity: 1;
-	background: #251D35 url("/img/background.png") no-repeat;
+	background: #251D35 url("/assets/img/background.png") no-repeat;
 	background-size: cover;
 	background-position: center;
 }
@@ -849,7 +849,7 @@ a.home-white:hover {
 	bottom: 0;
 	text-align: center;
 	opacity: 1;
-	background: #251D35 url("/img/background.png") no-repeat;
+	background: #251D35 url("/assets/img/background.png") no-repeat;
 	background-size: cover;
 	background-position: center;
 	position: relative;
@@ -1220,6 +1220,140 @@ h2.hlb {
 		-webkit-transform: translate3d(0, -40%, 0);
 		transform: translate3d(0, -40%, 0);
 	}
+}
+
+/* -------------------------------- 
+
+Type style
+
+-------------------------------- */
+
+.cd-title {
+	position: relative;
+	height: 160px;
+	line-height: 230px;
+	text-align: center;
+}
+.cd-title h2 {
+	font-size: 2.4rem;
+	font-weight: 700;
+}
+@media only screen and (min-width: 768px) {
+	.cd-title {
+		line-height: 250px;
+	}
+}
+@media only screen and (min-width: 1170px) {
+	.cd-title {
+		height: 200px;
+		line-height: 300px;
+	}
+	.cd-title h2 {
+		font-size: 3rem;
+	}
+}
+
+.cd-intro {
+	width: 90%;
+	max-width: 768px;
+	text-align: center;
+}
+
+.cd-intro {
+	margin: 4em auto;
+}
+@media only screen and (min-width: 768px) {
+	.cd-intro {
+		margin: 5em auto;
+	}
+}
+@media only screen and (min-width: 1170px) {
+	.cd-intro {
+		margin: 6em auto;
+	}
+}
+
+.cd-headline {
+	font-size: 3rem;
+	line-height: 1.2;
+}
+@media only screen and (min-width: 768px) {
+	.cd-headline {
+		font-size: 4.4rem;
+		font-weight: 300;
+	}
+}
+@media only screen and (min-width: 1170px) {
+	.cd-headline {
+		font-size: 6rem;
+	}
+}
+
+.cd-words-wrapper {
+	display: inline-block;
+	position: relative;
+	text-align: left;
+}
+.cd-words-wrapper b {
+	display: inline-block;
+	position: absolute;
+	white-space: nowrap;
+	left: 0;
+	top: 0;
+}
+.cd-words-wrapper b.is-visible {
+	position: relative;
+}
+.no-js .cd-words-wrapper b {
+	opacity: 0;
+}
+.no-js .cd-words-wrapper b.is-visible {
+	opacity: 1;
+}
+
+/* -------------------------------- 
+
+xloading-bar 
+
+-------------------------------- */
+.cd-headline.loading-bar span {
+	display: inline-block;
+	padding: 0 0 .1em 0;
+}
+.cd-headline.loading-bar .cd-words-wrapper {
+	overflow: hidden;
+	vertical-align: top;
+}
+.cd-headline.loading-bar .cd-words-wrapper::after {
+	/* loading bar */
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 2px;
+	width: 0;
+	background: rgba(255,255,255,0.3);
+	z-index: 2;
+	-webkit-transition: width 0.3s -0.1s;
+	-moz-transition: width 0.3s -0.1s;
+	transition: width 0.3s -0.1s;
+}
+.cd-headline.loading-bar .cd-words-wrapper.is-loading::after {
+	width: 100%;
+	-webkit-transition: width 3s;
+	-moz-transition: width 3s;
+	transition: width 3s;
+}
+.cd-headline.loading-bar b {
+	top: .2em;
+	opacity: 0;
+	-webkit-transition: opacity 0.3s;
+	-moz-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+.cd-headline.loading-bar b.is-visible {
+	opacity: 1;
+	top: 0;
 }
 
 
@@ -1772,80 +1906,6 @@ h2.hlb {
 		font-size: 26px;
 	}
 }
-
-/* Others - 600 & 800
-@media only screen and (min-device-width : 600px) and (max-device-width : 1024px) and (orientation : portrait) { 
-	h2.inpage-h2 {
-		font-size: 50px;
-		line-height: 55px;
-		margin-top: 30px;
-	}
-	h3.inpage-h3 {
-  		font-size: 24px;
-  		line-height: 30px;
-  		margin: 10px 80px;
-  	}
-  	.inpage-intro {
-		height: 30vh;
-	}
-	.brands-b li {
-		width: 27%;
-		margin: 3%;
-	}
-	.skill_b {
-		margin: 2%;
-		width: 46%;
-		min-width: 46%;
-	}
-	.for-ct {
-		width: 100%;
-		min-height: 120px;
-		margin-top: 20px;
-	}
-	.for-pc {
-		width: 100%;
-		height: 100px;
-		margin-right: 0px;
-		border-radius: 3px;
-	}
-	.skill_table {
-	  	padding-bottom: 0;
-	}
-	#skillset h2 {
-		padding-top: 0;
-	}
-	#forte {
-  		min-height: 45vh;
-	}
-	#contact {
-  		min-height: 70vh;
-	}
-	.inner-foot {
-		height: 21vh;
-	}
-	.inpage-outro {
-  		height: 30vh;
-	}
-	.intro h2 {
-		min-width: 500px;
-		max-width: 500px;
-		font-size: 36px;
-		line-height: 40px;
-	}
-	.bio .cd-words-wrapper b {
-		font-size: 30px;
-	}
-}
-@media only screen and (min-device-width : 600px) and (max-device-width : 1024px) and (orientation : landscape) { 
-	h2.inpage-h2 {
-		font-size: 50px;
-		line-height: 55px;
-	}
-	h3.inpage-h3 {
-  		font-size: 24px;
-  		line-height: 30px;
-  	}
-}*/
 
 /* iPad */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) { 
