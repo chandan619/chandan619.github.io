@@ -772,7 +772,7 @@ h3.cd blockquote {
 
 .out-s blockquote {
 	display: inline-block;
-	background: #FFE432;
+	/*background: #FFE432;*/
 	color: #000;	
 }
 
