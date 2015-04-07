@@ -1722,7 +1722,7 @@ h2.hlb {
 	}
 }
 
-/* Others - 600 & 800 */
+/* Others - 600 & 800
 @media only screen and (min-device-width : 600px) and (max-device-width : 1024px) and (orientation : portrait) { 
 	h2.inpage-h2 {
 		font-size: 50px;
@@ -1794,7 +1794,7 @@ h2.hlb {
   		font-size: 24px;
   		line-height: 30px;
   	}
-}
+}*/
 
 /* iPad */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) { 
