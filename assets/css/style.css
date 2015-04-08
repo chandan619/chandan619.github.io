@@ -258,6 +258,22 @@ header.blk_hdr nav li:nth-child(4) a::after {
 	background: #2BA9F5;
 }
 
+header.wht_hdr nav li:nth-child(1) a::after {
+	background: #FF0B59;
+}
+
+header.wht_hdr nav li:nth-child(2) a::after {
+	background: #45C65B;
+}
+
+header.wht_hdr nav li:nth-child(3) a::after {
+	background: #FFE432;
+}
+
+header.wht_hdr nav li:nth-child(4) a::after {
+	background: #2BA9F5;
+}
+
 header nav li.active:nth-child(1) a::after {
 	background: #FF0B59;
 }
@@ -359,6 +375,15 @@ header.blk_hdr {
 	background: -moz-linear-gradient(rgba(0,0,0,.175),rgba(255,255,255,0));
 	background: -o-linear-gradient(rgba(0,0,0,.175),rgba(255,255,255,0));
 	background: linear-gradient(rgba(0, 0, 0, 0.175),rgba(255, 255, 255, 0));
+}
+
+header.wht_hdr {
+	background: rgba(255,255,255,1);
+	border-bottom: 1px solid rgba(0,0,0,0.03);
+}
+
+header.wht_hdr a {
+	color: #212934;
 }
 
 .tag--about {
