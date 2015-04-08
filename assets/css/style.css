@@ -1356,6 +1356,115 @@ xloading-bar
 	top: 0;
 }
 
+/* Connect */
+.con-fb {
+	border-top: 2px solid #46629E;
+}
+.con-lk {
+	border-top: 2px solid #1B86BC;
+}
+.con-tw {
+	border-top: 2px solid #53A7E8;
+}
+.con-gp {
+	border-top: 2px solid #DD4B39;
+}
+.con-pt {
+	border-top: 2px solid #BD1E23;
+}
+.con-ss {
+	border-top: 2px solid #007BB6;
+}
+.con-am {
+	border-top: 2px solid #94C1BE;
+}
+.con-gr {
+	border-top: 2px solid #1E8CBE;
+}
+.con-sv {
+	border-top: 2px solid #19C450;
+}
+.con-ac {
+	border-top: 2px solid #0F0F0F;
+}
+.con-ff {
+	border-top: 2px solid #3E7CC8;
+}
+.con-vm {
+	border-top: 2px solid #44BBFF;
+}
+.con-yt {
+	border-top: 2px solid #E02927;
+}
+.con-fk {
+	border-top: 2px solid #FF0084;
+}
+.con-in {
+	border-top: 2px solid #48769C;
+}
+.con-px {
+	border-top: 2px solid #222222;
+}
+.con-dr {
+	border-top: 2px solid #EA4C89;
+}
+.con-gh {
+	border-top: 2px solid #333;
+}
+.con-bh {
+	border-top: 2px solid #1769FF;
+}
+.con-sf {
+	border-top: 2px solid #F47920;
+}
+.con-cm {
+	border-top: 2px solid #91A759;
+}
+.con-cp {
+	border-top: 2px solid #222;
+}
+.con-ph {
+	border-top: 2px solid #DA552F;
+}
+.con-nn {
+	border-top: 2px solid #F47E57;
+}
+.con-sg {
+	border-top: 2px solid #DA500F;
+}
+.con-sc {
+	border-top: 2px solid #FF6C00;
+}
+.con-lf {
+	border-top: 2px solid #DD1C23;
+}
+.con-gb {
+	border-top: 2px solid #CFCEBB;
+}
+.con-fp {
+	border-top: 2px solid #404040;
+}
+.con-lb {
+	border-top: 2px solid #2C3641;
+}
+.con-ib {
+	border-top: 2px solid #F2CD00;
+}
+.con-dl {
+	border-top: 2px solid #0B79E5;
+}
+.con-fl {
+	border-top: 2px solid #E02828;
+}
+.con-md {
+	border-top: 2px solid #57AD68;
+}
+.con-su {
+	border-top: 2px solid #EC4B24;
+}
+.con-qo {
+	border-top: 2px solid #AA2200;
+}
 
 /* Responsive CSS */
 
