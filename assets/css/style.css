@@ -1750,7 +1750,7 @@ xloading-bar
 		line-height: 20px;
 	}
 	.social a {
-		/*margin: 10px;*/
+		margin: 0px;
 	}
 	.hl-form {
 		width: 380px;
