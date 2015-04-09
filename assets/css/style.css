@@ -1610,7 +1610,10 @@ xloading-bar
   		margin: 8px 15px;
 	}
 	.social, .social a {
-		line-height: 20px;
+		line-height: 30px;
+	}
+	.social a {
+		margin: 10px;
 	}
 	.hl-form {
 		width: 280px;
@@ -1745,6 +1748,9 @@ xloading-bar
 	}
 	.social, .social a {
 		line-height: 20px;
+	}
+	.social a {
+		/*margin: 10px;*/
 	}
 	.hl-form {
 		width: 380px;
