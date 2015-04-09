@@ -124,8 +124,24 @@
 	</footer>
 	
 	<!-- Scripts -->
-	<script async src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script async src="/assets/js/app.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="/assets/js/app-contact.js"></script>
+	<script>
+		// HEADER BACKGROUND & COLOR CHANGES ----------
+		var distance = $('.bio').offset().top + 300;
+		$window = $(window);
+
+		$window.scroll(function() {
+		  if ( $window.scrollTop() >= distance ) {
+		      // Your div has reached the top
+		      $( ".blk_hdr" ).css({"background":"rgba(255,255,255,1)", "border-bottom":"1px solid rgba(0,0,0,0.03)"});
+		  $( ".blk_hdr a" ).css({"color":"#212934"});
+		  }else{
+		    $( ".blk_hdr" ).css({ "border-bottom":"none","background": "-webkit-linear-gradient(rgba(0, 0, 0, 0.175),rgba(255, 255, 255, 0))","background": "-moz-linear-gradient(rgba(0,0,0,.175),rgba(255,255,255,0))","background": "-o-linear-gradient(rgba(0,0,0,.175),rgba(255,255,255,0))","background": "linear-gradient(rgba(0, 0, 0, 0.175),rgba(255, 255, 255, 0))"});
+		    $( ".blk_hdr a" ).css({"color":"#fff"});
+		  }
+		});
+	</script>
 
 </body>
 </html>
