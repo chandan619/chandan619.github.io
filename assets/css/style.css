@@ -1139,6 +1139,33 @@ h2.hlb {
 	font-family: 'karbonlight',Sans-Serif;
 }
 
+
+/* Work - */
+
+#lwork {
+  min-height: 50vh;
+}
+
+h2.hlg {
+	max-width: 950px;
+	margin: 0 auto;
+	padding-bottom: 10px;
+	padding-top: 50px;
+	font-size: 50px;
+	text-align: center;
+	color: #45C65B;
+}
+
+.inner-gr {
+	padding: 15px;
+	border-top: 2px solid #F2F2F2;
+	border-bottom: 1px solid #F2F2F2;
+	border-left: 1px solid #F2F2F2;
+	border-right: 1px solid #F2F2F2;
+}
+
+
+
 /* Hoshi */
 .input--hoshi {
 	overflow: hidden;
