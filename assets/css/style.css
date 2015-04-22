@@ -1576,7 +1576,7 @@ xloading-bar
   		padding: 20px 30px 30px 30px;
   		width: 100%;
   	}
-  	h2.cb {
+  	h2.cb, h2.hlg, h2.hlb  {
   		font-size: 40px;
  	}
  	h3.cd {
