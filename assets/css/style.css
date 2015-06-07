@@ -28,7 +28,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
 	background: #251D35;
 	line-height: 1;
-	font-family: 'karbonlight',Sans-Serif;
+	font-family: 'karbonlight','Lucida Grande','Lucida Sans Unicode','Lucida Sans',Geneva,Verdana,sans-serif;
 	font-size: 10px;
 	color: #333;
 	-webkit-font-smoothing: antialiased;
@@ -42,7 +42,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-size: 100%;
 	font-weight: normal;
-	font-family: 'karbonlight',Sans-Serif;
+	font-family: 'karbonlight','Lucida Grande','Lucida Sans Unicode','Lucida Sans',Geneva,Verdana,sans-serif;
 }
 
 a {
@@ -134,7 +134,14 @@ table {
 	font-style:normal;
 }
 
-/* STYLING BEGINS HERE */
+/* STYLING BEGINS HERE 
+
+967x730
+100X75
+215x161
+294x221
+
+*/
 
 /* -------------------------------- 
 
@@ -399,7 +406,7 @@ header.blk_hdr {
 
 header.wht_hdr {
 	background: rgba(255,255,255,1);
-	border-bottom: 1px solid rgba(0,0,0,0.03);
+	border-bottom: 1px solid rgba(0,0,0,0.07);
 }
 
 header.wht_hdr a {
@@ -419,7 +426,7 @@ header.wht_hdr a {
 	left: 0;
 	text-align: center;
 	opacity: 1;
-	background: #251D35 url("/assets/img/background.png") no-repeat;
+	background: #251D35 url("/assets/img/style/background.png") no-repeat;
 	background-size: cover;
 	background-position: center;
 }
@@ -511,6 +518,7 @@ PAGE - PROFILE #FORTE
 	float: left;
 	width: 50%;
 	min-height: 150px;
+	max-height: 175px;
 	display: inline-block;;
 }
 
@@ -772,6 +780,7 @@ PAGE - PROFILE #BRANDS
 	margin: 10px 10px;
 	float: left;
 	background: #fff;
+	border: 1px solid rgba(0, 0, 0, 0.07);
 }
 
 .brand-shot a {
@@ -915,7 +924,7 @@ PAGE - PROFILE #FOOTER
 	bottom: 0;
 	text-align: center;
 	opacity: 1;
-	background: #251D35 url("/assets/img/background.png") no-repeat;
+	background: #251D35 url("/assets/img/style/background.png") no-repeat;
 	background-size: cover;
 	background-position: center;
 	position: relative;
@@ -1012,10 +1021,46 @@ h2.hlg {
 	border-right: 1px solid #F2F2F2;
 }
 
+/* Project */
+
+.project {
+	width: 98%;
+	margin: 10px 10px 5px 10px;
+	padding: 10px 10px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+	display: inline-block;
+/*	border-top: 1px solid rgba(0, 0, 0, 0.07);
+	background-color: rgba(255, 255, 255, 0.5);*/
+}
+.project-hd {
+	float: left;
+	font-size: 24px;
+	line-height: 34px;
+	color: #000;
+}
+.project-lnk {
+	float: right;
+	font-size: 15px;
+	line-height: 25px;
+	border: 2px solid #45C65B;
+	padding: 0px 10px;
+	border-radius: 36px;
+	margin-top: 3px;
+	color: #45C65B;
+	font-weight: 700;
+	transition: .2s all linear;
+}
+
+.project-lnk:hover {
+	background: #45C65B;
+	color: #fff;
+}
+
+
 /* Slider */
 
 .ov-over {
-	display: none;
+	display: block;
 	width: auto;
 	height: auto;
 	position: fixed;
@@ -1027,7 +1072,7 @@ h2.hlg {
 	padding: 0px;
 	z-index: 99;
 	text-align: center;
-	background: rgba(0,0,0,1);
+	background: rgba(255,255,255,1);
 	/*background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%, rgba(241,210,194,1) 100%);
 	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,0.56)), color-stop(100%,rgba(241,210,194,1)));
 	background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.56) 0%,#F1D2C2 100%);
@@ -1046,14 +1091,14 @@ h2.hlg {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	z-index: 6;
-	border-bottom: 1px solid rgba(255,255,255,0.18);
+	border-bottom: 1px solid rgba(0,0,0,0.07);
 	min-height: 70px;
 }
 
 .ov-head h2 {
 	font-family: 'karbonsemibold',Sans-Serif;
 	font-size: 17px;
-	color: #FFF;
+	color: #333;
 	float: left;
 	margin-top: -2px;
 }
@@ -1061,7 +1106,7 @@ h2.hlg {
 .ov-head a {
 	font-family: 'karbonsemibold',Sans-Serif;
 	font-size: 17px;
-	color: #FFF;
+	color: #333;
 	float: right;
 	margin-top: -2px;
 }
@@ -1078,7 +1123,7 @@ h2.hlg {
 	padding: 20px 20px;
 	width: 70%;
 	height: 100%;
-	border-right: 1px solid rgba(255,255,255,0.18);
+	border-right: 1px solid rgba(0,0,0,0.07);
 }
 
 .ov-img-box {
@@ -1103,7 +1148,7 @@ ul.ov-nav {
 }
 
 ul.ov-nav li {
-	border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+	border-bottom: 1px solid rgba(0,0,0,0.07);
 	display: block;
 	float: left;
 	width: 100%;
@@ -1118,7 +1163,7 @@ ul.ov-nav li a {
 }
 
 ul.ov-nav li a:hover {
-	background: rgba(255,255,255,0.13);
+	background: rgba(0,0,0,0.03);
 }
 
 ul.ov-nav li a.ov-li-ac {
@@ -1146,7 +1191,7 @@ ul.ov-nav li a.ov-li-ac {
 .ov-nav-pr {
 	font-family: 'karbonsemibold',Sans-Serif;
 	font-size: 17px;
-	color: #FFF;
+	color: #333;
 	text-transform: uppercase;
 	display: block;
 	text-align: left;
@@ -1155,7 +1200,7 @@ ul.ov-nav li a.ov-li-ac {
 
 .ov-nav-prds {
 	font-size: 16px;
-	color: #FFF;
+	color: #333;
 	display: block;
 	text-align: left;
 }
@@ -1817,6 +1862,13 @@ Responsive CSS
   	}
   	.for-ct {
   		width: 100%;
+  	}
+  	.project {
+		width: 100%;
+		margin: 0px auto 10px;
+		clear: both;
+		display: block;
+		min-height: 55px;
   	}
   	.brands-b {
 		display: block;
