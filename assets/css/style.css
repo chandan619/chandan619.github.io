@@ -1853,6 +1853,7 @@ Responsive CSS
   		width: 100%;
   		text-align: center;
   		padding: 0px 20px 30px;
+  		max-height: 100%;
   	}
   	.for-pc {
   		margin: 0px auto 20px;
