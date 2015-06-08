@@ -397,11 +397,11 @@ PAGE - PROFILE #INTRO
 -------------------------------- */
 
 header.blk_hdr {
-	/*background: rgba(11, 18, 29, 0.3);*/
-	background: -webkit-linear-gradient(rgba(0, 0, 0, 0.175),rgba(255, 255, 255, 0));
+	background: rgba(0,0,0,0);
+	/*background: -webkit-linear-gradient(rgba(0, 0, 0, 0.175),rgba(255, 255, 255, 0));
 	background: -moz-linear-gradient(rgba(0,0,0,.175),rgba(255,255,255,0));
 	background: -o-linear-gradient(rgba(0,0,0,.175),rgba(255,255,255,0));
-	background: linear-gradient(rgba(0, 0, 0, 0.175),rgba(255, 255, 255, 0));
+	background: linear-gradient(rgba(0, 0, 0, 0.175),rgba(255, 255, 255, 0));*/
 }
 
 header.wht_hdr {
@@ -1024,9 +1024,9 @@ h2.hlg {
 /* Project */
 
 .project {
-	width: 98%;
-	margin: 10px 10px 5px 10px;
-	padding: 10px 10px;
+	width: 100%;
+	margin: 10px 0px 5px 0px;
+	padding: 10px 10px 10px 10px;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.03);
 	display: inline-block;
 /*	border-top: 1px solid rgba(0, 0, 0, 0.07);
@@ -1040,15 +1040,17 @@ h2.hlg {
 }
 .project-lnk {
 	float: right;
-	font-size: 15px;
+	font-size: 14px;
 	line-height: 25px;
 	border: 2px solid #45C65B;
 	padding: 0px 10px;
 	border-radius: 36px;
-	margin-top: 3px;
+	margin-top: 2px;
 	color: #45C65B;
 	font-weight: 700;
 	transition: .2s all linear;
+	font-family: 'karbonsemibold',Sans-Serif;
+	text-transform: uppercase;
 }
 
 .project-lnk:hover {
@@ -1793,7 +1795,7 @@ Responsive CSS
 		margin-top: 20px;
 	}
 	header li {
-  		margin-left: 12px;
+  		margin-left: 20px;
 	}
 	.inpage-intro {
   		height: 70vh;
