@@ -285,6 +285,22 @@ header.wht_hdr nav li:nth-child(4) a::after {
 	background: #2BA9F5;
 }
 
+header.fix_hdr nav li:nth-child(1) a::after {
+	background: #FF0B59;
+}
+
+header.fix_hdr nav li:nth-child(2) a::after {
+	background: #45C65B;
+}
+
+header.fix_hdr nav li:nth-child(3) a::after {
+	background: #FFE432;
+}
+
+header.fix_hdr nav li:nth-child(4) a::after {
+	background: #2BA9F5;
+}
+
 header nav li.active:nth-child(1) a::after {
 	background: #FF0B59;
 }
@@ -410,6 +426,16 @@ header.wht_hdr {
 }
 
 header.wht_hdr a {
+	color: #212934;
+}
+
+header.fix_hdr {
+	background: rgba(255,255,255,1);
+	border-bottom: 1px solid rgba(0,0,0,0.07);
+	position: relative;
+}
+
+header.fix_hdr a {
 	color: #212934;
 }
 
@@ -783,6 +809,22 @@ PAGE - PROFILE #BRANDS
 	border: 1px solid rgba(0, 0, 0, 0.07);
 }
 
+.brands-w {
+	max-width: 950px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.brands-w li {
+	width: 100%;
+	max-width: 967px;
+	padding: 0;
+	margin: 20px 0px;
+	float: left;
+	background: #fff;
+	border: 1px solid rgba(0, 0, 0, 0.07);
+}
+
 .brand-shot a {
 	color: #000;
 	font-size: 18px;
@@ -803,12 +845,51 @@ PAGE - PROFILE #BRANDS
 	border-top: 2px solid rgba(51, 51, 51, 0.05);
 }
 
+.inner-in {
+	padding: 15px;
+	border-bottom: 2px solid rgba(51, 51, 51, 0.05);
+	overflow: hidden;
+}
+
 .meta {
 	display: block;
 	font-size: 16px;
 	font-weight: 300;
 	color: rgba(33, 41, 52, 0.6);
 	line-height: 1.4em;
+}
+
+.meta-left {
+	float: left;
+}
+
+.meta-b {
+	font-size: 16px;
+	font-weight: 300;
+	color: rgba(33, 41, 52, 0.6);
+	line-height: 1.4em;
+	display: block;
+}
+
+.meta-a {
+	color: #000;
+	font-size: 18px;
+	line-height: 1.4em;
+	display: block;
+}
+
+.brand-shot a.meta-n {
+	font-size: 18px;
+	line-height: 1.4em;
+	border: 2px solid #45C65B;
+	color: #45C65B;
+	padding: 5px 10px;
+	float: right;
+	margin: 4px 0px 0px 12px;
+}
+
+.arrow {
+	width: 16px;
 }
 
 /* -------------------------------- 
@@ -1013,6 +1094,16 @@ h2.hlg {
 	color: #45C65B;
 }
 
+h2.hwb {
+	max-width: 950px;
+	margin: 0 auto;
+	padding-bottom: 10px;
+	padding-top: 110px;
+	font-size: 50px;
+	text-align: center;
+	color: #45C65B;
+}
+
 .inner-gr {
 	padding: 15px;
 	border-top: 2px solid #F2F2F2;
@@ -1064,6 +1155,12 @@ h2.hlg {
 PAGE - WORK Inner
 
 -------------------------------- */
+.slideto {
+  display: inline-block;
+  height: 80px; /*same height as header*/
+  margin-top: -80px; /*same height as header*/
+  visibility: hidden;
+}
 
 .ov-over {
 	display: block;
@@ -1841,7 +1938,7 @@ Responsive CSS
   		padding: 20px 30px 30px 30px;
   		width: 100%;
   	}
-  	h2.cb, h2.hlg, h2.hlb  {
+  	h2.cb, h2.hlg, h2.hlb, h2.hwb {
   		font-size: 40px;
  	}
  	h3.cd {
