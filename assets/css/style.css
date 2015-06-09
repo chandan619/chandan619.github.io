@@ -1945,15 +1945,27 @@ Responsive CSS
 		margin: 46px auto;
 		display: block;
 	}
+	.pre-three {
+		display: none;
+	}
+	.pre-four {
+		display: none;
+	}
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) {
 	header {
 		padding: 20px 20px;
 	}
+	header h1 {
+		float: left;
+	}
+	header li {
+		margin-left: 1.5em;
+	}
 	header nav {
-		float: none;
+		float: right;
 		text-align: center;
-		margin-top: 20px;
+		margin-top: 0px;
 	}
 	.headcenter {
 		text-align: center;
@@ -1974,7 +1986,7 @@ Responsive CSS
 	h2.inpage-h2 {
 		font-size: 40px;
 		line-height: 45px;
-		margin-top: 60px;
+		margin-top: 20px;
 	}
 	h3.inpage-h3 {
 		font-size: 20px;
@@ -2063,6 +2075,15 @@ Responsive CSS
 	.out-s {
 		font-size: 26px;
 	}
+	.skill_table {
+  		max-width: 460px;
+	}
+	.pre-three {
+		display: none;
+	}
+	.pre-four {
+		display: none;
+	}
 }
 
 /* iPhone 5 & 5S */
@@ -2104,10 +2125,16 @@ Responsive CSS
 	header {
 		padding: 20px 20px;
 	}
+	header h1 {
+		float: left;
+	}
+	header li {
+		margin-left: 2em;
+	}
 	header nav {
-		float: none;
+		float: right;
 		text-align: center;
-		margin-top: 20px;
+		margin-top: 0px;
 	}
 	.headcenter {
 		text-align: center;
@@ -2128,7 +2155,7 @@ Responsive CSS
 	h2.inpage-h2 {
 		font-size: 40px;
 		line-height: 45px;
-		margin-top: 60px;
+		margin-top: 10px;
 	}
 	h3.inpage-h3 {
 		font-size: 20px;
@@ -2214,6 +2241,12 @@ Responsive CSS
 	.out-s {
 		font-size: 26px;
 	}
+	.skill_table {
+  		max-width: 630px;
+	}
+	.pre-four {
+		display: none;
+	}
 }
 
 /* iPhone 6 Plus */
@@ -2228,10 +2261,16 @@ Responsive CSS
 	header {
 		padding: 20px 20px;
 	}
+	header h1 {
+		float: left;
+	}
+	header li {
+		margin-left: 3em;
+	}
 	header nav {
-		float: none;
+		float: right;
 		text-align: center;
-		margin-top: 20px;
+		margin-top: 0px;
 	}
 	.headcenter {
 		text-align: center;
@@ -2252,7 +2291,7 @@ Responsive CSS
 	h2.inpage-h2 {
 		font-size: 40px;
 		line-height: 45px;
-		margin-top: 50px;
+		margin-top: 10px;
 	}
 	h3.inpage-h3 {
 		font-size: 20px;
@@ -2341,6 +2380,12 @@ Responsive CSS
 	.out-s {
 		font-size: 26px;
 	}
+	.skill_table {
+  		max-width: 700px;
+	}
+	.pre-four {
+		display: none;
+	}
 }
 
 /* iPad */
@@ -2379,7 +2424,7 @@ Responsive CSS
 		border-radius: 90px;
 	}
 	.skill_table {
-	  	padding-bottom: 0;
+	  	max-width: 700px;
 	}
 	#skillset h2 {
 		padding-top: 0;
@@ -2403,6 +2448,9 @@ Responsive CSS
 		width: 50%;
 		margin: 24px auto;
 		display: block;
+	}
+	.pre-four {
+		display: none;
 	}
 }
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) { 
