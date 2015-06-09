@@ -1059,7 +1059,11 @@ h2.hlg {
 }
 
 
-/* Slider */
+/* -------------------------------- 
+
+PAGE - WORK Inner
+
+-------------------------------- */
 
 .ov-over {
 	display: block;
@@ -1951,6 +1955,9 @@ Responsive CSS
 	.pre-four {
 		display: none;
 	}
+	h2.cnct {
+		padding-top: 120px;
+	}
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) {
 	header {
@@ -2083,6 +2090,9 @@ Responsive CSS
 	}
 	.pre-four {
 		display: none;
+	}
+	h2.cnct {
+		padding-top: 80px;
 	}
 }
 
@@ -2247,6 +2257,9 @@ Responsive CSS
 	.pre-four {
 		display: none;
 	}
+	h2.cnct {
+		padding-top: 80px;
+	}
 }
 
 /* iPhone 6 Plus */
@@ -2385,6 +2398,9 @@ Responsive CSS
 	}
 	.pre-four {
 		display: none;
+	}
+	h2.cnct {
+		padding-top: 80px;
 	}
 }
 
