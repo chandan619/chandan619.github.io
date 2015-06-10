@@ -1158,8 +1158,8 @@ PAGE - WORK Inner
 -------------------------------- */
 .slideto {
   display: inline-block;
-  height: 80px; /*same height as header*/
-  margin-top: -80px; /*same height as header*/
+  height: 65px; /*same height as header*/
+  margin-top: -65px; /*same height as header*/
   visibility: hidden;
 }
 
@@ -1914,6 +1914,10 @@ Responsive CSS
 	h2.cnct {
 		padding-top: 120px;
 	}
+	.slideto {
+		height: 82px;
+		margin-top: -82px;
+  	}
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) {
 	header {
@@ -2054,8 +2058,8 @@ Responsive CSS
   		padding-top: 80px;
  	}
  	.slideto {
-		height: 60px;
-		margin-top: -60px;
+		height: 45px;
+		margin-top: -45px;
   	}
 }
 
@@ -2227,8 +2231,8 @@ Responsive CSS
   		padding-top: 80px;
  	}
  	.slideto {
-		height: 60px;
-		margin-top: -60px;
+		height: 45px;
+		margin-top: -45px;
   	}
 }
 
@@ -2376,8 +2380,8 @@ Responsive CSS
   		padding-top: 80px;
  	}
  	.slideto {
-		height: 60px;
-		margin-top: -60px;
+		height: 45px;
+		margin-top: -45px;
   	}
 }
 
