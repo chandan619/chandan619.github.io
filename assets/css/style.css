@@ -134,14 +134,11 @@ table {
 	font-style:normal;
 }
 
-/* STYLING BEGINS HERE 
-
-967x730
-100X75
-215x161
-294x221
-
-*/
+.arrow_m {
+	width: 16px;
+	margin-right: 10px;
+	margin-top: 0px;
+}
 
 /* -------------------------------- 
 
@@ -1917,6 +1914,9 @@ Responsive CSS
 	.slideto {
 		height: 82px;
 		margin-top: -82px;
+  	}
+  	h2.spshd, h3.spshd {
+  		font-size: 36px;
   	}
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) {
