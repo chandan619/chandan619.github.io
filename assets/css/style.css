@@ -1793,7 +1793,10 @@ Responsive CSS
   		padding: 20px 30px 30px 30px;
   		width: 100%;
   	}
-  	h2.cb, h2.hlg, h2.hlb, h2.hwb {
+  	h2.cb, h2.hlg, h2.hlb {
+  		font-size: 40px;
+ 	}
+ 	h2.hwb {
   		font-size: 40px;
   		padding-top: 120px;
  	}
