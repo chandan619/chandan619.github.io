@@ -20,23 +20,24 @@
 	<link rel="icon" type="image/png" href="/assets/icons/favicon-16x16.png" sizes="16x16" />
 
 	<link rel="stylesheet" type="text/css" href="/assets/css/style.css"> <!-- Resource style -->
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-61451627-1"></script>
 	<script>
-		// GOOGLE ANALYTICS ----------
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
 
-		ga('create', 'UA-61451627-1', 'auto');
-		ga('send', 'pageview');
+		gtag('config', 'UA-61451627-1');
 	</script>
+
 	<script type="application/ld+json">
 		{
 			"@context" : "http://schema.org",
 			"@type" : "Person",
 			"name" : "Chandan Kumar",
-			"url" : "http://chandankm.com",
-			"image": "http://chandankm.com/assets/img/logo/chandan-kumar.png",
+			"url" : "http://chandankumar.co",
+			"image": "http://chandankumar.co/assets/img/logo/chandan-kumar.png",
 			"sameAs" : [
 				"http://www.facebook.com/cplusk",
 				"http://twitter.com/chandan619",
@@ -60,7 +61,7 @@
 	<!-- Navigation -->
 	<header>
 		<div class="headcenter">
-			<h1><a href="/" title="Chandan Kumar" class="logo">Chandan Kumar</a></h1>
+			<h1><a href="/" title="Chandan Kumar" class="logo">Chandan</a></h1>
 			<nav>
 				<li>
 					<a href="/profile/" title="View my profile">profile</a>
@@ -100,7 +101,7 @@
 		<div class="footcenter">
 			<a href="/profile/" title="View my profile" class="button home-white">
 				<img class="arrow_m" src="/assets/img/style/arrow-right-w.png">
-				Learn more about me
+				More About Me
 			</a>
 		</div>
 	</footer>
