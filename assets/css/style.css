@@ -28,7 +28,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
 	background: #212121;
 	line-height: 1;
-	font-family: 'karbonlight','Lucida Grande','Lucida Sans Unicode','Lucida Sans',Geneva,Verdana,sans-serif;
+	font-family: 'Circular-Reg',,sans-serif;
 	font-size: 10px;
 	color: #333;
 	-webkit-font-smoothing: antialiased;
@@ -39,10 +39,10 @@ body {
     -webkit-text-size-adjust: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p, a, span {
 	font-size: 100%;
 	font-weight: normal;
-	font-family: 'karbonlight','Lucida Grande','Lucida Sans Unicode','Lucida Sans',Geneva,Verdana,sans-serif;
+	font-family: 'Circular-Reg',sans-serif;
 }
 
 a {
@@ -91,48 +91,64 @@ table {
 	box-sizing: border-box;
 }
 
-/* Fonts */
+/* -- Font : San Francisco -- */
 @font-face {
-	font-family:'karbonregular';
-	src:url(/assets/fonts/karbon-regular-webfont.eot);
-	src:url(/assets/fonts/karbon-regular-webfont.eot?#iefix) format("embedded-opentype"),
-	url(/assets/fonts/karbon-regular-webfont.woff) format("woff"),
-	url(/assets/fonts/karbon-regular-webfont.ttf) format("truetype"),
-	url(/assets/fonts/karbon-regular-webfont.svg#karbonregular) format("svg");
-	font-weight:normal;
-	font-style:normal;
+	font-family:'SFD-Thin';
+	src:url(/assets/fonts/SanFrancisco/SanFranciscoDisplay-Thin.ttf);
 }
 @font-face {
-	font-family:'karbonsemibold';
-	src:url(/assets/fonts/karbon-semibold-webfont.eot);
-	src:url(/assets/fonts/karbon-semibold-webfont.eot?#iefix) format("embedded-opentype"),
-	url(/assets/fonts/karbon-semibold-webfont.woff) format("woff"),
-	url(/assets/fonts/karbon-semibold-webfont.ttf) format("truetype"),
-	url(/assets/fonts/karbon-semibold-webfont.svg#karbonsemibold) format("svg");
-	font-weight:normal;
-	font-style:normal;
+	font-family:'SFD-Light';
+	src:url(/assets/fonts/SanFrancisco/SanFranciscoDisplay-Light.ttf);
 }
 @font-face {
-	font-family:'karbonlight';
-	src:url(/assets/fonts/karbon-light-webfont.eot);
-	src:url(/assets/fonts/karbon-light-webfont.eot?#iefix) format("embedded-opentype"),
-	url(/assets/fonts/karbon-light-webfont.woff) format("woff"),
-	url(/assets/fonts/karbon-light-webfont.ttf) format("truetype"),
-	url(/assets/fonts/karbon-light-webfont.svg#karbonlight) format("svg");
-	font-weight:normal;
-	font-style:normal;
+	font-family:'SFD-Reg';
+	src:url(/assets/fonts/SanFrancisco/SanFranciscoDisplay-Regular.ttf);
+}
+@font-face {
+	font-family:'SFD-Med';
+	src:url(/assets/fonts/SanFrancisco/SanFranciscoDisplay-Medium.ttf);
+}
+@font-face {
+	font-family:'SFD-Bold';
+	src:url(/assets/fonts/SanFrancisco/SanFranciscoDisplay-Bold.ttf);
+}
+@font-face {
+	font-family:'SFD-Black';
+	src:url(/assets/fonts/SanFrancisco/SanFranciscoDisplay-Black.ttf);
 }
 
+/* -- Font : Adobe Caslon -- */
 @font-face {
-	font-family:'karbonregularitalic';
-	src:url(/assets/fonts/karbon-regularitalic-webfont.eot);
-	src:url(/assets/fonts/karbon-regularitalic-webfont.eot?#iefix) format("embedded-opentype"),
-	url(/assets/fonts/karbon-regularitalic-webfont.woff) format("woff"),
-	url(/assets/fonts/karbon-regularitalic-webfont.ttf) format("truetype"),
-	url(/assets/fonts/karbon-regularitalic-webfont.svg#karbonregularitalic) format("svg");
-	font-weight:normal;
-	font-style:normal;
+	font-family:'Caslon-Reg';
+	src:url(/assets/fonts/Caslon/ACaslonPro-Regular.otf);
 }
+@font-face {
+	font-family:'Caslon-Med';
+	src:url(/assets/fonts/Caslon/ACaslonPro-Semibold.otf);
+}
+@font-face {
+	font-family:'Caslon-Bold';
+	src:url(/assets/fonts/Caslon/ACaslonPro-Bold.otf);
+}
+
+/* -- Font : Circular -- */
+@font-face {
+	font-family:'Circular-Reg';
+	src:url(/assets/fonts/Circular/circular-book.otf);
+}
+@font-face {
+	font-family:'Circular-Med';
+	src:url(/assets/fonts/Circular/circular-medium.otf);
+}
+@font-face {
+	font-family:'Circular-Bold';
+	src:url(/assets/fonts/Circular/circular-bold.otf);
+}
+@font-face {
+	font-family:'Circular-Black';
+	src:url(/assets/fonts/Circular/circular-black.otf);
+}
+
 
 /* -------------------------------- 
 
@@ -161,8 +177,9 @@ header {
 
 header a {
 	position: relative;
-	font-family: 'karbonsemibold',Sans-Serif;
-	font-size: 16px;
+	font-family: 'Circular-Bold',Sans-Serif;
+	font-size: 12px;
+	letter-spacing: 2px;
 	color: #FFF;
 }
 
@@ -329,13 +346,12 @@ PAGE - HOME #INTRO
 .intro h2 {
 	position: relative;
 	display: block;
-	min-width: 650px;
-	max-width: 650px;
+	min-width: 720px;
+	max-width: 720px;
 	margin: 0 auto;
-	font-family: 'karbonlight',Sans-Serif;
 	color: #FFF;
 	font-size: 40px;
-	line-height: 48px;
+	line-height: 54px;
 	text-align: center;
 	z-index: 1;
 	opacity: 1;
@@ -384,13 +400,13 @@ footer a {
 }
 
 a.home-white {
-	border: 2px solid rgba(255,255,255,0.5);
-    background: rgba(255,255,255,0.1);
+	border: 2px solid rgba(255,255,255,0.0);
+    background: rgba(255,255,255,0.2);
 }
 
 a.home-white:hover {
-	border: 2px solid rgba(255,255,255,0.8);
-	background: rgba(255,255,255,0.2);
+	border: 2px solid rgba(255,255,255,0.0);
+	background: rgba(255,255,255,0.3);
 }
 
 .arrow_m {
@@ -402,16 +418,17 @@ a.home-white:hover {
 .button {
 	border-radius: 2px;
 	line-height: 46px;
-	padding: 0 25px 0 20px;
+	padding: 5px 35px 5px 25px;
 	display: inline-block;
 	cursor: pointer;
 	position: relative;
 	transition: .2s all linear;
 	margin: 0 10px;
-	font-family: 'karbonsemibold',Sans-Serif;
-	font-size: 17px;
+	font-size: 12px;
+	letter-spacing: 2px;
 	text-transform: uppercase;	
 	-webkit-appearance: none;
+	font-weight: bold;
 }
 
 .button:focus {
@@ -731,7 +748,6 @@ PAGE - PROFILE #SKILLSET
 	padding: 4px;
 	text-align: center;
 	font-weight: bold;
-	font-family: 'karbonsemibold',Sans-Serif;
 	font-size: 18px;
 	border:2px solid rgba(0, 0, 0, 0.02);
 }
@@ -1141,7 +1157,6 @@ h2.hwb {
 	color: #45C65B;
 	font-weight: 700;
 	transition: .2s all linear;
-	font-family: 'karbonsemibold',Sans-Serif;
 	text-transform: uppercase;
 }
 
@@ -1333,7 +1348,6 @@ h2.hlb {
 	color: #2BA9F5;
 	font-size: 24px;
 	line-height: 30px;
-	font-family: 'karbonlight',Sans-Serif;
 	-webkit-appearance: none; /* for box shadows to show on iOS */
 }
 
@@ -1365,7 +1379,6 @@ h2.hlb {
 	width: 100%;
 	font-size: 24px;
 	line-height: 30px;
-	font-family: 'karbonlight',Sans-Serif;
 }
 
 /* -------------------------------- 
@@ -1698,8 +1711,7 @@ xloading-bar
 .cd-headline.loading-bar .cd-words-wrapper {
 	overflow: hidden;
 	vertical-align: top;
-	font-weight: bold;
-	font-size:32px;
+	font-size:28px;
 }
 .cd-headline.loading-bar .cd-words-wrapper::after {
 	/* loading bar */
@@ -1753,7 +1765,7 @@ Responsive CSS
 		margin-top: 25px;
 	}
 	header li {
-  		margin-left: 20px;
+  		margin-left: 10px;
 	}
 	.inpage-intro {
   		height: 70vh;
@@ -1761,15 +1773,15 @@ Responsive CSS
 	.intro h2 {
 		min-width: 280px;
 		max-width: 280px;
-		font-size: 30px;
+		font-size: 28px;
   		line-height: 36px;
   		text-align: center;
 	}
-	.cd-headline.loading-bar .cd-words-wrapper {
-		font-size:24px;
+	.cd-headline.loading-bar .cd-words-wrapper b {
+		font-size:18px;
 	}
 	footer {
-		padding: 30px 20px
+		padding: 20px 20px
 	}
 	footer a.more {
   		font-size: 14px;
@@ -1904,6 +1916,12 @@ Responsive CSS
 	a.home-white {
 		width: 100%;
 		margin: 0px;
+		padding: 0px;
+	}
+	.arrow_m {
+    	width: 12px;
+    	margin-right: 10px;
+    	margin-top: -4px;
 	}
 	img.ab-ico {
 		width: 20%;
@@ -1935,7 +1953,7 @@ Responsive CSS
 		float: left;
 	}
 	header li {
-		margin-left: 1.5em;
+		margin-left: 1em;
 	}
 	header nav {
 		float: right;
@@ -1951,12 +1969,12 @@ Responsive CSS
 	.intro h2 {
 		min-width: 450px;
 		max-width: 450px;
-		font-size: 30px;
-		line-height: 36px;
+		font-size: 24px;
+		line-height: 32px;
 		text-align: center;
 	}
-	.cd-headline.loading-bar .cd-words-wrapper {
-		font-size:24px;
+	.cd-headline.loading-bar .cd-words-wrapper b {
+		font-size:20px;
 	}
 	.inpage-intro {
 		height: 100vh;
@@ -2072,6 +2090,9 @@ Responsive CSS
 		height: 45px;
 		margin-top: -45px;
   	}
+  	.button {
+    	padding: 0px 35px 0px 25px;
+    }
 }
 
 /* iPhone 5 & 5S */
@@ -2092,16 +2113,16 @@ Responsive CSS
   		height: 60vh;
 	}
 	a.home-white {
-  		width: 280px;
+  		padding: 3px;
   	}
   	.intro h2 {
 		min-width: 340px;
 		max-width: 340px;
-		font-size: 36px;
-		line-height: 48px;
+		font-size: 30px;
+		line-height: 40px;
 	}
 	.bio .cd-words-wrapper b {
-		font-size: 26px;
+		font-size: 20px;
 	}
 	img.ab-ico {
 		width: 20%;
@@ -2133,12 +2154,15 @@ Responsive CSS
 	.intro h2 {
 		min-width: 500px;
 		max-width: 500px;
-		font-size: 32px;
-		line-height: 40px;
+		font-size: 28px;
+		line-height: 36px;
 		text-align: center;
 	}
-	.cd-headline.loading-bar .cd-words-wrapper {
-		font-size:28px;
+	.cd-headline.loading-bar .cd-words-wrapper b {
+		font-size:24px;
+	}
+	.button {
+    	padding: 0px 35px 0px 25px;
 	}
 	.inpage-intro {
 		height: 70vh;
