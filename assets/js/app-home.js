@@ -158,15 +158,15 @@ jQuery(document).ready(function($) {
   // GRADIENT JS ----------
 
   var colors = new Array(
-  [62,35,255],
-  [60,255,60],
-  [255,35,98],
-  [45,175,230],
-  [255,0,255],
-  [255,128,0]);
+  [83,109,254],
+  [255,64,129],
+  [26,188,146],
+  [124,77,255],
+  [0,154,255],
+  [255,111,0]);
 
   var step = 0;
-  var colorIndices = [0,1,2,3];
+  var colorIndices = [0,1,2,3,4,5];
   var gradientSpeed = 0.002;
 
   function updateGradient() {
@@ -190,15 +190,15 @@ jQuery(document).ready(function($) {
     var color2 = "rgb("+r2+","+g2+","+b2+")";
 
     $('#gradient').css({
-    background: "-webkit-gradient(linear, left top, right top, from("+color1+"), to("+color2+"))"})
+    background: "-webkit-gradient(linear, to bottom right, from("+color1+"), to("+color2+"))"})
     .css({
-    background: "-moz-linear-gradient(left, "+color1+" 0%, "+color2+" 100%)"})
+    background: "-moz-linear-gradient(to bottom right, "+color1+" 0%, "+color2+" 100%)"})
     .css({
-    background: "-o-linear-gradient(left,  "+color1+" 1%, "+color2+" 100%)"})
+    background: "-o-linear-gradient(to bottom right,  "+color1+" 1%, "+color2+" 100%)"})
     .css({    
-    background: "-ms-linear-gradient(left,  "+color1+" 1%, "+color2+" 100%)"})
+    background: "-ms-linear-gradient(to bottom right,  "+color1+" 1%, "+color2+" 100%)"})
     .css({
-    background: "linear-gradient(to right,  "+color1+" 1%, "+color2+" 100%)"})
+    background: "linear-gradient(to bottom right,  "+color1+" 1%, "+color2+" 100%)"})
     .css({
     filter: "progid:DXImageTransform.Microsoft.gradient( startColorstr='"+color1+"', endColorstr='"+color2+"',GradientType=1 )"})
 
@@ -215,7 +215,7 @@ jQuery(document).ready(function($) {
     }
   }
 
-  setInterval(updateGradient,10);
+  setInterval(updateGradient,20);
 
 });
 
@@ -235,7 +235,7 @@ background.initializr = function (){
   //option
   $this.id = "background_css3";
   $this.style = {bubbles_color:"#fff",stroke_width:0, stroke_color :"black"};
-  $this.bubbles_number = 30;
+  $this.bubbles_number = 15;
   $this.speed = [1500,20000]; //milliseconds
   $this.max_bubbles_height = $this.height;
   $this.shape = false // 1 : circle | 2 : triangle | 3 : rect | false :random
