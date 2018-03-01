@@ -473,9 +473,7 @@ header.fix_hdr a {
 	background: #90DEC6;
 	color: #31A480;
 }
-/*background: #212121 url("/assets/img/style/background.png") no-repeat;
-	background-size: cover;
-	background-position: center;*/
+
 .inpage-intro {
 	display: table;
 	width: 100%;
@@ -485,9 +483,10 @@ header.fix_hdr a {
 	text-align: center;
 	opacity: 1;
 	background: #fc00ff;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #00dbde, #fc00ff);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #00dbde, #fc00ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+	background: -webkit-linear-gradient(left, #00dbde, #fc00ff);
+	background: -o-linear-gradient(left, #00dbde, #fc00ff);
+	background: linear-gradient(to right, #00dbde, #fc00ff);
+	/* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 h2.inpage-h2 {
@@ -835,7 +834,7 @@ PAGE - PROFILE #BRANDS
 .brands-b li {
 	width: 217px;
 	padding: 0;
-	margin: 20px 10px;
+	margin: 0px 10px 30px;
 	float: left;
 	background: #fff;
 	border: 2px solid rgba(0, 0, 0, 0.03);
@@ -955,9 +954,9 @@ PAGE - PROFILE #OUTRO
 	margin: 0 auto;
 }
 
-.wgr {
+/*.wgr {
 	color: #45C65B;
-}
+}*/
 
 .out-s {
 	color: rgba(0,0,0,0.4);
@@ -1086,6 +1085,19 @@ a.underliner {
 	display: block;
 }
 
+.gradtwo {
+	background: #00c6ff;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.gradthree {
+	background: #00b09b;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #96c93d, #00b09b);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #96c93d, #00b09b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 /* -------------------------------- 
 
 PAGE - WORK
@@ -1098,12 +1110,13 @@ PAGE - WORK
 
 h2.hlg {
 	max-width: 950px;
-	margin: 0 auto;
-	padding-bottom: 10px;
-	padding-top: 50px;
-	font-size: 50px;
-	text-align: center;
-	color: #45C65B;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    padding-top: 40px;
+    font-size: 40px;
+    text-align: center;
+    color: rgba(33,33,33,0.7);
+    line-height: 54px;
 }
 
 h2.hwb {
@@ -1130,29 +1143,32 @@ h2.hwb {
 	width: 100%;
 	margin: 10px 0px 5px 0px;
 	padding: 10px 10px 10px 10px;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+	/*border-bottom: 1px solid rgba(0, 0, 0, 0.03);*/
 	display: inline-block;
 /*	border-top: 1px solid rgba(0, 0, 0, 0.07);
 	background-color: rgba(255, 255, 255, 0.5);*/
 }
 .project-hd {
 	float: left;
-	font-size: 24px;
-	line-height: 34px;
-	color: #000;
+	font-size: 18px;
+	line-height: 24px;
+	color: rgba(33,33,33,0.7);
+	padding: 5px;
 }
 .project-lnk {
 	float: right;
-	font-size: 14px;
-	line-height: 25px;
-	border: 2px solid #45C65B;
-	padding: 0px 10px;
-	border-radius: 36px;
+	font-size: 12px;
+	line-height: 24px;
+	padding: 5px 15px;
+	border-radius: 2px;
 	margin-top: 2px;
 	color: #45C65B;
 	font-weight: 700;
 	transition: .2s all linear;
 	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-family: 'Circular-Bold', sans-serif;
+	background: #fafafa;
 }
 
 .project-lnk:hover {
@@ -1279,11 +1295,12 @@ PAGE - CONTACT
 h2.hlb {
 	max-width: 950px;
 	margin: 0 auto;
-	padding-bottom: 10px;
-	padding-top: 50px;
-	font-size: 50px;
+	padding-bottom: 5px;
+	padding-top: 40px;
+	font-size: 40px;
+	line-height: 54px;
 	text-align: center;
-	color: #2BA9F5;
+	color: rgba(33,33,33,0.7);
 }
 
 .hl-form {
@@ -1303,12 +1320,13 @@ h2.hlb {
 	background: #fff;
 	width: 50%;
 	display: block;
+	padding:5px 35px 5px 35px;
 }
 
 .sb-tx{
 	margin: 20px auto;
-	color: #666;
-	font-size: 18px;
+	color: rgba(0,0,0,0.4);
+	font-size: 14px;
 	line-height: 24px;
 	margin-right: 18px;
 	width: 100%;
@@ -1372,8 +1390,9 @@ h2.hlb {
 	display: block;
 	padding: 1.6em 0;
 	width: 100%;
-	font-size: 24px;
-	line-height: 30px;
+	font-size: 16px;
+	line-height: 24px;
+	color: rgba(33,33,33,0.7);
 }
 
 /* -------------------------------- 
@@ -2003,6 +2022,11 @@ Responsive CSS
 		font-size: 16px;
     	line-height: 24px;
 	}
+	h2.hlg {
+	    font-size: 28px;
+	    line-height: 36px;
+	    padding-bottom: 5px;
+	}
 	.cd-headline.loading-bar .cd-words-wrapper b {
 		font-size:20px;
 	}
@@ -2499,14 +2523,13 @@ Responsive CSS
   	}
 }
 
-/* ----------- iPhone X ----------- */
+/* iPhone X */
 
-/* Portrait */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) { 
-
+	.inpage-outro {
+    height: 40vh;
+	}
 }
-
-/* Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3)and (orientation: landscape) { 
 	.inpage-intro {
     	height: 100vh;
@@ -2516,14 +2539,14 @@ Responsive CSS
 /* iPad */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) { 
 	h2.inpage-h2 {
-		font-size: 50px;
-		line-height: 55px;
-		margin-top: 30px;
+		font-size: 32px;
+		line-height: 40px;
+		margin-top: 60px;
 	}
 	h3.inpage-h3 {
-  		font-size: 24px;
-  		line-height: 30px;
-  		margin: 10px 80px;
+		font-size: 16px;
+		line-height: 24px;
+		margin: 10px 80px;
   	}
   	.inpage-intro {
 		height: 30vh;
@@ -2538,15 +2561,16 @@ Responsive CSS
 		min-width: 46%;
 	}
 	.for-ct {
-		width: 60%;
-		min-height: 150px;
+		width: 100%;
+		min-height: 100px;
 		margin-top: 0;
 	}
 	.for-pc {
 		width: 100px;
 		height: 100px;
 		margin-right: 20px;
-		border-radius: 90px;
+		border-radius: 5px;
+    	margin-bottom: 20px;
 	}
 	.skill_table {
 	  	max-width: 700px;
@@ -2564,14 +2588,17 @@ Responsive CSS
 		height: 21vh;
 	}
 	.out-h3 {
-		font-size: 40px;
+		font-size: 32px;
+		line-height: 44px;
+		padding-bottom: 5px;
 	}
 	.out-s {
-		font-size: 26px;
+		font-size: 18px;
+		line-height: 30px;
 	}
 	img.ab-ico {
-		width: 50%;
-		margin: 24px auto;
+		width: 100%;
+		margin: 0px auto;
 		display: block;
 	}
 	.pre-four {
@@ -2580,20 +2607,23 @@ Responsive CSS
 }
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) { 
 	h2.inpage-h2 {
-		font-size: 40px;
-		line-height: 50px;
+		font-size: 30px;
+		line-height: 36px;
 	}
 	h3.inpage-h3 {
-  		font-size: 20px;
-    	line-height: 28px;
+		font-size: 16px;
+		line-height: 24px;
+		max-width: 640px;
+		margin: 10px auto;
   	}
   	.out-h3 {
-		font-size: 40px;		
-    	line-height: 50px;
+		font-size: 32px;
+    	line-height: 44px;
+    	padding-bottom: 5px;
 	}
 	.out-s {
-		font-size: 20px;
-    	line-height: 28px
+		font-size: 16px;
+    	line-height: 24px;
 	}
 	.for-pc {
 		margin-top: 20px;
@@ -2603,23 +2633,31 @@ Responsive CSS
 		min-height: 324px;
     	padding: 30px 64px 50px;
 	}
+	.for-ct {
+    	width: 100%;
+	}
+	h2.hlg {
+		font-size: 32px;
+	    line-height: 44px;
+	    padding-bottom: 5px;
+	}
 	h2.cb {
-    	font-size: 40px;
-    	line-height: 50px;
+    	font-size: 32px;
+    	line-height: 40px;
     	padding-bottom: 5px;
 	}
 	h3.cd {
-		font-size: 20px;
-    	line-height: 28px
+		font-size: 16px;
+    	line-height: 24px
 	}
 	.brands-b li {
-		width: 200px;
-    	margin: 20px 35px;
+		width: 170px;
+    	margin: 10px 10px;
 	}
 	.prin li {
 		min-height: 205px;
 	}
 	.inpage-outro {
-    	height: 80vh;
+    	height: 70vh;
     }
 }
