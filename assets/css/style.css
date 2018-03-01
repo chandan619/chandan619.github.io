@@ -1722,7 +1722,7 @@ xloading-bar
 .cd-headline.loading-bar .cd-words-wrapper {
 	overflow: hidden;
 	vertical-align: top;
-	font-size:28px;
+	font-size:24px;
 	color: rgba(255,255,255,0.7);
 }
 .cd-headline.loading-bar .cd-words-wrapper::after {
