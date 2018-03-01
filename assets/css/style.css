@@ -188,9 +188,9 @@ header a::after {
 	content: "";
 	position: absolute;
 	bottom: 0px;
-	top: 22px;
+	top: 18px;
 	left: 0px;
-	width: calc(100% + 1px);
+	width: calc(100% + 0px);
 	height: 2px;
 	-webkit-transform: rotate(0deg) scale(0, 1);
 	-moz-transform: rotate(0deg) scale(0, 1);
@@ -234,7 +234,7 @@ header h1 a::after {
 }
 
 header li {
-	margin-left: 3em;
+	margin-left: 3.5em;
 }
 
 header nav {
@@ -262,69 +262,55 @@ header nav li:nth-child(4) a::after {
 	background: rgba(255,255,255,0.5);
 }
 
-header.blk_hdr nav li:nth-child(1) a::after {
-	background: #FF0B59;
-}
-
-header.blk_hdr nav li:nth-child(2) a::after {
-	background: #45C65B;
-}
-
-header.blk_hdr nav li:nth-child(3) a::after {
-	background: #FFE432;
-}
-
-header.blk_hdr nav li:nth-child(4) a::after {
-	background: #2BA9F5;
-}
-
-header.wht_hdr nav li:nth-child(1) a::after {
-	background: #FF0B59;
-}
-
-header.wht_hdr nav li:nth-child(2) a::after {
-	background: #45C65B;
-}
-
-header.wht_hdr nav li:nth-child(3) a::after {
-	background: #FFE432;
-}
-
-header.wht_hdr nav li:nth-child(4) a::after {
-	background: #2BA9F5;
-}
-
-header.fix_hdr nav li:nth-child(1) a::after {
-	background: #FF0B59;
-}
-
-header.fix_hdr nav li:nth-child(2) a::after {
-	background: #45C65B;
-}
-
-header.fix_hdr nav li:nth-child(3) a::after {
-	background: #FFE432;
-}
-
-header.fix_hdr nav li:nth-child(4) a::after {
-	background: #2BA9F5;
-}
-
 header nav li.active:nth-child(1) a::after {
-	background: #FF0B59;
+	background: rgba(255,255,255,0.5);
 }
 
 header nav li.active:nth-child(2) a::after {
-	background: #45C65B;
+	background: rgba(255,255,255,0.5);
 }
 
 header nav li.active:nth-child(3) a::after {
-	background: #FFE432;
+	background: rgba(255,255,255,0.5);
 }
 
 header nav li.active:nth-child(4) a::after {
-	background: #2BA9F5;
+	background: rgba(255,255,255,0.5);
 }
+
+header.blk_hdr nav li:nth-child(1) a::after {
+	background: rgba(255,255,255,0.5);
+}
+
+header.blk_hdr nav li:nth-child(2) a::after {
+	background: rgba(255,255,255,0.5);
+}
+
+header.blk_hdr nav li:nth-child(3) a::after {
+	background: rgba(255,255,255,0.5);
+}
+
+header.blk_hdr nav li:nth-child(4) a::after {
+	background: rgba(255,255,255,0.5);
+}
+
+header.blk_hdr nav li.active:nth-child(1) a::after {
+	background: rgba(255,255,255,0.5);
+}
+
+header.blk_hdr nav li.active:nth-child(2) a::after {
+	background: rgba(255,255,255,0.5);
+}
+
+header.blk_hdr nav li.active:nth-child(3) a::after {
+	background: rgba(255,255,255,0.5);
+}
+
+header.blk_hdr nav li.active:nth-child(4) a::after {
+	background: rgba(255,255,255,0.5);
+}
+
+
 
 /* -------------------------------- 
 
@@ -410,9 +396,9 @@ a.home-white:hover {
 }
 
 .arrow_m {
-	width: 16px;
+	width: 14px;
 	margin-right: 20px;
-	margin-top: 0px;
+	margin-top: -2px;
 }
 
 .button {
@@ -428,7 +414,7 @@ a.home-white:hover {
 	letter-spacing: 2px;
 	text-transform: uppercase;	
 	-webkit-appearance: none;
-	font-weight: bold;
+	font-family: 'Circular-Bold',Sans-Serif;
 }
 
 .button:focus {
@@ -457,7 +443,7 @@ PAGE - PROFILE #INTRO
 -------------------------------- */
 
 header.blk_hdr {
-	background: rgba(0,0,0,0);
+	background: rgba(255,255,255,0.1);
 	/*background: -webkit-linear-gradient(rgba(0, 0, 0, 0.175),rgba(255, 255, 255, 0));
 	background: -moz-linear-gradient(rgba(0,0,0,.175),rgba(255,255,255,0));
 	background: -o-linear-gradient(rgba(0,0,0,.175),rgba(255,255,255,0));
@@ -487,7 +473,9 @@ header.fix_hdr a {
 	background: #90DEC6;
 	color: #31A480;
 }
-
+/*background: #212121 url("/assets/img/style/background.png") no-repeat;
+	background-size: cover;
+	background-position: center;*/
 .inpage-intro {
 	display: table;
 	width: 100%;
@@ -496,25 +484,26 @@ header.fix_hdr a {
 	left: 0;
 	text-align: center;
 	opacity: 1;
-	background: #404040 url("/assets/img/style/background.png") no-repeat;
-	background-size: cover;
-	background-position: center;
+	background: #fc00ff;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #00dbde, #fc00ff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #00dbde, #fc00ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 h2.inpage-h2 {
 	text-align: center;
-	font-size: 50px;
-  	line-height: 56px;
+	font-size: 40px;
+  	line-height: 54px;
   	color: #fff;
   	display: inline-block;
-  	font-weight: bold;
+  	margin-top: 50px;
 }
 
 h3.inpage-h3 {
-	font-size: 24px;
-	line-height: 32px;
+	font-size: 18px;
+	line-height: 30px;
 	margin-top: 10px;
-	color: #fff;
+	color: rgba(255,255,255,0.7);
 	text-align: center;
 }
 
@@ -544,26 +533,26 @@ h2.cb {
 	max-width: 950px;
 	margin: 0 auto;
 	padding-bottom: 10px;
-	padding-top: 100px;
-	font-size: 50px;
+	padding-top: 40px;
+	font-size: 40px;
 	text-align: center;
-	color: #FF0B59;
+	color: rgba(33,33,33,0.7);
+    line-height: 54px;
 }
 
 h3.cd {
 	max-width: 950px;
 	margin: 0 auto;
-	padding-bottom: 30px;
+	padding-bottom: 40px;
 	padding-top: 0px;
-	font-size: 30px;
+	font-size: 18px;
+    line-height: 30px;
 	text-align: center;
-	color: #FF0B59;
+	color: rgba(0,0,0,0.4);
 }
 
 h3.cd blockquote {
 	display: inline-block;
-	background: #FFE432;
-	color: #000;
 }
 
 /* -------------------------------- 
@@ -585,17 +574,17 @@ PAGE - PROFILE #FORTE
 }
 
 .forte-b li {
-	padding: 30px 60px;
+	padding: 30px 64px;
     float: left;
     width: 50%;
-    min-height: 200px;
+    min-height: 168px;
     display: inline-block;
 }
 
 .forte-b h3 {
-	font-size: 20px;
-    line-height: 32px;
-    color: #404040;
+	font-size: 16px;
+    line-height: 30px;
+    color: rgba(33,33,33,0.7);
     display: inline-block;
     padding: 0px 0px;
     margin-bottom: 5px;
@@ -605,9 +594,9 @@ PAGE - PROFILE #FORTE
 }
 
 .forte-b p {
-	font-size: 16px;
-	line-height: 24px;
-	color: rgba(0,0,0,0.7);
+	font-size: 14px;
+	line-height: 20px;
+	color: rgba(0,0,0,0.4);
 }
 
 .for-pc {
@@ -619,7 +608,7 @@ PAGE - PROFILE #FORTE
 	margin-right: 35px;
 	margin-top: 0px;
 	border: 2px solid rgba(0, 0, 0, 0.03);
-	border-radius: 0px;
+	border-radius: 12px;
 }
 
 .for-ct {
@@ -638,6 +627,7 @@ img.ab-ico {
 	width: 100%;
 	margin: 0px auto;
 	display: block;
+	border-radius: 10px;
 }
 
 /* -------------------------------- 
@@ -649,22 +639,24 @@ PAGE - PROFILE #PRINCIPLES
 .prin {
 	max-width: 950px;
 	margin: 0 auto;
-	padding-top: 2em;
-	padding-bottom: 4em;
+	padding-top: 0;
+	padding-bottom: 30px;
 	padding-left: 0;
 	display: table;
 }
 
 .prin li {
-	padding: 30px 40px;
+	padding: 40px 40px;
 	float: left;
 	width: 50%;
 	min-height: 150px;
 }
 
 .prin h3 {
-	font-size: 30px;
-	line-height: 38px;
+	font-size: 24px;
+	line-height: 32px;
+	color: rgba(33,33,33,0.7);
+	margin-bottom: 10px;	
 }
 
 .prin .num{
@@ -672,9 +664,9 @@ PAGE - PROFILE #PRINCIPLES
 }
 
 .prin p {
-	font-size: 18px;
-	line-height: 24px;
-	color: rgba(33, 41, 52, 0.7);
+	font-size: 14px;
+	line-height: 20px;
+	color: rgba(0,0,0,0.4);
 }
 
 /* -------------------------------- 
@@ -686,7 +678,7 @@ PAGE - PROFILE #SKILLSET
 .skill_table {
 	max-width: 950px;
 	margin: 0 auto;
-	padding-bottom: 4em;
+	padding-bottom: 40px;
 	padding-left: 0;
 	display: table;
 }
@@ -825,12 +817,7 @@ PAGE - PROFILE #SKILLSET
 }
 
 .gray {
-	background: #FAFAFA;
-	background: -moz-linear-gradient(-45deg,#fafafa 0,#f2f2f2 60%,#eaeaea 100%);
-	background: -webkit-linear-gradient(-45deg,#FAFAFA 0,#F2F2F2 60%,#EAEAEA 100%);
-	background: -o-linear-gradient(-45deg,#fafafa 0,#f2f2f2 60%,#eaeaea 100%);
-	background: -ms-linear-gradient(-45deg,#fafafa 0,#f2f2f2 60%,#eaeaea 100%);
-	background: linear-gradient(135deg,#FAFAFA 0,#F2F2F2 60%,#EAEAEA 100%);
+	background: #fff;
 }
 
 /* -------------------------------- 
@@ -848,10 +835,11 @@ PAGE - PROFILE #BRANDS
 .brands-b li {
 	width: 217px;
 	padding: 0;
-	margin: 10px 10px;
+	margin: 20px 10px;
 	float: left;
 	background: #fff;
-	border: 1px solid rgba(0, 0, 0, 0.07);
+	border: 2px solid rgba(0, 0, 0, 0.03);
+	border-radius: 5px;
 }
 
 .brands-w {
@@ -871,9 +859,9 @@ PAGE - PROFILE #BRANDS
 }
 
 .brand-shot a {
-	color: #000;
-	font-size: 18px;
-	line-height: 1.4em;
+	color: rgba(33,33,33,0.7);
+	font-size: 16px;
+	line-height: 24px;
 }
 
 .brand-shot a:hover {
@@ -882,26 +870,25 @@ PAGE - PROFILE #BRANDS
 
 .brand-shot img {
 	max-width: 100%;
-	background: rgba(0, 0, 0, 0.01);
 }
 
 .inner {
-	padding: 15px;
-	border-top: 2px solid rgba(51, 51, 51, 0.05);
+	padding: 14px;
+	border-top: 2px solid rgba(33, 33, 33, 0.03);
 }
 
 .inner-in {
 	padding: 15px;
-	border-bottom: 2px solid rgba(51, 51, 51, 0.05);
+	border-bottom: 2px solid rgba(33, 33, 33, 0.03);
 	overflow: hidden;
 }
 
 .meta {
 	display: block;
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 300;
-	color: rgba(33, 41, 52, 0.6);
-	line-height: 1.4em;
+	color: rgba(0, 0, 0, 0.4);
+	line-height: 20px;
 }
 
 .meta-left {
@@ -947,7 +934,7 @@ PAGE - PROFILE #OUTRO
 .inpage-outro {
 	display: table;
 	width: 100%;
-	height: 35vh;
+	height: 40vh;
 	top: 0;
 	left: 0;
 	text-align: center;
@@ -957,7 +944,8 @@ PAGE - PROFILE #OUTRO
 
 .out-h3 {
 	font-size: 40px;
-	color: #FF0B59;
+	line-height: 54px;
+	color: rgba(33,33,33,0.7);
 	margin: 0 0 20px 0;
 	display: block;
 	text-align: center;
@@ -972,8 +960,9 @@ PAGE - PROFILE #OUTRO
 }
 
 .out-s {
-	color: rgba(33, 41, 52, 0.6);
-	font-size: 26px;
+	color: rgba(0,0,0,0.4);
+	font-size: 18px;
+	line-height: 30px;
 	padding-bottom: 40px;
 	display: block;
 	text-align: center;
@@ -983,18 +972,21 @@ PAGE - PROFILE #OUTRO
 
 .out-s blockquote {
 	display: inline-block;
-	/*background: #FFE432;*/
-	color: #000;	
+	/*background: #FFE432;*/	
 }
 
 a.out-blue {
 	border: 2px solid #2BA9F5;
 	color: #2BA9F5;
+	padding: 0px 35px 0 35px;
+	margin-bottom: 30px;
 }
 
 a.out-green {
 	border: 2px solid #45C65B;
 	color: #45C65B;
+	padding: 0px 35px 0 35px;
+	margin-bottom: 30px;
 }
 
 a.out-blue:hover {
@@ -1022,33 +1014,36 @@ PAGE - PROFILE #FOOTER
 	bottom: 0;
 	text-align: center;
 	opacity: 1;
-	background: #251D35 url("/assets/img/style/background.png") no-repeat;
-	background-size: cover;
-	background-position: center;
 	position: relative;
 	padding: 40px 40px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	background: #fc00ff;
+    background: -webkit-linear-gradient(to right, #00dbde, #fc00ff);
+    background: linear-gradient(to right, #00dbde, #fc00ff);
+    /*background: #251D35 url("/assets/img/style/background.png") no-repeat;
+	background-size: cover;
+	background-position: center;*/
 }
 
 .sitemap {
 	margin-bottom: 20px;
-	margin-top: 5px;
+	margin-top: 25px;
 	display: block;
 }
 
 .sitemap li {
 	display: inline;
-	margin: 0 15px;
+	margin: 0 10px;
 }
 
 .sitemap a {
-	color: rgba(255, 255, 255, 0.7);
-	font-size: 16px;
+	color: rgba(255, 255, 255, 1);
+	font-size: 12px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	padding-bottom: 2px;
+	padding-bottom: 4px;
 	border-bottom: 2px solid rgba(255, 255, 255,0.03);
 }
 
@@ -1064,29 +1059,29 @@ a.underliner {
 }
 
 .social, .social a {
-	color: rgba(255, 255, 255, 0.7);
-	font-size: 14px;
+	color: rgba(255, 255, 255, 1);
+	font-size: 10px;
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	transition: .2s color linear;
 }
 
 .social a {
-	padding-bottom: 2px;
+	padding-bottom: 4px;
 	transition: .2s all linear;
-	border-bottom: 1px solid rgba(255, 255, 255,0.03);
+	border-bottom: 2px solid rgba(255, 255, 255,0.03);
 }
 
 .social a:hover {
 	color: rgba(255, 255, 255, 1);
-	border-bottom: 1px solid rgba(255, 255, 255,0.3);
+	border-bottom: 2px solid rgba(255, 255, 255,0.3);
 }
 
 .copyright {
 	margin-top: 60px;
-	font-size: 16px;
-	color: rgba(255, 255, 255, 0.5);
-	letter-spacing: .5px;
+	font-size: 12px;
+	color: rgba(255, 255, 255, 0.7);
+	letter-spacing: 0px;
 	text-transform: capitalize;
 	display: block;
 }
@@ -1712,6 +1707,7 @@ xloading-bar
 	overflow: hidden;
 	vertical-align: top;
 	font-size:28px;
+	color: rgba(255,255,255,0.7);
 }
 .cd-headline.loading-bar .cd-words-wrapper::after {
 	/* loading bar */
@@ -1765,10 +1761,10 @@ Responsive CSS
 		margin-top: 25px;
 	}
 	header li {
-  		margin-left: 10px;
+  		margin-left: 30px;
 	}
 	.inpage-intro {
-  		height: 70vh;
+  		height: 90vh;
 	}
 	.intro h2 {
 		min-width: 280px;
@@ -1793,14 +1789,14 @@ Responsive CSS
 		font-size: 21px;
   	}
   	h2.inpage-h2 {
-  		font-size: 40px;
-  		line-height: 65px;
-  		margin-top: 40px;
+  		font-size: 28px;
+  		line-height: 36px;
+  		margin-top: 80px;
   	}
   	h3.inpage-h3 {
-  		font-size: 20px;
-  		line-height: 26px;
-  		margin: 10px 40px;
+  		font-size: 16px;
+  		line-height: 24px;
+  		margin: 10px 30px;
   	}
   	.prin {
   		padding-top: 10px;
@@ -1810,15 +1806,23 @@ Responsive CSS
   		padding: 20px 30px 30px 30px;
   		width: 100%;
   	}
+  	.prin h3 {
+  		font-size: 20px;
+    	line-height: 24px;
+  	}
   	h2.cb, h2.hlg, h2.hlb {
-  		font-size: 40px;
+  		font-size: 28px;
+  		line-height: 36px;
  	}
  	h2.hwb {
   		font-size: 40px;
   		padding-top: 120px;
  	}
  	h3.cd {
- 		font-size: 28px;
+ 		font-size: 16px;
+    	line-height: 24px;
+    	max-width: 250px;
+    	padding-bottom: 20px;
  	}
 	.skill_b {
   		min-width: 100%;
@@ -1826,19 +1830,25 @@ Responsive CSS
   		border-radius: 0px;
   	}
   	.forte-b {
-  		margin-top: 30px;
+  		margin-top: 10px;
   	}
   	.forte-b li {
   		width: 100%;
   		text-align: center;
-  		padding: 0px 20px 30px;
+  		padding: 0px 30px 40px;
   		max-height: 100%;
+  		border-bottom: 1px solid rgba(0,0,0,0.03);
+  	}
+  	.forte-b li:last-child {
+		border-bottom: none;
   	}
   	.for-pc {
   		margin: 0px auto 20px;
   		width: 100%;
-  		border-radius: 2px;
-		height: 150px;
+  		border-radius: 12px;
+		height: 120px;
+		background: #fff;
+    	border: none;
   	}
   	.for-ct {
   		width: 100%;
@@ -1856,7 +1866,7 @@ Responsive CSS
 		float: left;
   	}
   	.brands-b li {
-		width: 280px;
+		width: 240px;
 		float: none;
 	}
 	.inpage-outro {
@@ -1866,10 +1876,21 @@ Responsive CSS
 		width: 280px;
 	}
 	.out-h3 {
-		font-size: 40px;
+		font-size: 28px;
+    	line-height: 36px;
 	}
 	.out-s {
-		font-size: 26px;
+		font-size: 16px;
+    	line-height: 24px;
+    	max-width: 250px;
+    	padding-bottom: 20px;
+	}
+	a.out-green {
+	    margin-bottom: 10px;
+    	margin-top: 20px;
+	}
+	a.out-blue {
+	    margin-bottom: 10px;
 	}
 	.button{
 		width: 280px;
@@ -1924,8 +1945,8 @@ Responsive CSS
     	margin-top: -4px;
 	}
 	img.ab-ico {
-		width: 20%;
-		margin: 46px auto;
+		width: 50%;
+		margin: auto auto;
 		display: block;
 	}
 	.pre-three {
@@ -1947,13 +1968,13 @@ Responsive CSS
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) {
 	header {
-		padding: 20px 20px;
+		padding: 25px 20px;
 	}
 	header h1 {
 		float: left;
 	}
 	header li {
-		margin-left: 1em;
+		margin-left: 20px;
 	}
 	header nav {
 		float: right;
@@ -1973,6 +1994,15 @@ Responsive CSS
 		line-height: 32px;
 		text-align: center;
 	}
+	h2.cb {
+		font-size: 28px;
+    	line-height: 36px;
+    	padding-bottom: 5px;
+	}
+	h3.cd {
+		font-size: 16px;
+    	line-height: 24px;
+	}
 	.cd-headline.loading-bar .cd-words-wrapper b {
 		font-size:20px;
 	}
@@ -1980,14 +2010,14 @@ Responsive CSS
 		height: 100vh;
 	}
 	h2.inpage-h2 {
-		font-size: 40px;
-		line-height: 45px;
-		margin-top: 20px;
+		font-size: 28px;
+    	line-height: 36px;
+    	margin-top: 60px;
 	}
 	h3.inpage-h3 {
-		font-size: 20px;
-		line-height: 26px;
-		margin: 10px 40px;
+		font-size: 16px;
+    	line-height: 24px;
+    	margin: 10px 40px;
 	}
 	.forte-b {
   		margin-top: 30px;
@@ -1995,7 +2025,8 @@ Responsive CSS
 	.forte-b li {
 		width: 100%;
 		text-align: center;
-		padding: 0px 20px 30px;
+		padding: 10px 20px 10px;
+    	min-height: 160px;
 	}
 	.for-ct {
 		text-align: left;
@@ -2010,6 +2041,11 @@ Responsive CSS
 		margin: 0;
 		padding: 20px 30px 30px 30px;
 		width: 100%;
+		min-height: 100px;
+	}
+	.prin h3 {
+    	font-size: 20px;
+    	line-height: 24px;
 	}
 	.brands-b {
 		display: block;
@@ -2021,7 +2057,7 @@ Responsive CSS
 		margin: 2%;
 	}
 	.inpage-outro {
-		height: 100vh;
+		height: 80vh;
 	}
 	.inner-foot {
   		padding: 30px 20px;
@@ -2066,10 +2102,13 @@ Responsive CSS
   		margin-top: 50px;
 	}
 	.out-h3 {
-		font-size: 40px;
+		font-size: 28px;
+    	line-height: 36px;
+    	padding-bottom: 5px;
 	}
 	.out-s {
-		font-size: 26px;
+		font-size: 16px;
+    	line-height: 24px;
 	}
 	.skill_table {
   		max-width: 460px;
@@ -2104,10 +2143,10 @@ Responsive CSS
 /* iPhone 6 */
 @media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) { 
 	header li {
-  		margin-left: 25px;
+  		margin-left: 45px;
 	}
 	.inpage-intro {
-  		height: 60vh;
+  		height: 55vh;
 	}
 	.inpage-outro {
   		height: 60vh;
@@ -2125,20 +2164,20 @@ Responsive CSS
 		font-size: 20px;
 	}
 	img.ab-ico {
-		width: 20%;
-		margin: 40px auto;
+		width: 40%;
+		margin: 10px auto;
 		display: block;
 	}
 }
 @media only screen and (min-device-width : 569px) and (max-device-width : 667px) and (orientation : landscape) {
 	header {
-		padding: 20px 20px;
+		padding: 25px 20px;
 	}
 	header h1 {
 		float: left;
 	}
 	header li {
-		margin-left: 2em;
+		margin-left: 20px;
 	}
 	header nav {
 		float: right;
@@ -2165,25 +2204,35 @@ Responsive CSS
     	padding: 0px 35px 0px 25px;
 	}
 	.inpage-intro {
-		height: 70vh;
+		height: 100vh;
 	}
 	h2.inpage-h2 {
-		font-size: 40px;
-		line-height: 45px;
-		margin-top: 10px;
+		font-size: 32px;
+		line-height: 44px;
+		margin-top: 40px;
+	}
+	h2.cb {
+    	font-size: 32px;
+    	line-height: 44px;
+    	padding-bottom: 0px;
 	}
 	h3.inpage-h3 {
-		font-size: 20px;
-		line-height: 26px;
-		margin: 10px 40px;
+		font-size: 18px;
+		line-height: 28px;
+		margin: 10px 60px;
 	}
 	.forte-b {
-  		margin-top: 30px;
+  		margin-top: 0px;
 	}
 	.forte-b li {
 		width: 100%;
 		text-align: center;
-		padding: 0px 20px 30px;
+		padding: 30px;
+		min-height: 150px;
+    	border-bottom: 1px solid rgba(0,0,0,0.03);
+	}
+	.forte-b li:last-child {
+		border-bottom: none;
 	}
 	.for-ct {
 		text-align: left;
@@ -2209,7 +2258,7 @@ Responsive CSS
 		margin: 1%;
 	}
 	.inpage-outro {
-		height: 100vh;
+		height: 80vh;
 	}
 	.inner-foot {
   		padding: 30px 20px;
@@ -2251,10 +2300,13 @@ Responsive CSS
   		margin-top: 50px;
 	}
 	.out-h3 {
-		font-size: 40px;
+		font-size: 32px;
+    	line-height: 44px;
+    	padding-bottom: 0px;
 	}
 	.out-s {
-		font-size: 26px;
+		font-size: 18px;
+    	padding-bottom: 30px;
 	}
 	.skill_table {
   		max-width: 630px;
@@ -2314,25 +2366,42 @@ Responsive CSS
 		font-size:28px;
 	}
 	.inpage-intro {
-		height: 70vh;
+		height: 60vh;
 	}
 	h2.inpage-h2 {
-		font-size: 40px;
-		line-height: 45px;
-		margin-top: 10px;
+		font-size: 32px;
+		line-height: 44px;
+		margin-top: 50px;
+	}
+	h2.cb {
+		font-size: 28px;
+    	line-height: 36px;
+    	padding-bottom: 5px;
+	}
+	h3.cd {
+		font-size: 16px;
+    	line-height: 24px;
+	}
+	.prin h3 {
+	    font-size: 20px;
+	    margin-bottom: 5px;
 	}
 	h3.inpage-h3 {
-		font-size: 20px;
-		line-height: 26px;
-		margin: 10px 100px;
+		font-size: 16px;
+		line-height: 24px;
+		margin: 0px 100px;
 	}
 	.forte-b {
-  		margin-top: 30px;
+  		margin-top: 0px;
 	}
 	.forte-b li {
 		width: 100%;
 		text-align: center;
-		padding: 0px 20px 30px;
+		padding: 30px 30px 30px;
+		border-bottom: 1px solid rgba(0,0,0,0.03);
+	}
+	.forte-b li:last-child {
+		border-bottom: none;
 	}
 	.for-ct {
 		text-align: left;
@@ -2348,6 +2417,7 @@ Responsive CSS
 		margin: 0;
 		padding: 20px 30px 30px 30px;
 		width: 50%;
+		min-height: 168px;
 	}
 	.brands-b {
 		display: block;
@@ -2359,7 +2429,7 @@ Responsive CSS
 		margin: 1%;
 	}
 	.inpage-outro {
-		height: 80vh;
+		height: 70vh;
 	}
 	.inner-foot {
   		padding: 30px 20px;
@@ -2403,10 +2473,13 @@ Responsive CSS
   		margin-top: 50px;
 	}
 	.out-h3 {
-		font-size: 40px;
+		font-size: 28px;
+    	line-height: 36px;
+    	padding-bottom: 5px;
 	}
 	.out-s {
-		font-size: 26px;
+		font-size: 16px;
+    	line-height: 24px;
 	}
 	.skill_table {
   		max-width: 700px;
@@ -2424,6 +2497,20 @@ Responsive CSS
 		height: 45px;
 		margin-top: -45px;
   	}
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) { 
+
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3)and (orientation: landscape) { 
+	.inpage-intro {
+    	height: 100vh;
+    }
 }
 
 /* iPad */
@@ -2493,17 +2580,46 @@ Responsive CSS
 }
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) { 
 	h2.inpage-h2 {
-		font-size: 50px;
-		line-height: 55px;
+		font-size: 40px;
+		line-height: 50px;
 	}
 	h3.inpage-h3 {
-  		font-size: 24px;
-  		line-height: 30px;
+  		font-size: 20px;
+    	line-height: 28px;
   	}
   	.out-h3 {
-		font-size: 40px;
+		font-size: 40px;		
+    	line-height: 50px;
 	}
 	.out-s {
-		font-size: 26px;
+		font-size: 20px;
+    	line-height: 28px
 	}
+	.for-pc {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.forte-b li {
+		min-height: 324px;
+    	padding: 30px 64px 50px;
+	}
+	h2.cb {
+    	font-size: 40px;
+    	line-height: 50px;
+    	padding-bottom: 5px;
+	}
+	h3.cd {
+		font-size: 20px;
+    	line-height: 28px
+	}
+	.brands-b li {
+		width: 200px;
+    	margin: 20px 35px;
+	}
+	.prin li {
+		min-height: 205px;
+	}
+	.inpage-outro {
+    	height: 80vh;
+    }
 }
