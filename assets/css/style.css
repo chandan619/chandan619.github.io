@@ -386,8 +386,8 @@ footer a {
 }
 
 a.home-white {
-	border: 2px solid rgba(255,255,255,0.0);
-    background: rgba(255,255,255,0.2);
+	border: 2px solid rgba(255,255,255,0.3);
+    background: rgba(255,255,255,0.0);
 }
 
 a.home-white:hover {
@@ -398,6 +398,11 @@ a.home-white:hover {
 .arrow_m {
 	width: 14px;
 	margin-right: 20px;
+	margin-top: -2px;
+}
+.arrow_w {
+	width: 14px;
+	margin-right: 0px;
 	margin-top: -2px;
 }
 
@@ -656,7 +661,7 @@ PAGE - PROFILE #PRINCIPLES
 }
 
 .prin .num{
-	color: #FF0B59;
+	color: #fc00ff;
 }
 
 .prin p {
@@ -674,11 +679,14 @@ PAGE - PROFILE #SKILLSET
 .skill_table {
 	max-width: 950px;
 	margin: 0 auto;
-	padding-bottom: 40px;
+	padding-bottom: 20px;
 	padding-left: 0;
 	display: table;
 }
-
+.work_table{
+	padding-top: 40px;
+    padding-bottom: 20px;
+}
 .skill_b {
 	width: 46%;
 	float: left;
@@ -871,6 +879,7 @@ PAGE - PROFILE #BRANDS
 .inner {
 	padding: 14px;
 	border-top: 2px solid rgba(33, 33, 33, 0.03);
+	display: none;
 }
 
 .inner-in {
@@ -1165,11 +1174,11 @@ h2.hwb {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-family: 'Circular-Bold', sans-serif;
-	background: #fafafa;
+	background: #fff;
 }
 
 .project-lnk:hover {
-	background: #45C65B;
+	background: #fafafa;
 	color: #fff;
 }
 
@@ -1289,11 +1298,14 @@ PAGE - CONTACT
 
 -------------------------------- */
 
+.cvh {
+	min-height: 80vh;
+}
 h2.hlb {
 	max-width: 950px;
 	margin: 0 auto;
 	padding-bottom: 5px;
-	padding-top: 40px;
+	padding-top: 0px;
 	font-size: 40px;
 	line-height: 54px;
 	text-align: center;
@@ -1311,13 +1323,13 @@ h2.hlb {
 }
 
 .sb-bt {
-	margin: 20px auto;
+	margin: 40px auto 20px;
 	border: 2px solid #2BA9F5;
 	color: #2BA9F5;
 	background: #fff;
 	width: 50%;
 	display: block;
-	padding:5px 35px 5px 35px;
+	padding:0px 35px 0 35px;
 }
 
 .sb-tx{
@@ -1548,7 +1560,7 @@ Hoshi
 	left: 0;
 	width: 100%;
 	height: calc(100% - 10px);
-	border-bottom: 2px solid rgba(185, 193, 202, 0.4);
+	border-bottom: 2px solid rgba(0, 0, 0, 0.05);
 }
 
 .input__label--hoshi::after {
@@ -1926,10 +1938,11 @@ Responsive CSS
 		margin: 10px;
 	}
 	.hl-form {
-		width: 280px;
+		width: 300px;
 	}
 	.sb-bt {
 		width: 260px;
+		margin: 20px auto 20px;
 	}
 	h2.rcb {
 		font-size: 40px;
@@ -2118,6 +2131,7 @@ Responsive CSS
 	}
 	.sb-bt {
 		width: 360px;
+		margin: 20px auto 20px;
 	}
 	.copyright {
   		margin-top: 50px;
@@ -2316,6 +2330,7 @@ Responsive CSS
 	}
 	.sb-bt {
 		width: 360px;
+		margin: 20px auto 20px;
 	}
 	.copyright {
   		margin-top: 50px;
@@ -2489,6 +2504,7 @@ Responsive CSS
 	}
 	.sb-bt {
 		width: 360px;
+		margin: 20px auto 20px;
 	}
 	.copyright {
   		margin-top: 50px;
