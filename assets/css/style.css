@@ -2703,6 +2703,16 @@ Responsive CSS
 	.pre-four {
 		display: none;
 	}
+	.r-work {
+		max-width: 620px;
+		margin:20px auto 10px;
+	}
+	.r-work li span {
+    	max-width: 500px;
+	}
+	.r-work li {
+	    padding: 40px 0px;
+	}
 }
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) { 
 	h2.inpage-h2 {
