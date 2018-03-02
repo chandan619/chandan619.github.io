@@ -26,7 +26,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	}
 
 body {
-	background: #212121;
+	background: #fff;
 	line-height: 1;
 	font-family: 'Circular-Reg',,sans-serif;
 	font-size: 10px;
@@ -525,7 +525,7 @@ h3.inpage-h3 span {
   	top: 100%;
   	width: 100%;
   	min-height: 100vh;
-	border-bottom:1px solid rgba(0, 0, 0, 0.03);
+	border-bottom:1px solid rgba(0, 0, 0, 0.04);
 }
 
 .c_box {
@@ -1299,7 +1299,7 @@ PAGE - CONTACT
 -------------------------------- */
 
 .cvh {
-	min-height: 80vh;
+	min-height: 70vh;
 }
 h2.hlb {
 	max-width: 950px;
@@ -1368,8 +1368,8 @@ h2.hlb {
 	border-radius: 0;
 	background: #f0f0f0;
 	color: #2BA9F5;
-	font-size: 24px;
-	line-height: 30px;
+	font-size: 16px;
+	line-height: 36px;
 	-webkit-appearance: none; /* for box shadows to show on iOS */
 }
 
@@ -1530,7 +1530,7 @@ Hoshi
 }
 
 .input__field--hoshi {
-	margin-top: 1em;
+	margin-top: 2em;
 	padding: 0.85em 0.15em;
 	width: 100%;
 	background: transparent;
@@ -1865,7 +1865,7 @@ Responsive CSS
   		text-align: center;
   		padding: 0px 30px 40px;
   		max-height: 100%;
-  		border-bottom: 1px solid rgba(0,0,0,0.03);
+  		border-bottom: 1px solid rgba(0,0,0,0.04);
   	}
   	.forte-b li:last-child {
 		border-bottom: none;
@@ -1941,7 +1941,7 @@ Responsive CSS
 		width: 300px;
 	}
 	.sb-bt {
-		width: 260px;
+		width: 280px;
 		margin: 20px auto 20px;
 	}
 	h2.rcb {
@@ -1994,6 +1994,12 @@ Responsive CSS
   	h2.spshd, h3.spshd {
   		font-size: 36px;
   	}
+  	.input__field--hoshi {
+		margin-top: 1em;
+	}
+	.cvh {
+    	margin-top: 5px;
+	}
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) {
 	header {
@@ -2054,13 +2060,17 @@ Responsive CSS
     	margin: 10px 40px;
 	}
 	.forte-b {
-  		margin-top: 30px;
+  		margin-top: 0px;
 	}
 	.forte-b li {
 		width: 100%;
 		text-align: center;
-		padding: 10px 20px 10px;
+		padding: 30px;
     	min-height: 160px;
+    	border-bottom: 1px solid rgba(0,0,0,0.04);
+	}
+	.forte-b li:last-child {
+		border-bottom: none;
 	}
 	.for-ct {
 		text-align: left;
@@ -2087,8 +2097,8 @@ Responsive CSS
 		float: left;
 	}
 	.brands-b li {
-		width: 46%;
-		margin: 2%;
+		width: 170px;
+		margin: 10px 10px;
 	}
 	.inpage-outro {
 		height: 80vh;
@@ -2146,7 +2156,7 @@ Responsive CSS
     	line-height: 24px;
 	}
 	.skill_table {
-  		max-width: 460px;
+  		max-width: 380px;
 	}
 	.pre-three {
 		display: none;
@@ -2167,6 +2177,12 @@ Responsive CSS
   	.button {
     	padding: 0px 35px 0px 25px;
     }
+    .input__field--hoshi {
+		margin-top: 1em;
+	}
+	.cvh {
+    	margin-top: 10px;
+	}
 }
 
 /* iPhone 5 & 5S */
@@ -2202,6 +2218,9 @@ Responsive CSS
 		width: 40%;
 		margin: 10px auto;
 		display: block;
+	}
+	.cvh {
+    	min-height: 70vh;
 	}
 }
 @media only screen and (min-device-width : 569px) and (max-device-width : 667px) and (orientation : landscape) {
@@ -2264,7 +2283,7 @@ Responsive CSS
 		text-align: center;
 		padding: 30px;
 		min-height: 150px;
-    	border-bottom: 1px solid rgba(0,0,0,0.03);
+    	border-bottom: 1px solid rgba(0,0,0,0.04);
 	}
 	.forte-b li:last-child {
 		border-bottom: none;
@@ -2289,8 +2308,8 @@ Responsive CSS
 		float: left;
 	}
 	.brands-b li {
-		width: 31%;
-		margin: 1%;
+		width: 170px;
+    	margin: 10px 10px;
 	}
 	.inpage-outro {
 		height: 80vh;
@@ -2345,7 +2364,7 @@ Responsive CSS
     	padding-bottom: 30px;
 	}
 	.skill_table {
-  		max-width: 630px;
+  		max-width: 570px;
 	}
 	.pre-four {
 		display: none;
@@ -2360,6 +2379,12 @@ Responsive CSS
 		height: 45px;
 		margin-top: -45px;
   	}
+  	.input__field--hoshi {
+		margin-top: 1em;
+	}
+	.cvh {
+    	margin-top: 10px;
+	}
 }
 
 /* iPhone 6 Plus */
@@ -2455,14 +2480,17 @@ Responsive CSS
 		width: 50%;
 		min-height: 168px;
 	}
+	.skill_table {
+  		max-width: 570px;
+	}
 	.brands-b {
 		display: block;
 		width: 100%;
 		float: left;
 	}
 	.brands-b li {
-		width: 31%;
-		margin: 1%;
+		width: 170px;
+		margin: 10px 10px;
 	}
 	.inpage-outro {
 		height: 70vh;
@@ -2518,9 +2546,6 @@ Responsive CSS
 		font-size: 16px;
     	line-height: 24px;
 	}
-	.skill_table {
-  		max-width: 700px;
-	}
 	.pre-four {
 		display: none;
 	}
@@ -2534,6 +2559,12 @@ Responsive CSS
 		height: 45px;
 		margin-top: -45px;
   	}
+  	.input__field--hoshi {
+		margin-top: 1em;
+	}
+	.cvh {
+    	margin-top: 10px;
+	}
 }
 
 /* iPhone X */
@@ -2547,6 +2578,15 @@ Responsive CSS
 	.inpage-intro {
     	height: 100vh;
     }
+    .input__field--hoshi {
+		margin-top: 1em;
+	}
+	.cvh {
+    	margin-top: 20px;
+	}
+	.skill_table {
+    	max-width: 760px;
+	}
 }
 
 /* iPad */
@@ -2673,4 +2713,11 @@ Responsive CSS
 	.inpage-outro {
     	height: 70vh;
     }
+    .input__field--hoshi {
+		margin-top: 1em;
+	}
+	.cvh {
+    	margin-top: 10px;
+    	min-height: 70vh;
+	}
 }
