@@ -878,6 +878,7 @@ PAGE - PROFILE #BRANDS
 
 .brand-shot img {
 	max-width: 100%;
+	border-radius: 4px;
 }
 
 .inner {
@@ -1148,10 +1149,10 @@ a.underliner {
 }
 
 .grad_hike {
-	background: #9CECFB;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(left, #0052D4, #65C7F7, #9CECFB);
-	background: -o-linear-gradient(left, #0052D4, #65C7F7, #9CECFB);
-	background: linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);
+	background: #56CCF2;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(left, #2F80ED, #56CCF2);
+	background: -o-linear-gradient(left, #2F80ED, #56CCF2);
+	background: linear-gradient(to right, #2F80ED, #56CCF2);
 }
 
 .grad_snapdl{
