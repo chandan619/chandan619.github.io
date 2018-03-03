@@ -688,7 +688,7 @@ PAGE - PROFILE #SKILLSET
     padding-bottom: 20px;
 }
 .workin_table{
-	padding: 30px 0px 30px;
+	padding: 20px 0px 20px;
 }
 .skill_b {
 	width: 46%;
@@ -1121,32 +1121,44 @@ a.underliner {
 
 .grad_work {
 	background: #00b09b;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #96c93d, #00b09b);
+	background: -webkit-linear-gradient(left, #96c93d, #00b09b);
+	background: -o-linear-gradient(left, #96c93d, #00b09b);
 	background: linear-gradient(to right, #96c93d, #00b09b);
 }
 
 .grad_contact {
 	background: #00c6ff;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
+	background: -webkit-linear-gradient(left, #0072ff, #00c6ff);
+	background: -o-linear-gradient(left, #0072ff, #00c6ff);
 	background: linear-gradient(to right, #0072ff, #00c6ff);
 }
 
 .grad_resume {
 	background: #7F00FF;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(left, #E100FF, #7F00FF);
+	background: -o-linear-gradient(left, #E100FF, #7F00FF);
 	background: linear-gradient(to right, #E100FF, #7F00FF);
 }
 
 .grad_connect {
 	background: #ff4b1f;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(left, #1fddff, #ff4b1f);
+	background: -o-linear-gradient(left, #1fddff, #ff4b1f);
 	background: linear-gradient(to right, #1fddff, #ff4b1f);
 }
 
 .grad_hike {
 	background: #9CECFB;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(left, #0052D4, #65C7F7, #9CECFB);
+	background: -o-linear-gradient(left, #0052D4, #65C7F7, #9CECFB);
 	background: linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);
+}
+
+.grad_snapdl{
+	background: #EB3349;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(left, #F45C43, #EB3349);
+	background: -o-linear-gradient(left, #F45C43, #EB3349);
+	background: linear-gradient(to left, #F45C43, #EB3349);
 }
 
 /* -------------------------------- 
@@ -1337,6 +1349,21 @@ h3.rcd {
 	-moz-transition: opacity .15s linear;
 	-webkit-transition: opacity .15s linear;
 	transition: opacity .15s linear;
+}
+
+.meta-lnk {
+	margin: 20px 5px 0px;
+    padding: 5px 30px;
+    font-size: 10px;
+    line-height: 24px;
+    border: 2px solid rgba(255, 255, 255, 0.20);
+    border-radius: 2px;
+    color: #fff;
+}
+
+.meta-lnk:hover {
+	background: rgba(255, 255, 255, 0.10);
+    border: 2px solid rgba(255, 255, 255, 0);
 }
 
 /* -------------------------------- 
@@ -1804,6 +1831,7 @@ Type style
 	opacity: 1;
 }
 
+
 /* -------------------------------- 
 
 xloading-bar 
@@ -2099,6 +2127,10 @@ Responsive CSS
 	.cvh {
     	margin-top: 5px;
 	}
+	.meta-lnk {
+		margin: 20px 5px 0px;
+   		width: unset;
+	}
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) {
 	header {
@@ -2284,6 +2316,9 @@ Responsive CSS
 	}
 	.cvh {
     	margin-top: 10px;
+	}
+	.meta-lnk {
+		padding:5px 30px;
 	}
 }
 
@@ -2489,6 +2524,10 @@ Responsive CSS
 	}
 	.cvh {
     	margin-top: 10px;
+	}
+	.meta-lnk {
+		margin: 20px 5px 0px;
+   		padding: 5px 30px;
 	}
 }
 
