@@ -608,7 +608,7 @@ PAGE - PROFILE #FORTE
 	float: left;
 	margin-right: 35px;
 	margin-top: 0px;
-	border: 2px solid rgba(0, 0, 0, 0.03);
+	border: 1px solid rgba(0, 0, 0, 0.04);
 	border-radius: 12px;
 }
 
@@ -628,7 +628,7 @@ img.ab-ico {
 	width: 100%;
 	margin: 0px auto;
 	display: block;
-	border-radius: 10px;
+	border-radius: 12px;
 }
 
 /* -------------------------------- 
@@ -686,6 +686,9 @@ PAGE - PROFILE #SKILLSET
 .work_table{
 	padding-top: 40px;
     padding-bottom: 20px;
+}
+.workin_table{
+	padding: 30px 0px 30px;
 }
 .skill_b {
 	width: 46%;
@@ -842,24 +845,25 @@ PAGE - PROFILE #BRANDS
 	margin: 0px 10px 30px;
 	float: left;
 	background: #fff;
-	border: 2px solid rgba(0, 0, 0, 0.03);
+	border: 1px solid rgba(0, 0, 0, 0.04);
 	border-radius: 5px;
 }
 
 .brands-w {
-	max-width: 950px;
+	max-width: 740px;
 	margin: 0px;
 	padding: 0px;
 }
 
 .brands-w li {
 	width: 100%;
-	max-width: 967px;
+	max-width: 740px;
 	padding: 0;
 	margin: 20px 0px;
 	float: left;
 	background: #fff;
-	border: 1px solid rgba(0, 0, 0, 0.07);
+	border: 1px solid rgba(0, 0, 0, 0.04);
+	border-radius: 5px;
 }
 
 .brand-shot a {
@@ -886,6 +890,7 @@ PAGE - PROFILE #BRANDS
 	padding: 15px;
 	border-bottom: 2px solid rgba(33, 33, 33, 0.03);
 	overflow: hidden;
+	display: none;
 }
 
 .meta {
@@ -1114,22 +1119,28 @@ a.underliner {
 	display: block;
 }
 
-.gradtwo {
-	background: #00c6ff;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.gradthree {
+.grad_work {
 	background: #00b09b;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #96c93d, #00b09b);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #96c93d, #00b09b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: -webkit-linear-gradient(to right, #96c93d, #00b09b);
+	background: linear-gradient(to right, #96c93d, #00b09b);
 }
 
-.gradfour {
+.grad_contact {
+	background: #00c6ff;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
+	background: linear-gradient(to right, #0072ff, #00c6ff);
+}
+
+.grad_resume {
 	background: #7F00FF;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(left, #E100FF, #7F00FF);
-	background: linear-gradient(to right, #E100FF, #7F00FF); /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: linear-gradient(to right, #E100FF, #7F00FF);
+}
+
+.grad_connect {
+	background: #ff4b1f;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(left, #1fddff, #ff4b1f);
+	background: linear-gradient(to right, #1fddff, #ff4b1f);
 }
 
 /* -------------------------------- 
@@ -1187,7 +1198,7 @@ h2.hwb {
 	font-size: 18px;
 	line-height: 24px;
 	color: rgba(33,33,33,0.7);
-	padding: 5px;
+	padding: 7px;
 }
 .project-lnk {
 	float: right;
@@ -1203,11 +1214,13 @@ h2.hwb {
 	letter-spacing: 2px;
 	font-family: 'Circular-Bold', sans-serif;
 	background: #fff;
+	border: 1px solid rgba(0, 0, 0, 0);
 }
 
 .project-lnk:hover {
-	background: #fafafa;
 	color: #fff;
+	border: 1px solid rgba(0, 0, 0, 0.04);
+    border-radius: 5px;
 }
 
 
@@ -1440,111 +1453,147 @@ PAGE - CONNECT
 
 .con-fb {
 	border-top: 2px solid #46629E;
+	display: block;
 }
 .con-lk {
 	border-top: 2px solid #1B86BC;
+	display: block;
 }
 .con-tw {
 	border-top: 2px solid #53A7E8;
+	display: block;
 }
 .con-gp {
 	border-top: 2px solid #DD4B39;
+	display: block;
 }
 .con-pt {
 	border-top: 2px solid #BD1E23;
+	display: block;
 }
 .con-ss {
 	border-top: 2px solid #007BB6;
+	display: block;
 }
 .con-am {
 	border-top: 2px solid #94C1BE;
+	display: block;
 }
 .con-gr {
 	border-top: 2px solid #1E8CBE;
+	display: block;
 }
 .con-sv {
 	border-top: 2px solid #19C450;
+	display: block;
 }
 .con-ac {
 	border-top: 2px solid #0F0F0F;
+	display: block;
 }
 .con-ff {
 	border-top: 2px solid #3E7CC8;
+	display: block;
 }
 .con-vm {
 	border-top: 2px solid #44BBFF;
+	display: block;
 }
 .con-yt {
 	border-top: 2px solid #E02927;
+	display: block;
 }
 .con-fk {
 	border-top: 2px solid #FF0084;
+	display: block;
 }
 .con-in {
 	border-top: 2px solid #48769C;
+	display: block;
 }
 .con-px {
 	border-top: 2px solid #222222;
+	display: block;
 }
 .con-dr {
 	border-top: 2px solid #EA4C89;
+	display: block;
 }
 .con-gh {
 	border-top: 2px solid #333;
+	display: block;
 }
 .con-bh {
 	border-top: 2px solid #1769FF;
+	display: block;
 }
 .con-sf {
 	border-top: 2px solid #F47920;
+	display: block;
 }
 .con-cm {
 	border-top: 2px solid #91A759;
+	display: block;
 }
 .con-cp {
 	border-top: 2px solid #222;
+	display: block;
 }
 .con-ph {
 	border-top: 2px solid #DA552F;
+	display: block;
 }
 .con-nn {
 	border-top: 2px solid #F47E57;
+	display: block;
 }
 .con-sg {
 	border-top: 2px solid #DA500F;
+	display: block;
 }
 .con-sc {
 	border-top: 2px solid #FF6C00;
+	display: block;
 }
 .con-lf {
 	border-top: 2px solid #DD1C23;
+	display: block;
 }
 .con-gb {
 	border-top: 2px solid #CFCEBB;
+	display: block;
 }
 .con-fp {
 	border-top: 2px solid #404040;
+	display: block;
 }
 .con-lb {
 	border-top: 2px solid #2C3641;
+	display: block;
 }
 .con-ib {
 	border-top: 2px solid #F2CD00;
+	display: block;
 }
 .con-dl {
 	border-top: 2px solid #0B79E5;
+	display: block;
 }
 .con-fl {
 	border-top: 2px solid #E02828;
+	display: block;
 }
 .con-md {
 	border-top: 2px solid #57AD68;
+	display: block;
 }
 .con-su {
 	border-top: 2px solid #EC4B24;
+	display: block;
 }
 .con-qo {
 	border-top: 2px solid #AA2200;
+	display: block;
 }
 
 /* -------------------------------- 
@@ -1924,6 +1973,11 @@ Responsive CSS
   	.brands-b li {
 		width: 240px;
 		float: none;
+	}
+	.brands-w li {
+		border-left: none;
+	    border-right: none;
+	    border-radius: 0px;
 	}
 	.inpage-outro {
 		height: 80vh;
