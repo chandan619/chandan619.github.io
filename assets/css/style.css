@@ -1143,6 +1143,12 @@ a.underliner {
 	background: linear-gradient(to right, #1fddff, #ff4b1f);
 }
 
+.grad_hike {
+	background: #9CECFB;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(left, #0052D4, #65C7F7, #9CECFB);
+	background: linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);
+}
+
 /* -------------------------------- 
 
 PAGE - WORK
