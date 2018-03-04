@@ -1162,6 +1162,13 @@ a.underliner {
 	background: linear-gradient(to left, #F45C43, #EB3349);
 }
 
+.grad_shoto {
+	background: #f79d00;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(left, #64f38c, #f79d00);
+	background: -o-linear-gradient(left, #64f38c, #f79d00);
+	background: linear-gradient(to right, #64f38c, #f79d00);
+}
+
 /* -------------------------------- 
 
 PAGE - WORK
