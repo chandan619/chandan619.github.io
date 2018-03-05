@@ -1431,12 +1431,11 @@ h2.hlb {
 
 .input {
 	position: relative;
-	z-index: 1;
-	display: block;
-	margin: 2em auto;
-	max-width: 500px;
-	width: calc(100% - 2em);
-	vertical-align: top;
+    z-index: 1;
+    display: block;
+    margin: 20px auto;
+    max-width: 500px;
+    vertical-align: top;
 }
 
 .input__field {
@@ -1477,12 +1476,12 @@ h2.hlb {
 
 .input__label-content {
 	position: relative;
-	display: block;
-	padding: 1.6em 0;
-	width: 100%;
-	font-size: 16px;
-	line-height: 24px;
-	color: rgba(33,33,33,0.7);
+    display: block;
+    padding: 25px 0;
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(33,33,33,0.7);
 }
 
 /* -------------------------------- 
@@ -1647,22 +1646,22 @@ Hoshi
 }
 
 .input__field--hoshi {
-	margin-top: 2em;
-	padding: 0.85em 0.15em;
-	width: 100%;
-	background: transparent;
-	color: #2BA9F5;
+	margin-top: 20px;
+    padding: 10px 5px;
+    width: 100%;
+    background: transparent;
+    color: #2BA9F5;
 }
 
 .input__label--hoshi {
 	position: absolute;
-	bottom: 0;
-	left: 0;
-	padding: 0 0.25em;
-	width: 100%;
-	height: calc(100% - 1em);
-	text-align: left;
-	pointer-events: none;
+    bottom: 0;
+    left: 0;
+    padding: 0 3px;
+    width: 100%;
+    height: 70px;
+    text-align: left;
+    pointer-events: none;
 }
 
 .input__label-content--hoshi {
@@ -1672,12 +1671,12 @@ Hoshi
 .input__label--hoshi::before,
 .input__label--hoshi::after {
 	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: calc(100% - 10px);
-	border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
 }
 
 .input__label--hoshi::after {
