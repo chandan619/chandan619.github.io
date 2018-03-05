@@ -604,7 +604,7 @@ PAGE - PROFILE #FORTE
 	display: block;
 	width: 108px;
 	height: 108px;
-	background: rgba(0, 0, 0, 0.01) no-repeat left top;
+	background: rgba(0, 0, 0, 0) no-repeat left top;
 	float: left;
 	margin-right: 35px;
 	margin-top: 0px;
