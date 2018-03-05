@@ -1447,7 +1447,7 @@ h2.hlb {
 	border: none;
 	border-radius: 0;
 	background: #f0f0f0;
-	color: #2BA9F5;
+	color: #01baff;
 	font-size: 16px;
 	line-height: 36px;
 	-webkit-appearance: none; /* for box shadows to show on iOS */
@@ -1650,7 +1650,7 @@ Hoshi
     padding: 10px 5px;
     width: 100%;
     background: transparent;
-    color: #2BA9F5;
+    color: #01baff;
 }
 
 .input__label--hoshi {
@@ -1689,7 +1689,7 @@ Hoshi
 }
 
 .input__label--hoshi-color-1::after {
-	border-color: #2BA9F5;
+	border-color: #01baff;
 }
 
 .input__label--hoshi-color-2::after {
