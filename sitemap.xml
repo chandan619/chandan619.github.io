@@ -6,154 +6,52 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
+
 <url>
   <loc>http://chandankumar.co/</loc>
-  <lastmod>2018-02-27T12:32:09+00:00</lastmod>
-  <changefreq>monthly</changefreq>
+  <lastmod>2018-03-13T17:56:42+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>http://chandankumar.co/profile/</loc>
-  <lastmod>2018-02-27T12:32:09+00:00</lastmod>
-  <changefreq>monthly</changefreq>
+  <lastmod>2018-03-13T17:56:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://chandankumar.co/work/</loc>
-  <lastmod>2018-02-27T12:32:09+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://chandankumar.co/resume/</loc>
-  <lastmod>2018-02-27T12:32:09+00:00</lastmod>
-  <changefreq>monthly</changefreq>
+  <lastmod>2018-03-13T17:56:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://chandankumar.co/contact/</loc>
-  <lastmod>2018-02-27T12:32:09+00:00</lastmod>
-  <changefreq>monthly</changefreq>
+  <lastmod>2018-03-13T17:56:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>http://chandankumar.co/resume/</loc>
+  <lastmod>2018-03-13T17:56:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
   <loc>http://chandankumar.co/connect/</loc>
-  <lastmod>2018-02-27T12:32:09+00:00</lastmod>
-  <changefreq>monthly</changefreq>
+  <lastmod>2018-03-13T17:56:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://chandankumar.co/work/shoto/</loc>
+  <lastmod>2018-03-13T17:56:42+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://chandankumar.co/work/hike-messenger/</loc>
-  <lastmod>2018-02-27T12:32:09+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://chandankumar.co/work/uservia/</loc>
-  <lastmod>2018-02-27T12:32:09+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://chandankumar.co/work/billings/</loc>
-  <lastmod>2018-02-27T12:32:09+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://chandankumar.co/work/squareyards/</loc>
-  <lastmod>2018-02-27T12:32:09+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://chandankumar.co/work/restaurant-finder/</loc>
-  <lastmod>2018-02-27T12:32:09+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://chandankumar.co/work/chore-check/</loc>
-  <lastmod>2018-02-27T12:32:09+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://chandankumar.co/work/flock/</loc>
-  <lastmod>2018-02-27T12:32:09+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://chandankumar.co/work/switch/</loc>
-  <lastmod>2018-02-27T12:32:09+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://chandankumar.co/work/keas/</loc>
-  <lastmod>2018-02-27T12:32:09+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://chandankumar.co/work/golf-course-finder/</loc>
-  <lastmod>2018-02-27T12:32:09+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://chandankumar.co/work/country-quiz/</loc>
-  <lastmod>2018-02-27T12:32:09+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://chandankumar.co/work/nomenal/</loc>
-  <lastmod>2018-02-27T12:32:09+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://chandankumar.co/work/stone-paper-scissors/</loc>
-  <lastmod>2018-02-27T12:32:09+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://chandankumar.co/work/7-minute-workout/</loc>
-  <lastmod>2018-02-27T12:32:09+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://chandankumar.co/work/ifluid/</loc>
-  <lastmod>2018-02-27T12:32:09+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://chandankumar.co/work/videoday/</loc>
-  <lastmod>2018-02-27T12:32:09+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://chandankumar.co/work/camera-feed/</loc>
-  <lastmod>2018-02-27T12:32:09+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://chandankumar.co/work/paint-jobs/</loc>
-  <lastmod>2018-02-27T12:32:09+00:00</lastmod>
-  <changefreq>monthly</changefreq>
+  <lastmod>2018-03-13T17:56:42+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://chandankumar.co/work/snapdeal/</loc>
-  <lastmod>2018-02-27T12:32:09+00:00</lastmod>
-  <changefreq>monthly</changefreq>
+  <lastmod>2018-03-13T17:56:42+00:00</lastmod>
   <priority>0.64</priority>
 </url>
+
+
 </urlset>
