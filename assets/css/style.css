@@ -8,8 +8,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -83,7 +83,7 @@ table {
 }
 
 /* grid */
-*, 
+*,
 *:before,
 *:after {
 	-webkit-box-sizing: border-box;
@@ -150,7 +150,7 @@ table {
 }
 
 
-/* -------------------------------- 
+/* --------------------------------
 
 PAGE - HOME #HEADER
 
@@ -312,7 +312,7 @@ header.blk_hdr nav li.active:nth-child(4) a::after {
 
 
 
-/* -------------------------------- 
+/* --------------------------------
 
 PAGE - HOME #INTRO
 
@@ -348,7 +348,7 @@ PAGE - HOME #INTRO
 	vertical-align: middle;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 PAGE - HOME #FOOTER
 
@@ -417,7 +417,7 @@ a.home-white:hover {
 	margin: 0 10px;
 	font-size: 12px;
 	letter-spacing: 2px;
-	text-transform: uppercase;	
+	text-transform: uppercase;
 	-webkit-appearance: none;
 	font-family: 'Circular-Bold',Sans-Serif;
 }
@@ -426,7 +426,7 @@ a.home-white:hover {
 	outline: none;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 PAGE - HOME #GRADIENT
 
@@ -441,7 +441,7 @@ PAGE - HOME #GRADIENT
 	opacity: 1;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 PAGE - PROFILE #INTRO
 
@@ -559,7 +559,7 @@ h3.cd blockquote {
 	display: inline-block;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 PAGE - PROFILE #FORTE
 
@@ -631,7 +631,7 @@ img.ab-ico {
 	border-radius: 12px;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 PAGE - PROFILE #PRINCIPLES
 
@@ -657,7 +657,7 @@ PAGE - PROFILE #PRINCIPLES
 	font-size: 24px;
 	line-height: 32px;
 	color: rgba(33,33,33,0.7);
-	margin-bottom: 10px;	
+	margin-bottom: 10px;
 }
 
 .prin .num{
@@ -670,7 +670,7 @@ PAGE - PROFILE #PRINCIPLES
 	color: rgba(0,0,0,0.4);
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 PAGE - PROFILE #SKILLSET
 
@@ -827,7 +827,7 @@ PAGE - PROFILE #SKILLSET
 	background: #fff;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 PAGE - PROFILE #BRANDS
 
@@ -936,7 +936,7 @@ PAGE - PROFILE #BRANDS
 	width: 16px;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 PAGE - PROFILE #OUTRO
 
@@ -983,7 +983,7 @@ PAGE - PROFILE #OUTRO
 
 .out-s blockquote {
 	display: inline-block;
-	/*background: #FFE432;*/	
+	/*background: #FFE432;*/
 }
 
 a.out-blue {
@@ -1033,7 +1033,7 @@ a.out-pink:hover {
 	color: #fff;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 PAGE - PROFILE #FOOTER
 
@@ -1169,7 +1169,14 @@ a.underliner {
 	background: linear-gradient(to right, #64f38c, #f79d00);
 }
 
-/* -------------------------------- 
+.grad_builder {
+	background: #7f00ff;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(left, #e100ff, #7f00ff);
+  background: -o-linear-gradient(left, #e100ff, #7f00ff);
+  background: linear-gradient(to right, #e100ff, #7f00ff);
+}
+
+/* --------------------------------
 
 PAGE - WORK
 
@@ -1249,7 +1256,7 @@ h2.hwb {
 }
 
 
-/* -------------------------------- 
+/* --------------------------------
 
 PAGE - WORK Inner
 
@@ -1262,7 +1269,7 @@ PAGE - WORK Inner
 }
 
 
-/* -------------------------------- 
+/* --------------------------------
 
 PAGE - RESUME
 
@@ -1373,7 +1380,7 @@ h3.rcd {
     border: 2px solid rgba(255, 255, 255, 0);
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 PAGE - CONTACT
 
@@ -1484,7 +1491,7 @@ h2.hlb {
     color: rgba(33,33,33,0.7);
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 PAGE - CONNECT
 
@@ -1635,7 +1642,7 @@ PAGE - CONNECT
 	display: block;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Hoshi
 
@@ -1748,7 +1755,7 @@ Hoshi
 	}
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Type style
 
@@ -1838,9 +1845,9 @@ Type style
 }
 
 
-/* -------------------------------- 
+/* --------------------------------
 
-xloading-bar 
+xloading-bar
 
 -------------------------------- */
 
@@ -1886,7 +1893,7 @@ xloading-bar
 	top: 0;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Responsive CSS
 
@@ -2335,7 +2342,7 @@ Responsive CSS
 }
 
 /* iPhone 6 */
-@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) { 
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {
 	header li {
   		margin-left: 45px;
 	}
@@ -2538,7 +2545,7 @@ Responsive CSS
 }
 
 /* iPhone 6 Plus */
-@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait) { 
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait) {
 	img.ab-ico {
 		width: 20%;
 		margin: 36px auto;
@@ -2720,12 +2727,12 @@ Responsive CSS
 
 /* iPhone X */
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) { 
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
 	.inpage-outro {
     height: 40vh;
 	}
 }
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3)and (orientation: landscape) { 
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3)and (orientation: landscape) {
 	.inpage-intro {
     	height: 100vh;
     }
@@ -2741,7 +2748,7 @@ Responsive CSS
 }
 
 /* iPad */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) { 
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
 	h2.inpage-h2 {
 		font-size: 32px;
 		line-height: 40px;
@@ -2819,7 +2826,7 @@ Responsive CSS
 	    padding: 40px 0px;
 	}
 }
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) { 
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
 	h2.inpage-h2 {
 		font-size: 30px;
 		line-height: 36px;
